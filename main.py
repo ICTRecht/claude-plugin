@@ -3,7 +3,7 @@ ICTRecht Knowledge MCP Server — Horizon/FastMCP versie
 
 Per-klant toegang wordt beheerd via Horizon RBAC (welke tools een klant mag aanroepen).
 Configuratie via omgevingsvariabelen:
-  OPENWEBUI_URL       — URL van de OpenWebUI instance
+  OPENWEBUI_URL       — URL van de OpenWebUI instance (bijv. https://ai.ictrecht.nl)
   OPENWEBUI_API_KEY   — API-sleutel voor OpenWebUI
   CHUNKS_PER_QUERY    — aantal fragmenten per zoekopdracht (standaard: 6)
 """
@@ -15,8 +15,9 @@ from fastmcp import FastMCP
 mcp = FastMCP(
     name="ictrecht-knowledge",
     instructions=(
-        "Je hebt toegang tot ICTRecht kennisbanken. Gebruik de zoektools om relevante "
-        "juridische informatie op te halen. Verwerk de fragmenten zelf in je antwoord."
+        "Je hebt toegang tot ICTRecht privacy- en gegevensbeschermingskennisbanken. "
+        "Gebruik de zoektools om relevante juridische informatie op te halen en "
+        "verwerk de fragmenten zelf in je antwoord."
     ),
 )
 
@@ -58,34 +59,24 @@ async def _search(collection_id: str, collection_name: str, query: str) -> str:
 # Horizon RBAC bepaalt welke tools een klant mag aanroepen.
 
 @mcp.tool()
+async def search_avg_rechten(query: str) -> str:
+    """Zoek in de AVG-Rechten Assistent kennisbank (rechten van betrokkenen, inzage, bezwaar)."""
+    return await _search("376ab8c4-d17a-40c4-9031-45668128d27a", "AVG-Rechten Assistent", query)
+
+@mcp.tool()
 async def search_privacy_guide(query: str) -> str:
-    """Zoek in de Privacy Guide v2 kennisbank (AVG, privacyrecht, verwerkersovereenkomsten)."""
-    return await _search("b1c44172-86ba-4504-8b1a-6c58c8ea9120", "Privacy Guide v2", query)
+    """Zoek in de Privacy Guide V2 kennisbank (AVG, privacyrecht, verwerkersovereenkomsten)."""
+    return await _search("b1c44172-86ba-4504-8b1a-6c58c8ea9120", "Privacy Guide V2", query)
 
 @mcp.tool()
-async def search_woo(query: str) -> str:
-    """Zoek in de WOO kennisbank (Wet open overheid, openbaarheid van bestuur)."""
-    return await _search("eb430eef-341c-463b-8ab2-9a1712bafb32", "WOO", query)
+async def search_datalekken(query: str) -> str:
+    """Zoek in de Beoordelingsassistent Datalekken kennisbank (meldplicht, beoordeling datalekken)."""
+    return await _search("e89f6432-124c-421f-ac93-6b83c3ce37b4", "Beoordelingsassistent Datalekken", query)
 
 @mcp.tool()
-async def search_ondernemingsrecht(query: str) -> str:
-    """Zoek in de Ondernemingsrecht kennisbank."""
-    return await _search("21982d73-9d75-434d-8c5b-24fcb5d6606d", "Ondernemingsrecht", query)
-
-@mcp.tool()
-async def search_onderwijsassistent(query: str) -> str:
-    """Zoek in de Onderwijsassistent kennisbank (onderwijs en privacy)."""
-    return await _search("de0e5e93-0acb-433c-a13a-7f3682c9f16a", "Onderwijsassistent", query)
-
-@mcp.tool()
-async def search_risico_assistent(query: str) -> str:
-    """Zoek in de Risico Assistent kennisbank (DPIA, risicoanalyse)."""
-    return await _search("3d8809ff-c0c1-4d78-947e-a084f425ef2d", "Risico Assistent", query)
-
-@mcp.tool()
-async def search_vso_checker(query: str) -> str:
-    """Zoek in de VSO Checker kennisbank (vaststellingsovereenkomsten)."""
-    return await _search("e344e0f3-d32a-4151-8238-00e1d5e2bf3a", "VSO Checker", query)
+async def search_data_act(query: str) -> str:
+    """Zoek in de Data Act Guide kennisbank (EU Data Act, dataverordening)."""
+    return await _search("41f69cc8-8f94-436c-95f1-e8939e7dfcb5", "Data Act Guide", query)
 
 @mcp.tool()
 async def search_wpg(query: str) -> str:
@@ -93,26 +84,16 @@ async def search_wpg(query: str) -> str:
     return await _search("2254dc37-fa85-474b-9345-f5138bbd62cc", "WPG", query)
 
 @mcp.tool()
-async def search_zorgrecht(query: str) -> str:
-    """Zoek in de Zorgrecht Guide kennisbank."""
-    return await _search("af813a9e-7d21-4e98-bb4a-0e46695a746a", "Zorgrecht Guide", query)
-
-@mcp.tool()
-async def search_arbeidsovereenkomsten(query: str) -> str:
-    """Zoek in de Arbeidsovereenkomsten Checker kennisbank."""
-    return await _search("3538820f-87e6-45fb-bf27-65428a818200", "Arbeidsovereenkomsten Checker", query)
-
-@mcp.tool()
-async def search_ontslag(query: str) -> str:
-    """Zoek in de Ontslag Assistent kennisbank."""
-    return await _search("0ba17aec-794c-4149-9dd6-379712dc25a7", "Ontslag Assistent", query)
-
-@mcp.tool()
-async def search_wet_dba(query: str) -> str:
-    """Zoek in de Wet DBA Guide kennisbank (zelfstandigen, zzp)."""
-    return await _search("387ece26-3cb4-4efd-b809-691645bb86bb", "Wet DBA Guide", query)
-
-@mcp.tool()
 async def search_gegevensverwerking(query: str) -> str:
-    """Zoek in de Gegevensverwerking Assistent kennisbank."""
+    """Zoek in de Gegevensverwerking Assistent kennisbank (grondslagen, verwerkingsregister)."""
     return await _search("2f3b3297-a449-4848-b38b-44cf61d58c2a", "Gegevensverwerking Assistent", query)
+
+@mcp.tool()
+async def search_dpia(query: str) -> str:
+    """Zoek in de DPIA Assistent kennisbank (gegevensbeschermingseffectbeoordeling)."""
+    return await _search("6ea95c7b-0e2c-4efd-ac84-bd7a96fc9356", "DPIA Assistent", query)
+
+@mcp.tool()
+async def search_doorgifte(query: str) -> str:
+    """Zoek in de Doorgifte Assistent AVG kennisbank (internationale doorgifte, SCCs, adequaatheid)."""
+    return await _search("a7280324-a663-4c80-b056-ae42fc223abc", "Doorgifte Assistent AVG", query)

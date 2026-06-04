@@ -30,29 +30,32 @@ async def _search(collection_id: str, collection_name: str, query: str) -> str:
     """Haalt documentfragmenten op uit OpenWebUI via vector search (geen LLM)."""
     async with httpx.AsyncClient(timeout=30) as client:
         r = await client.post(
-            f"{OPENWEBUI_URL}/api/v1/knowledge/{collection_id}/query",
+            f"{OPENWEBUI_URL}/api/v1/retrieval/query/doc",
             headers={"Authorization": f"Bearer {OPENWEBUI_API_KEY}"},
-            json={"query": query, "k": CHUNKS},
+            json={"collection_name": collection_id, "query": query, "k": CHUNKS},
         )
         r.raise_for_status()
         data = r.json()
 
-    lines = [f"## Kennisbank: {collection_name}\n"]
-    for result in data.get("results", []):
-        docs  = result.get("documents", [])
-        metas = result.get("metadatas", [])
-        dists = result.get("distances", [])
-        for i, text in enumerate(docs):
-            meta = metas[i] if i < len(metas) else {}
-            dist = dists[i] if i < len(dists) else None
-            ref  = meta.get("name") or meta.get("source", "onbekend")
-            if meta.get("page_label") or meta.get("page"):
-                ref += f", p. {meta.get('page_label') or meta.get('page')}"
-            if dist is not None:
-                ref += f" (relevantie: {round(1 - float(dist), 3)})"
-            lines += [f"**{ref}**", text.strip(), ""]
+    docs  = data.get("documents",  [[]])[0]
+    metas = data.get("metadatas",  [[]])[0]
+    dists = data.get("distances",  [[]])[0]
 
-    return "\n".join(lines) if len(lines) > 1 else f"*{collection_name}* — geen relevante fragmenten gevonden."
+    if not docs:
+        return f"*{collection_name}* — geen relevante fragmenten gevonden."
+
+    lines = [f"## Kennisbank: {collection_name}\n"]
+    for i, text in enumerate(docs):
+        meta = metas[i] if i < len(metas) else {}
+        dist = dists[i] if i < len(dists) else None
+        # Bestandsnaam opschonen (verwijder .json extensie indien aanwezig)
+        source = meta.get("name") or meta.get("source", "onbekend")
+        source = source.removesuffix(".json")
+        if dist is not None:
+            source += f" (relevantie: {round(1 - float(dist), 3)})"
+        lines += [f"**{source}**", text.strip(), ""]
+
+    return "\n".join(lines)
 
 
 # ── Tools — één per kennisbank ────────────────────────────────────────────────

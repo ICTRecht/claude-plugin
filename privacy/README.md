@@ -10,114 +10,113 @@ Met deze plugin gebruik je de juridische kennisbanken van ICTRecht rechtstreeks 
 
 ---
 
-## Wat heb je nodig?
+## Welke versie van Claude gebruik jij?
 
-- **Claude Desktop** (gratis te downloaden op [claude.com/download](https://claude.com/download))
-- **Een Claude-account** — een gratis account volstaat voor persoonlijk gebruik; voor teams adviseren we Claude for Work
+Er zijn twee versies van Claude. Kies de juiste installatiehandleiding:
 
----
+| Ik gebruik… | Hoe herken ik dat? | Ga naar |
+|---|---|---|
+| **Claude Desktop** | Een chat-app op mijn computer | [Optie A](#optie-a--claude-desktop-via-instellingen) |
+| **Claude Code** | Een terminal-venster met Claude | [Optie B](#optie-b--claude-code-via-terminal) |
 
-## Installatie — stap voor stap
-
-### Stap 1 — Download de plugin
-
-Klik rechtsboven op de groene knop **"Code"** → **"Download ZIP"** op de GitHub-pagina.
-
-Pak het ZIP-bestand uit. Je krijgt een map genaamd `ictrecht-privacy`.
+Niet zeker? Als je geen terminal gebruikt, kies dan **Optie A**.
 
 ---
 
-### Stap 2 — Open Claude Desktop
+## Optie A — Claude Desktop (via instellingen)
 
-Start Claude Desktop op je computer.
+Met Claude Desktop voeg je de kennisbanken toe als connector. Je krijgt direct toegang tot alle kennisbanken — geen download of installatie nodig.
+
+### Stap 1 — Open Claude Desktop instellingen
+
+Klik linksonder op je naam of het ⚙️-icoon → **Settings** → **Connectors** (of **Connected Apps**).
+
+### Stap 2 — Voeg de ICTRecht connector toe
+
+Klik op **"Add connector"** of **"+"** en vul in:
+
+- **URL:** `https://ictrecht.fastmcp.app/mcp`
+- **Naam:** ICTRecht Privacy
+
+### Stap 3 — Inloggen
+
+Een browservenster opent. Log in met je Horizon-account (of maak er een aan op [horizon.prefect.io](https://horizon.prefect.io)).
+
+### Stap 4 — Klaar
+
+De ICTRecht kennisbanken zijn nu beschikbaar. Stel een privacyvraag in Claude Desktop, bijvoorbeeld:
+
+> *"Wat moet ik melden bij een datalek aan de Autoriteit Persoonsgegevens?"*
+
+> ℹ️ De slash-commando's (`/ictrecht-privacy:dpia` etc.) zijn niet beschikbaar in Claude Desktop. Voor de volledige plugin met commando's: gebruik Claude Code (Optie B).
 
 ---
+
+## Optie B — Claude Code (via terminal)
+
+Met Claude Code krijg je de volledige plugin inclusief slash-commando's.
+
+### Stap 1 — Download en uitpakken
+
+Klik op de downloadknop bovenaan deze pagina. Pak het ZIP-bestand uit. Je krijgt een map `ictrecht-privacy`.
+
+### Stap 2 — Open Claude Code
+
+Start Claude Code in je terminal.
 
 ### Stap 3 — Voeg de plugin toe
 
-Typ het volgende commando in het chatvenster van Claude. Vervang het pad door de locatie waar je de map hebt uitgepakt:
+Typ in Claude Code:
 
 ```
 /plugin marketplace add /pad/naar/ictrecht-privacy
 ```
 
-**Voorbeeld op Mac:**
-```
-/plugin marketplace add /Users/jouwnaam/Downloads/ictrecht-privacy
-```
+💡 **Tip voor Mac:** typ `/plugin marketplace add ` (met spatie) en sleep de map `ictrecht-privacy` vanuit Finder naar het terminalvenster. Het pad wordt automatisch ingevuld.
 
-**Voorbeeld op Windows:**
-```
-/plugin marketplace add C:\Users\jouwnaam\Downloads\ictrecht-privacy
-```
-
-> 💡 **Tip voor Mac:** typ `/plugin marketplace add ` (met een spatie achteraan) en sleep daarna de map `ictrecht-privacy` vanuit Finder naar het chatvenster. Het pad wordt automatisch ingevuld.
-
-Druk op **Enter**.
-
----
-
-### Stap 4 — Installeer de plugin
-
-Typ vervolgens:
+### Stap 4 — Installeer
 
 ```
 /plugin install ictrecht-privacy
 ```
 
-Druk op **Enter** en wacht tot Claude de installatie bevestigt.
+Kies bij de vraag voor **"alle projecten"** (user scope).
 
-> ⚠️ Als gevraagd wordt of je de plugin wilt installeren voor "dit project" of "alle projecten": kies **alle projecten** (user scope). Dit is nodig om bestanden op je computer te kunnen openen.
+### Stap 5 — Herstart Claude Code
 
----
+Sluit Claude Code en open het opnieuw.
 
-### Stap 5 — Herstart Claude Desktop
-
-**Sluit Claude Desktop volledig af en open het opnieuw.** Dit is verplicht — de plugin is pas actief na een herstart.
-
----
-
-### Stap 6 — Eerste inrichting (eenmalig, 10-15 minuten)
-
-Bij de eerste keer gebruik stel je de plugin in op jouw organisatie. Typ:
+### Stap 6 — Eerste inrichting (eenmalig, ~10 minuten)
 
 ```
 /ictrecht-privacy:cold-start-interview
 ```
 
-Claude stelt je een aantal vragen over je organisatie (naam, sector, FG, etc.). Na afloop zijn alle commando's klaar voor gebruik.
-
-> ✅ Je hoeft dit maar **één keer** te doen. De antwoorden worden opgeslagen en door alle commando's gebruikt.
+Claude stelt vragen over jouw organisatie. Na afloop zijn alle commando's beschikbaar.
 
 ---
 
-## Beschikbare commando's
-
-Na de eerste inrichting kun je deze commando's gebruiken:
+## Beschikbare commando's (Claude Code)
 
 | Commando | Wat het doet |
 |---|---|
-| `/ictrecht-privacy:dpia` | DPIA uitvoeren voor een nieuwe verwerking of product |
-| `/ictrecht-privacy:datalek` | Datalek beoordelen en meldplicht bepalen (AP en/of betrokkenen) |
-| `/ictrecht-privacy:avg-rechten` | Verzoek van een betrokkene behandelen (inzage, verwijdering, etc.) |
-| `/ictrecht-privacy:vok-review` | Verwerkersovereenkomst controleren op AVG-conformiteit |
-| `/ictrecht-privacy:doorgifte` | Internationale doorgifte van persoonsgegevens beoordelen |
-| `/ictrecht-privacy:grondslag` | Juiste verwerkingsgrondslag bepalen (art. 6 AVG) |
+| `/ictrecht-privacy:dpia` | DPIA uitvoeren voor een nieuwe verwerking |
+| `/ictrecht-privacy:datalek` | Datalek beoordelen en meldplicht bepalen |
+| `/ictrecht-privacy:avg-rechten` | Verzoek van een betrokkene behandelen |
+| `/ictrecht-privacy:vok-review` | Verwerkersovereenkomst controleren |
+| `/ictrecht-privacy:doorgifte` | Internationale doorgifte beoordelen |
+| `/ictrecht-privacy:grondslag` | Verwerkingsgrondslag bepalen |
 
-### Gebruik
-
-Typ een commando, eventueel gevolgd door een omschrijving:
+### Voorbeelden
 
 ```
 /ictrecht-privacy:dpia Nieuw klantportaal met logingegevens en gebruikshistorie
 ```
-
 ```
 /ictrecht-privacy:datalek Laptop gestolen met klantgegevens, geen encryptie
 ```
-
 ```
-/ictrecht-privacy:vok-review [sleep je VOK-document naar het chatvenster]
+/ictrecht-privacy:vok-review [sleep je VOK-document naar het venster]
 ```
 
 ---
@@ -126,10 +125,10 @@ Typ een commando, eventueel gevolgd door een omschrijving:
 
 | Probleem | Oplossing |
 |---|---|
-| "Command not found" | Herstart Claude Desktop (stap 5 overgeslagen) |
+| "/plugin isn't available" | Je gebruikt Claude Desktop — volg Optie A |
+| "Command not found" na installatie | Herstart Claude Code (stap 5 overgeslagen) |
 | "Run setup first" | Voer `/ictrecht-privacy:cold-start-interview` uit |
-| Plugin doet niets na installatie | Controleer of je hebt gekozen voor "user scope" bij installatie |
-| Je wilt de inrichting opnieuw doen | Voer `/ictrecht-privacy:cold-start-interview` opnieuw uit |
+| Je wilt de inrichting opnieuw doen | Voer cold-start-interview opnieuw uit |
 
 ---
 

@@ -2,6 +2,12 @@
 
 Met deze plugin gebruik je de juridische kennisbanken van ICTRecht rechtstreeks vanuit Claude. Je kunt DPIA's uitvoeren, datalekken beoordelen, verwerkersovereenkomsten controleren en meer — volledig in het Nederlands, afgestemd op jouw organisatie.
 
+<p align="center">
+  <a href="https://github.com/MarkICTRecht/ictrecht-mcp/releases/latest/download/ictrecht-privacy.zip">
+    <img src="https://img.shields.io/badge/⬇%20Download%20Plugin-ICTRecht%20Privacy%20v1.0.0-1a1a2e?style=for-the-badge&logoColor=white" alt="Download ICTRecht Privacy Plugin">
+  </a>
+</p>
+
 ---
 
 ## Wat heb je nodig?

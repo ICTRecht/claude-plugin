@@ -54,39 +54,33 @@ De ICTRecht kennisbanken zijn nu beschikbaar. Stel een privacyvraag in Claude De
 
 ## Optie B — Claude Code (via terminal)
 
-Met Claude Code krijg je de volledige plugin inclusief slash-commando's.
+Met Claude Code krijg je de volledige plugin inclusief slash-commando's. Geen download nodig — je installeert direct vanuit GitHub.
 
-### Stap 1 — Download en uitpakken
-
-Klik op de downloadknop bovenaan deze pagina. Pak het ZIP-bestand uit. Je krijgt een map `ictrecht-privacy`.
-
-### Stap 2 — Open Claude Code
+### Stap 1 — Open Claude Code
 
 Start Claude Code in je terminal.
 
-### Stap 3 — Voeg de plugin toe
+### Stap 2 — Voeg de ICTRecht marketplace toe
 
-Typ in Claude Code:
-
-```
-/plugin marketplace add /pad/naar/ictrecht-privacy
-```
-
-💡 **Tip voor Mac:** typ `/plugin marketplace add ` (met spatie) en sleep de map `ictrecht-privacy` vanuit Finder naar het terminalvenster. Het pad wordt automatisch ingevuld.
-
-### Stap 4 — Installeer
+Typ dit commando (eenmalig):
 
 ```
-/plugin install ictrecht-privacy
+/plugin marketplace add https://github.com/MarkICTRecht/ictrecht-mcp
+```
+
+### Stap 3 — Installeer de privacy plugin
+
+```
+/plugin install ictrecht-privacy@ictrecht-plugins
 ```
 
 Kies bij de vraag voor **"alle projecten"** (user scope).
 
-### Stap 5 — Herstart Claude Code
+### Stap 4 — Herstart Claude Code
 
 Sluit Claude Code en open het opnieuw.
 
-### Stap 6 — Eerste inrichting (eenmalig, ~10 minuten)
+### Stap 5 — Eerste inrichting (eenmalig, ~10 minuten)
 
 ```
 /ictrecht-privacy:cold-start-interview

@@ -1,0 +1,25 @@
+{
+  "name": "ictrecht-plugins",
+  "owner": {
+    "name": "ICTRecht B.V.",
+    "email": "info@ictrecht.nl"
+  },
+  "description": "Juridische AI-plugins van ICTRecht voor privacy, AVG en gegevensbescherming.",
+  "metadata": {
+    "pluginRoot": "./privacy"
+  },
+  "plugins": [
+    {
+      "name": "ictrecht-privacy",
+      "source": "./privacy/ictrecht-privacy",
+      "description": "Privacy- en AVG-assistent met DPIA, datalekbeoordeling, VOK-review, betrokkenenrechten, doorgifte en grondslagbepaling.",
+      "version": "1.0.0",
+      "author": {
+        "name": "ICTRecht B.V.",
+        "email": "info@ictrecht.nl"
+      },
+      "category": "legal",
+      "tags": ["privacy", "AVG", "GDPR", "DPIA", "datalek", "juridisch"]
+    }
+  ]
+}

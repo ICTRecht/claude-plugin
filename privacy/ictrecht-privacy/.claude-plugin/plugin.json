@@ -1,0 +1,9 @@
+{
+  "name": "ictrecht-privacy",
+  "description": "Privacy- en AVG-assistent met DPIA, datalekbeoordeling, VOK-review, betrokkenenrechten, doorgifte en grondslagbepaling.",
+  "version": "1.0.0",
+  "author": {
+    "name": "ICTRecht B.V.",
+    "email": "info@ictrecht.nl"
+  }
+}

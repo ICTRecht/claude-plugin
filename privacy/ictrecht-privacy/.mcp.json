@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "ICTRecht": {
+      "command": "npx",
+      "args": ["-y", "mcp-remote@latest", "https://ictrecht.fastmcp.app/mcp"],
+      "title": "ICTRecht Kennisbanken",
+      "description": "Juridische kennisbanken van ICTRecht voor privacy, AVG en gegevensbescherming."
+    }
+  }
+}

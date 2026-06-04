@@ -19,7 +19,7 @@ mcp = FastMCP(
         "Gebruik de zoektools om relevante juridische informatie op te halen en "
         "verwerk de fragmenten zelf in je antwoord."
     ),
-    icon_url="https://raw.githubusercontent.com/MarkICTRecht/ictrecht-mcp/main/logo.png",
+    icon_url="https://raw.githubusercontent.com/MarkICTRecht/ictrecht-mcp/main/privacy/logo.png",
 )
 
 OPENWEBUI_URL     = os.getenv("OPENWEBUI_URL", "").rstrip("/")

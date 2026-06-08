@@ -5,6 +5,12 @@
       "args": ["-y", "mcp-remote@latest", "https://ictrecht.fastmcp.app/mcp"],
       "title": "ICTRecht Kennisbanken",
       "description": "Juridische kennisbanken van ICTRecht voor privacy, AVG en gegevensbescherming."
+    },
+    "ICTRecht Legal": {
+      "command": "npx",
+      "args": ["-y", "mcp-remote@latest", "https://ictrecht-legal-sources.fastmcp.app/mcp"],
+      "title": "ICTRecht Legal Sources",
+      "description": "Juridische bronnen van ICTRecht."
     }
   }
 }

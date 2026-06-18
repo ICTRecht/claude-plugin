@@ -17,7 +17,7 @@ Voer een gestructureerde DPIA uit conform AVG artikel 35.
    - Lees `~/.claude/plugins/config/ictrecht-privacy/CLAUDE.md`
    - Of zoek in geheugen naar "ICTRecht Privacy organisatieprofiel"
    - Of zoek in projectinstructies naar het blok `## ICTRecht Privacy Profiel`
-   - Geen van deze beschikbaar → meld: "Organisatieprofiel niet gevonden. Voer eerst `/ictrecht-privacy:cold-start-interview` uit." en stop.
+   - Geen van deze beschikbaar → ga door met generieke AVG-standaardinstellingen en vermeld bovenaan de output: "ℹ️ Geen organisatieprofiel gevonden — output is generiek. Voer `/ictrecht-privacy:cold-start-interview` uit voor gepersonaliseerde analyses."
 2. Controleer `~/.claude/plugins/config/ictrecht-privacy/outputs/` op eerdere DPIA's voor dezelfde verwerking (alleen als dat pad beschikbaar is).
 3. Zoek in de kennisbank: gebruik `search_dpia` met een gerichte query over het type verwerking.
 

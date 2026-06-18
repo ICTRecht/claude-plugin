@@ -17,7 +17,7 @@ Behandel een verzoek van een betrokkene conform AVG hoofdstuk III.
    - Lees `~/.claude/plugins/config/ictrecht-privacy/CLAUDE.md`
    - Of zoek in geheugen naar "ICTRecht Privacy organisatieprofiel"
    - Of zoek in projectinstructies naar het blok `## ICTRecht Privacy Profiel`
-   - Geen van deze beschikbaar → meld: "Organisatieprofiel niet gevonden. Voer eerst `/ictrecht-privacy:cold-start-interview` uit." en stop.
+   - Geen van deze beschikbaar → ga door met generieke AVG-standaardinstellingen en vermeld bovenaan de output: "ℹ️ Geen organisatieprofiel gevonden — output is generiek. Voer `/ictrecht-privacy:cold-start-interview` uit voor gepersonaliseerde analyses."
 2. Gebruik `search_avg_rechten` voor de relevante rechten en uitzonderingen.
 
 ## Stap 1 — Identificeer het type verzoek

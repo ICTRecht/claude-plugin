@@ -17,7 +17,7 @@ Beoordeel een datalek conform AVG artikel 33 en 34.
    - Lees `~/.claude/plugins/config/ictrecht-privacy/CLAUDE.md`
    - Of zoek in geheugen naar "ICTRecht Privacy organisatieprofiel"
    - Of zoek in projectinstructies naar het blok `## ICTRecht Privacy Profiel`
-   - Geen van deze beschikbaar → meld: "Organisatieprofiel niet gevonden. Voer eerst `/ictrecht-privacy:cold-start-interview` uit." en stop.
+   - Geen van deze beschikbaar → ga door met generieke AVG-standaardinstellingen en vermeld bovenaan de output: "ℹ️ Geen organisatieprofiel gevonden — output is generiek. Voer `/ictrecht-privacy:cold-start-interview` uit voor gepersonaliseerde analyses."
 2. Controleer op eerdere beoordelingen van hetzelfde incident (alleen als outputs-pad beschikbaar is).
 3. Gebruik `search_datalekken` voor referentie-inhoud.
 

@@ -13,8 +13,12 @@ Voer een gestructureerde DPIA uit conform AVG artikel 35.
 
 ## Voorbereiding
 
-1. Laad `~/.claude/plugins/config/ictrecht-privacy/CLAUDE.md` → organisatiecontext en huisstijl.
-2. Controleer `~/.claude/plugins/config/ictrecht-privacy/outputs/` op eerdere DPIA's voor dezelfde verwerking. Citeer die als ze bestaan.
+1. **Organisatiecontext laden** — probeer in volgorde:
+   - Lees `~/.claude/plugins/config/ictrecht-privacy/CLAUDE.md`
+   - Of zoek in geheugen naar "ICTRecht Privacy organisatieprofiel"
+   - Of zoek in projectinstructies naar het blok `## ICTRecht Privacy Profiel`
+   - Geen van deze beschikbaar → meld: "Organisatieprofiel niet gevonden. Voer eerst `/ictrecht-privacy:cold-start-interview` uit." en stop.
+2. Controleer `~/.claude/plugins/config/ictrecht-privacy/outputs/` op eerdere DPIA's voor dezelfde verwerking (alleen als dat pad beschikbaar is).
 3. Zoek in de kennisbank: gebruik `search_dpia` met een gerichte query over het type verwerking.
 
 ## Stap 1 — Is een DPIA verplicht?
@@ -64,7 +68,7 @@ Schaal: Laag / Gemiddeld / Hoog
 
 ## Stap 6 — Output
 
-Schrijf het DPIA-rapport naar:
-`~/.claude/plugins/config/ictrecht-privacy/outputs/dpia-[datum]-[verwerking].md`
+Schrijf het DPIA-rapport naar `~/.claude/plugins/config/ictrecht-privacy/outputs/dpia-[datum]-[verwerking].md`.
+Als dat pad niet beschikbaar is, toon het volledige rapport in de chat.
 
 Sluit af met de standaard ICTRecht disclaimer.

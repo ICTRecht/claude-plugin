@@ -13,7 +13,11 @@ Beoordeel een verwerkersovereenkomst conform AVG artikel 28.
 
 ## Voorbereiding
 
-1. Laad `~/.claude/plugins/config/ictrecht-privacy/CLAUDE.md`.
+1. **Organisatiecontext laden** — probeer in volgorde:
+   - Lees `~/.claude/plugins/config/ictrecht-privacy/CLAUDE.md`
+   - Of zoek in geheugen naar "ICTRecht Privacy organisatieprofiel"
+   - Of zoek in projectinstructies naar het blok `## ICTRecht Privacy Profiel`
+   - Geen van deze beschikbaar → meld: "Organisatieprofiel niet gevonden. Voer eerst `/ictrecht-privacy:cold-start-interview` uit." en stop.
 2. Gebruik `search_privacy_guide` voor AVG art. 28 vereisten.
 3. Vraag het document op als nog niet gedeeld.
 
@@ -51,7 +55,7 @@ Geef per ontbrekend of zwak element:
 
 ## Output
 
-Schrijf beoordeling naar:
-`~/.claude/plugins/config/ictrecht-privacy/outputs/vok-review-[datum]-[leverancier].md`
+Schrijf beoordeling naar `~/.claude/plugins/config/ictrecht-privacy/outputs/vok-review-[datum]-[leverancier].md`.
+Als dat pad niet beschikbaar is, toon de volledige beoordeling in de chat.
 
 Sluit af met de standaard ICTRecht disclaimer.

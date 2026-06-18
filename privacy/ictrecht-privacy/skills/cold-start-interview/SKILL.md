@@ -48,12 +48,43 @@ Stel de volgende vragen één voor één. Wacht op antwoord voordat je verder ga
 8. **Huisstijl documenten**
    "Heeft u een voorbeelddocument (DPIA, verwerkersovereenkomst, datalekrapportage) dat ik als huisstijlreferentie kan gebruiken? Zo ja, deel het bestand of plak de structuur."
 
-## Stap 3 — Configuratie schrijven
+## Stap 3 — Configuratie opslaan
 
-Schrijf de ingevulde antwoorden weg naar:
-`~/.claude/plugins/config/ictrecht-privacy/CLAUDE.md`
+Sla de ingevulde antwoorden op via drie kanalen (in volgorde):
 
-Vervang alle [PLACEHOLDER] markers met de ingevoerde gegevens. Behoud de koppenstructuur.
+**3a. Bestand** (voor Claude Code gebruikers)
+Schrijf weg naar `~/.claude/plugins/config/ictrecht-privacy/CLAUDE.md`.
+Vervang alle [PLACEHOLDER] markers. Behoud de koppenstructuur.
+Als het pad niet beschikbaar is, sla deze stap over.
+
+**3b. Geheugen** (voor alle omgevingen)
+Sla het organisatieprofiel op in Claude-geheugen onder de naam "ICTRecht Privacy organisatieprofiel".
+Formaat: compacte samenvatting van naam, sector, omvang, rol, FG, wetgeving en gebruikersrol.
+
+**3c. Projectinstructies-blok genereren**
+Toon onderaan dit bericht een kant-en-klaar tekstblok dat de gebruiker kan kopiëren naar de instructies van een Claude Project:
+
+```
+--- KOPIEER DIT NAAR JE CLAUDE PROJECT INSTRUCTIES ---
+
+## ICTRecht Privacy Profiel
+
+**Organisatie:** [ingevulde naam]
+**Sector:** [sector]
+**Omvang:** [medewerkers]
+**Rol t.o.v. persoonsgegevens:** [verwerkingsverantwoordelijke / verwerker / beide]
+**Vestigingsland:** [land]
+**Toepasselijke wetgeving:** [AVG / WPG / etc.]
+**FG:** [naam of 'geen']
+**Rol gebruiker:** [jurist / privacy officer / etc.]
+**Juridisch contact:** [intern / extern / nvt]
+
+Alle ICTRecht privacy-commando's gebruiken dit profiel als organisatiecontext.
+
+--- EINDE BLOK ---
+```
+
+Zeg erbij: "Optioneel: plak dit blok in de instructies van een Claude Project om de configuratie ook in nieuwe chats beschikbaar te hebben zonder opnieuw de cold-start te hoeven doen."
 
 ## Stap 4 — Bevestiging
 

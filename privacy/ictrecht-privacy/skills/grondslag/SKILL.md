@@ -13,7 +13,11 @@ Bepaal de verwerkingsgrondslag conform AVG artikel 6 (en art. 9 voor bijzondere 
 
 ## Voorbereiding
 
-1. Laad `~/.claude/plugins/config/ictrecht-privacy/CLAUDE.md`.
+1. **Organisatiecontext laden** — probeer in volgorde:
+   - Lees `~/.claude/plugins/config/ictrecht-privacy/CLAUDE.md`
+   - Of zoek in geheugen naar "ICTRecht Privacy organisatieprofiel"
+   - Of zoek in projectinstructies naar het blok `## ICTRecht Privacy Profiel`
+   - Geen van deze beschikbaar → meld: "Organisatieprofiel niet gevonden. Voer eerst `/ictrecht-privacy:cold-start-interview` uit." en stop.
 2. Gebruik `search_gegevensverwerking` voor grondslagen en jurisprudentie.
 
 ## Stap 1 — Zijn het bijzondere categorieën?
@@ -47,7 +51,7 @@ Als gerechtvaardigd belang: voer de balancing test uit:
 
 ## Output
 
-Schrijf analyse naar:
-`~/.claude/plugins/config/ictrecht-privacy/outputs/grondslag-[datum]-[verwerking].md`
+Schrijf analyse naar `~/.claude/plugins/config/ictrecht-privacy/outputs/grondslag-[datum]-[verwerking].md`.
+Als dat pad niet beschikbaar is, toon de volledige analyse in de chat.
 
 Sluit af met de standaard ICTRecht disclaimer.

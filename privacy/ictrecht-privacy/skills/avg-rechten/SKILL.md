@@ -13,7 +13,11 @@ Behandel een verzoek van een betrokkene conform AVG hoofdstuk III.
 
 ## Voorbereiding
 
-1. Laad `~/.claude/plugins/config/ictrecht-privacy/CLAUDE.md`.
+1. **Organisatiecontext laden** — probeer in volgorde:
+   - Lees `~/.claude/plugins/config/ictrecht-privacy/CLAUDE.md`
+   - Of zoek in geheugen naar "ICTRecht Privacy organisatieprofiel"
+   - Of zoek in projectinstructies naar het blok `## ICTRecht Privacy Profiel`
+   - Geen van deze beschikbaar → meld: "Organisatieprofiel niet gevonden. Voer eerst `/ictrecht-privacy:cold-start-interview` uit." en stop.
 2. Gebruik `search_avg_rechten` voor de relevante rechten en uitzonderingen.
 
 ## Stap 1 — Identificeer het type verzoek
@@ -56,7 +60,7 @@ Mogelijke uitkomsten:
 
 ## Stap 5 — Output
 
-Schrijf concept-reactiebrief naar:
-`~/.claude/plugins/config/ictrecht-privacy/outputs/avg-verzoek-[datum]-[type].md`
+Schrijf concept-reactiebrief naar `~/.claude/plugins/config/ictrecht-privacy/outputs/avg-verzoek-[datum]-[type].md`.
+Als dat pad niet beschikbaar is, toon de volledige reactiebrief in de chat.
 
 Sluit af met de standaard ICTRecht disclaimer.

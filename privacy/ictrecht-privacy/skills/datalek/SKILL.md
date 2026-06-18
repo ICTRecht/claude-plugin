@@ -13,8 +13,12 @@ Beoordeel een datalek conform AVG artikel 33 en 34.
 
 ## Voorbereiding
 
-1. Laad `~/.claude/plugins/config/ictrecht-privacy/CLAUDE.md` → organisatiecontext.
-2. Controleer op eerdere beoordelingen van hetzelfde incident.
+1. **Organisatiecontext laden** — probeer in volgorde:
+   - Lees `~/.claude/plugins/config/ictrecht-privacy/CLAUDE.md`
+   - Of zoek in geheugen naar "ICTRecht Privacy organisatieprofiel"
+   - Of zoek in projectinstructies naar het blok `## ICTRecht Privacy Profiel`
+   - Geen van deze beschikbaar → meld: "Organisatieprofiel niet gevonden. Voer eerst `/ictrecht-privacy:cold-start-interview` uit." en stop.
+2. Controleer op eerdere beoordelingen van hetzelfde incident (alleen als outputs-pad beschikbaar is).
 3. Gebruik `search_datalekken` voor referentie-inhoud.
 
 ## Stap 1 — Is er sprake van een datalek?
@@ -74,7 +78,7 @@ Geef een genummerde actielijst:
 
 ## Stap 7 — Output
 
-Schrijf beoordeling naar:
-`~/.claude/plugins/config/ictrecht-privacy/outputs/datalek-[datum]-[incident].md`
+Schrijf beoordeling naar `~/.claude/plugins/config/ictrecht-privacy/outputs/datalek-[datum]-[incident].md`.
+Als dat pad niet beschikbaar is, toon de volledige beoordeling in de chat.
 
 Sluit af met de standaard ICTRecht disclaimer.

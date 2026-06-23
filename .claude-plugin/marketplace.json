@@ -12,7 +12,7 @@
     {
       "name": "ictrecht-privacy",
       "source": "./privacy/ictrecht-privacy",
-      "description": "Privacy- en AVG-assistent met DPIA, datalekbeoordeling, VOK-review, betrokkenenrechten, doorgifte en grondslagbepaling.",
+      "description": "Privacy- en AVG-assistent met DPIA, datalekbeoordeling, VOK-review, betrokkenenrechten, doorgifte en grondslagbepaling. Inclusief ICTRecht kennisbankconnector.",
       "version": "1.0.0",
       "author": {
         "name": "ICTRecht B.V.",
@@ -20,6 +20,18 @@
       },
       "category": "legal",
       "tags": ["privacy", "AVG", "GDPR", "DPIA", "datalek", "juridisch"]
+    },
+    {
+      "name": "ictrecht-privacy-basis",
+      "source": "./privacy/ictrecht-privacy-basis",
+      "description": "Gratis AVG-assistent met DPIA, datalekbeoordeling, VOK-review, betrokkenenrechten, doorgifte en grondslagbepaling. Zonder kennisbankconnector.",
+      "version": "1.0.0",
+      "author": {
+        "name": "ICTRecht B.V.",
+        "email": "info@ictrecht.nl"
+      },
+      "category": "legal",
+      "tags": ["privacy", "AVG", "GDPR", "DPIA", "datalek", "juridisch", "gratis"]
     }
   ]
 }

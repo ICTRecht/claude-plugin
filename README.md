@@ -13,7 +13,7 @@
   <img src="https://img.shields.io/badge/versie-1.0.0-1a56db?style=flat-square" alt="Versie 1.0.0">
   <img src="https://img.shields.io/badge/taal-Nederlands-orange?style=flat-square" alt="Nederlands">
   <img src="https://img.shields.io/badge/Claude_Code-compatibel-blueviolet?style=flat-square" alt="Claude Code">
-  <img src="https://img.shields.io/badge/licentie-Proprietary-lightgrey?style=flat-square" alt="MIT">
+  <img src="https://img.shields.io/badge/licentie-CC%20BY--SA%204.0-blue?style=flat-square" alt="CC BY-SA 4.0">
 </p>
 
 ---

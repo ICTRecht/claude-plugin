@@ -1,0 +1,100 @@
+# dsa-verplichtingen
+
+Bepaal DSA-verplichtingen voor een online platform of tussenpersoon.
+
+## Metadata
+- **name:** dsa-verplichtingen
+- **description:** Bepaal DSA-verplichtingen voor een online platform of tussenpersoon.
+- **argument-hint:** "[platform of dienst]"
+
+## Voorbereiding (3-laags)
+
+1. **Config-bestand:** Lees `~/.claude/plugins/config/ictrecht-digital-decade/CLAUDE.md` voor organisatiecontext.
+2. **Memory:** Zoek naar memory met label "ICTRecht Digital Decade organisatieprofiel".
+3. **Project instructions:** Zoek naar sectie `## ICTRecht Digital Decade Profiel` in de projectinstructies.
+
+Geen van de drie beschikbaar: ga door generiek en toon:
+> ℹ️ *Geen organisatieprofiel gevonden. Voer `/ictrecht-digital-decade:cold-start-interview` uit voor gepersonaliseerde analyse. Nu worden generieke DSA-verplichtingen bepaald.*
+
+## Instructies
+
+Voer de volgende stappen uit voor het opgegeven platform of de opgegeven dienst:
+
+### Stap 1 — Kwalificatie (art. 2 DSA)
+Bepaal het type tussenpersoon:
+
+| Type | Omschrijving | Voorbeeld |
+|---|---|---|
+| **Mere conduit** | Doorgifte van informatie, geen opslag | ISP, telecomoperator |
+| **Caching** | Tijdelijke automatische opslag | CDN, proxy |
+| **Hosting** | Opslag van door gebruikers verstrekte informatie | Webhosting, cloud opslag |
+| **Online platform** | Hosting + verspreiding aan publiek | Sociale media, marktplaats, app store |
+| **VLOP** | Online platform met ≥45M maandelijkse gebruikers in EU | Facebook, TikTok, Amazon Marketplace |
+| **VLOSE** | Online zoekmachine met ≥45M maandelijkse gebruikers in EU | Google Search, Bing |
+
+**Conclusie:** Welk type is de dienst? (meerdere lagen mogelijk)
+
+### Stap 2 — Basisverplichtingen alle tussenpersonen (art. 11-15)
+Van toepassing op alle categorieën:
+
+| Verplichting | Artikel | Status |
+|---|---|---|
+| Aanwijzen contactpunt voor autoriteiten | Art. 11 | |
+| Aanwijzen wettelijk vertegenwoordiger in EU (indien buiten EU) | Art. 13 | |
+| Transparantierapportage | Art. 15 | |
+| Samenwerking met toezichthoudende autoriteiten | Art. 11 | |
+| Algemene gebruiksvoorwaarden (helder, begrijpelijk) | Art. 14 | |
+
+### Stap 3 — Hostingprovider verplichtingen
+Extra bij hosting (inclusief online platforms):
+
+| Verplichting | Artikel | Status |
+|---|---|---|
+| Notice-and-action mechanisme (meldingen illegale inhoud) | Art. 16 | |
+| Verwerking meldingen tijdig en zorgvuldig | Art. 17 | |
+| Motivering bij verwijdering of beperking | Art. 17 | |
+| Waarschuwing bij misbruik (repeterend misbruik) | Art. 23 | |
+| Bewaarplicht gegevens na verwijdering (6 maanden) | Art. 17 | |
+
+### Stap 4 — Online platform verplichtingen (art. 20-28)
+Extra bij online platforms:
+
+| Verplichting | Artikel | Status |
+|---|---|---|
+| Intern klachtenbehandelingssysteem | Art. 20 | |
+| Buitengerechtelijke geschillenbeslechting | Art. 21 | |
+| Vertrouwde melders (trusted flaggers) erkennen | Art. 22 | |
+| Transparantie over reclame (duidelijk gelabeld) | Art. 26 | |
+| Verbod op targeting minderjarigen voor reclame | Art. 28 | |
+| Verbod op targeting op basis van gevoelige gegevens | Art. 26 | |
+| Transparantie aanbevelingssystemen | Art. 27 | |
+| Verbod op dark patterns | Art. 25 | |
+| Online marktplaatsen: traceerbaarheid handelaren | Art. 30 | |
+
+### Stap 5 — VLOP/VLOSE extra verplichtingen
+Bij aanwijzing als Very Large Online Platform of Search Engine:
+
+| Verplichting | Artikel | Status |
+|---|---|---|
+| Systeemrisicoanalyse (jaarlijks) | Art. 34 | |
+| Risicobeperkende maatregelen | Art. 35 | |
+| Onafhankelijke audit (jaarlijks) | Art. 37 | |
+| Data-toegang voor onderzoekers | Art. 40 | |
+| Crisisprotocol | Art. 48 | |
+| Aanbevelingssysteem zonder profiling optie | Art. 38 | |
+| Verhoogde transparantie reclame-archief | Art. 39 | |
+| Toezicht door Europese Commissie | Art. 33 | |
+
+### Stap 6 — Actieplan
+Overzicht van:
+1. Verplichtingen die direct gelden
+2. Verplichtingen die nog niet zijn geïmplementeerd
+3. Prioritering op basis van handhavingsrisico (boetes tot 6% wereldwijde jaaromzet)
+4. Aanbevolen volgorde van implementatie
+
+### Output
+Sla de DSA-analyse op naar `~/.claude/plugins/config/ictrecht-digital-decade/outputs/dsa-verplichtingen-[datum].md`.
+
+---
+
+Sluit af met de standaard ICTRecht disclaimer.

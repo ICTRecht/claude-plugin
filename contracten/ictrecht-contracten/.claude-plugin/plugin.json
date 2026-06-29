@@ -1,0 +1,9 @@
+{
+  "name": "ictrecht-contracten",
+  "description": "Contractenrecht assistent: contract review, NDA, algemene voorwaarden, aansprakelijkheid, SLA en onderhandelingsstrategie.",
+  "version": "1.0.0",
+  "author": {
+    "name": "ICTRecht B.V.",
+    "email": "info@ictrecht.nl"
+  }
+}

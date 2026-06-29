@@ -1,0 +1,9 @@
+{
+  "name": "ictrecht-digital-decade",
+  "description": "Digital Decade specialist: AI Act, NIS2, DSA, DMA, eIDAS 2.0, Cyber Resilience Act en EU digitale regelgeving.",
+  "version": "1.0.0",
+  "author": {
+    "name": "ICTRecht B.V.",
+    "email": "info@ictrecht.nl"
+  }
+}

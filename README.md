@@ -1,5 +1,6 @@
 <p align="center">
-  <img src="https://ictrecht.nl/wp-content/uploads/2023/01/ictrecht-logo.png" alt="ICTRecht" height="60">
+  <img <img width="649" height="439" alt="LOGO_ICTRECHT-1" src="https://github.com/user-attachments/assets/b8232a64-30d5-47b0-bd04-c122e8d9eca1" />
+ alt="ICTRecht" height="60">
 </p>
 
 <h1 align="center">ICTRecht Plugin Suite voor Claude</h1>
@@ -49,7 +50,7 @@ Klanten van ICTRecht kunnen ook de **connector-versie** activeren. Die koppelt C
 
 | Plugin | Vakgebied | Skills | Download |
 |---|---|---|---|
-| **ictrecht-privacy** † | Privacy & AVG | DPIA · datalek · AVG-rechten · VOK-review · doorgifte · grondslag | [![](https://img.shields.io/badge/⬇_connector-1a56db?style=flat-square)](https://github.com/MarkICTRecht/ictrecht-mcp/releases/latest/download/ictrecht-privacy.zip) |
+| **ictrecht-privacy** * | Privacy & AVG | DPIA · datalek · AVG-rechten · VOK-review · doorgifte · grondslag | [![](https://img.shields.io/badge/⬇_connector-1a56db?style=flat-square)](https://github.com/MarkICTRecht/ictrecht-mcp/releases/latest/download/ictrecht-privacy.zip) |
 | **ictrecht-privacy-basis** | Privacy & AVG | DPIA · datalek · AVG-rechten · VOK-review · doorgifte · grondslag | [![](https://img.shields.io/badge/⬇_gratis-6b7280?style=flat-square)](https://github.com/MarkICTRecht/ictrecht-mcp/releases/latest/download/ictrecht-privacy-basis.zip) |
 | **ictrecht-contracten** | Contractenrecht | contract-review · NDA · algemene voorwaarden · aansprakelijkheid · SLA · onderhandeling | [![](https://img.shields.io/badge/⬇_gratis-6b7280?style=flat-square)](https://github.com/MarkICTRecht/ictrecht-mcp/releases/latest/download/ictrecht-contracten.zip) |
 | **ictrecht-legal-counsel** | Legal Counsel | juridisch-memo · risico-analyse · compliance-check · regelgeving-scan · geschil · adviesstructuur | [![](https://img.shields.io/badge/⬇_gratis-6b7280?style=flat-square)](https://github.com/MarkICTRecht/ictrecht-mcp/releases/latest/download/ictrecht-legal-counsel.zip) |
@@ -57,11 +58,15 @@ Klanten van ICTRecht kunnen ook de **connector-versie** activeren. Die koppelt C
 | **ictrecht-data** | Data (juridisch) | verwerkingsregister · data-sharing · governance · Data Act · open data · dataverdragen | [![](https://img.shields.io/badge/⬇_gratis-6b7280?style=flat-square)](https://github.com/MarkICTRecht/ictrecht-mcp/releases/latest/download/ictrecht-data.zip) |
 | **ictrecht-digital-decade** | Digital Decade | AI Act · NIS2 · DSA · DMA · Cyber Resilience Act · regelgeving-scan | [![](https://img.shields.io/badge/⬇_gratis-6b7280?style=flat-square)](https://github.com/MarkICTRecht/ictrecht-mcp/releases/latest/download/ictrecht-digital-decade.zip) |
 
-† Connector-versie beschikbaar via [support@ictrecht.nl](mailto:support@ictrecht.nl)
+* Connector-versie beschikbaar via [support@ictrecht.nl](mailto:support@ictrecht.nl)
 
 ---
 
 ## Installatie
+
+<img width="756" height="480" alt="ICTRecht plugin install" src="https://github.com/user-attachments/assets/9f027bd3-e7af-4948-8548-2d57b8c9e8ce" />
+
+
 
 ### Claude Code (aanbevolen — volledige plugin met slash-commando's)
 

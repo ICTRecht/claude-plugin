@@ -17,95 +17,47 @@
 
 ---
 
-## Plugins
+## Wat zijn de ICTRecht plugins?
 
-Zeven juridische specialist-plugins, elk met eigen slash-commando's en een optioneel organisatieprofiel.
+De ICTRecht Plugin Suite voegt juridische expertise toe aan Claude. Stel vragen over specifieke situaties, laat documenten beoordelen of voer gestructureerde analyses uit — met de werkwijze en het kennisniveau van ICTRecht-juristen.
 
-### Snel installeren (Claude Code)
+Elke plugin biedt slash-commando's voor concrete juridische taken: van DPIA's en contractreviews tot AI Act-classificaties en IE-analyses. Een optioneel inrichtingsgesprek (`cold-start-interview`) stemt de analyses af op jouw organisatie.
 
-```
-/plugin marketplace add https://github.com/MarkICTRecht/ictrecht-mcp
-```
-
-Installeer daarna één of meer plugins:
-
-```
-/plugin install ictrecht-privacy@ictrecht-plugins
-/plugin install ictrecht-contracten@ictrecht-plugins
-/plugin install ictrecht-legal-counsel@ictrecht-plugins
-/plugin install ictrecht-ie@ictrecht-plugins
-/plugin install ictrecht-data@ictrecht-plugins
-/plugin install ictrecht-digital-decade@ictrecht-plugins
-```
+<p align="center">
+  <img src="./assets/demo.gif" alt="ICTRecht Plugin in gebruik" width="720">
+</p>
 
 ---
 
-## Overzicht
+## Gratis plugins vs. connector-versie
 
-### Privacy & AVG
+Alle plugins zijn beschikbaar als **gratis basisversie**. De analyses zijn gebaseerd op de ingebouwde juridische kennis van Claude.
 
-| Plugin | Inhoud | Download |
-|---|---|---|
-| **ictrecht-privacy** | DPIA, datalek, AVG-rechten, VOK-review, doorgifte, grondslag — met ICTRecht kennisbankconnector | [![Download](https://img.shields.io/badge/⬇_download-ictrecht--privacy-1a56db?style=flat-square)](https://github.com/MarkICTRecht/ictrecht-mcp/releases/latest/download/ictrecht-privacy.zip) |
-| **ictrecht-privacy-basis** | Zelfde skills, zonder connector, gratis | [![Download](https://img.shields.io/badge/⬇_download-privacy--basis-6b7280?style=flat-square)](https://github.com/MarkICTRecht/ictrecht-mcp/releases/latest/download/ictrecht-privacy-basis.zip) |
+Klanten van ICTRecht kunnen ook de **connector-versie** activeren. Die koppelt Claude direct aan de kennisbanken van ICTRecht: actuele adviezen, standaarddocumenten en juridische bronnen. De connector is onderdeel van de ICTRecht-dienstverlening — neem contact op via [support@ictrecht.nl](mailto:support@ictrecht.nl) voor toegang.
 
-**Commando's:**
-`/ictrecht-privacy:dpia` · `/ictrecht-privacy:datalek` · `/ictrecht-privacy:avg-rechten` · `/ictrecht-privacy:vok-review` · `/ictrecht-privacy:doorgifte` · `/ictrecht-privacy:grondslag`
-
----
-
-### Contractenrecht
-
-| Plugin | Inhoud | Download |
-|---|---|---|
-| **ictrecht-contracten** | Contract review, NDA, algemene voorwaarden, aansprakelijkheid, SLA, onderhandelingsstrategie | [![Download](https://img.shields.io/badge/⬇_download-ictrecht--contracten-1a56db?style=flat-square)](https://github.com/MarkICTRecht/ictrecht-mcp/releases/latest/download/ictrecht-contracten.zip) |
-
-**Commando's:**
-`/ictrecht-contracten:contract-review` · `/ictrecht-contracten:nda-review` · `/ictrecht-contracten:algemene-voorwaarden` · `/ictrecht-contracten:aansprakelijkheid` · `/ictrecht-contracten:onderhandeling-prep` · `/ictrecht-contracten:sla-review`
+| | Gratis plugin | Met connector |
+|---|:---:|:---:|
+| Slash-commando's | ✓ | ✓ |
+| Analyses gebaseerd op | Kennis van Claude | ICTRecht kennisbanken |
+| Organisatieprofiel opslaan | ✓ | ✓ |
+| Verwijzing voor definitief advies | ✓ | ✓ |
+| Toegang | Vrij te downloaden | Via [support@ictrecht.nl](mailto:support@ictrecht.nl) |
 
 ---
 
-### Legal Counsel
+## Alle plugins
 
-| Plugin | Inhoud | Download |
-|---|---|---|
-| **ictrecht-legal-counsel** | Juridische memo's, risico-analyse, compliance-check, regelgeving-scan, geschilvoorbereiding, adviesstructuur | [![Download](https://img.shields.io/badge/⬇_download-ictrecht--legal--counsel-1a56db?style=flat-square)](https://github.com/MarkICTRecht/ictrecht-mcp/releases/latest/download/ictrecht-legal-counsel.zip) |
+| Plugin | Vakgebied | Skills | Download |
+|---|---|---|---|
+| **ictrecht-privacy** † | Privacy & AVG | DPIA · datalek · AVG-rechten · VOK-review · doorgifte · grondslag | [![](https://img.shields.io/badge/⬇_connector-1a56db?style=flat-square)](https://github.com/MarkICTRecht/ictrecht-mcp/releases/latest/download/ictrecht-privacy.zip) |
+| **ictrecht-privacy-basis** | Privacy & AVG | DPIA · datalek · AVG-rechten · VOK-review · doorgifte · grondslag | [![](https://img.shields.io/badge/⬇_gratis-6b7280?style=flat-square)](https://github.com/MarkICTRecht/ictrecht-mcp/releases/latest/download/ictrecht-privacy-basis.zip) |
+| **ictrecht-contracten** | Contractenrecht | contract-review · NDA · algemene voorwaarden · aansprakelijkheid · SLA · onderhandeling | [![](https://img.shields.io/badge/⬇_gratis-6b7280?style=flat-square)](https://github.com/MarkICTRecht/ictrecht-mcp/releases/latest/download/ictrecht-contracten.zip) |
+| **ictrecht-legal-counsel** | Legal Counsel | juridisch-memo · risico-analyse · compliance-check · regelgeving-scan · geschil · adviesstructuur | [![](https://img.shields.io/badge/⬇_gratis-6b7280?style=flat-square)](https://github.com/MarkICTRecht/ictrecht-mcp/releases/latest/download/ictrecht-legal-counsel.zip) |
+| **ictrecht-ie** | Intellectueel Eigendom | auteursrecht · merkenrecht · software-licenties · IE-clausules · handelsnaam · AI & IP | [![](https://img.shields.io/badge/⬇_gratis-6b7280?style=flat-square)](https://github.com/MarkICTRecht/ictrecht-mcp/releases/latest/download/ictrecht-ie.zip) |
+| **ictrecht-data** | Data (juridisch) | verwerkingsregister · data-sharing · governance · Data Act · open data · dataverdragen | [![](https://img.shields.io/badge/⬇_gratis-6b7280?style=flat-square)](https://github.com/MarkICTRecht/ictrecht-mcp/releases/latest/download/ictrecht-data.zip) |
+| **ictrecht-digital-decade** | Digital Decade | AI Act · NIS2 · DSA · DMA · Cyber Resilience Act · regelgeving-scan | [![](https://img.shields.io/badge/⬇_gratis-6b7280?style=flat-square)](https://github.com/MarkICTRecht/ictrecht-mcp/releases/latest/download/ictrecht-digital-decade.zip) |
 
-**Commando's:**
-`/ictrecht-legal-counsel:juridisch-memo` · `/ictrecht-legal-counsel:risico-analyse` · `/ictrecht-legal-counsel:compliance-check` · `/ictrecht-legal-counsel:regelgeving-scan` · `/ictrecht-legal-counsel:geschil-voorbereiding` · `/ictrecht-legal-counsel:advies-structuur`
-
----
-
-### Intellectueel Eigendom
-
-| Plugin | Inhoud | Download |
-|---|---|---|
-| **ictrecht-ie** | Auteursrecht, merkenrecht, software-licenties, IE-clausules, handelsnaam/domeinnaam, AI & IP | [![Download](https://img.shields.io/badge/⬇_download-ictrecht--ie-1a56db?style=flat-square)](https://github.com/MarkICTRecht/ictrecht-mcp/releases/latest/download/ictrecht-ie.zip) |
-
-**Commando's:**
-`/ictrecht-ie:auteursrecht` · `/ictrecht-ie:merkenrecht` · `/ictrecht-ie:software-licenties` · `/ictrecht-ie:ie-clausules` · `/ictrecht-ie:handelsnaam-domeinnaam` · `/ictrecht-ie:ai-ip`
-
----
-
-### Data (Juridisch)
-
-| Plugin | Inhoud | Download |
-|---|---|---|
-| **ictrecht-data** | Verwerkingsregister, data sharing, data governance, EU Data Act, open data, dataverdragen | [![Download](https://img.shields.io/badge/⬇_download-ictrecht--data-1a56db?style=flat-square)](https://github.com/MarkICTRecht/ictrecht-mcp/releases/latest/download/ictrecht-data.zip) |
-
-**Commando's:**
-`/ictrecht-data:verwerkingsregister` · `/ictrecht-data:data-sharing` · `/ictrecht-data:data-governance` · `/ictrecht-data:data-act` · `/ictrecht-data:open-data` · `/ictrecht-data:dataverdrag-analyse`
-
----
-
-### Digital Decade (AI Act · NIS2 · DSA · DMA)
-
-| Plugin | Inhoud | Download |
-|---|---|---|
-| **ictrecht-digital-decade** | AI Act classificatie & conformiteit, NIS2, DSA, DMA, Cyber Resilience Act, regelgeving-scan | [![Download](https://img.shields.io/badge/⬇_download-ictrecht--digital--decade-1a56db?style=flat-square)](https://github.com/MarkICTRecht/ictrecht-mcp/releases/latest/download/ictrecht-digital-decade.zip) |
-
-**Commando's:**
-`/ictrecht-digital-decade:ai-act-classificatie` · `/ictrecht-digital-decade:nis2-check` · `/ictrecht-digital-decade:dsa-verplichtingen` · `/ictrecht-digital-decade:dma-analyse` · `/ictrecht-digital-decade:cyberweerbaarheid-act` · `/ictrecht-digital-decade:regulering-scan`
+† Connector-versie beschikbaar via [support@ictrecht.nl](mailto:support@ictrecht.nl)
 
 ---
 
@@ -118,37 +70,31 @@ Installeer daarna één of meer plugins:
 /plugin marketplace add https://github.com/MarkICTRecht/ictrecht-mcp
 ```
 
-**Stap 2** — Installeer de gewenste plugin(s):
+**Stap 2** — Installeer één of meer plugins:
 ```
-/plugin install ictrecht-privacy@ictrecht-plugins
+/plugin install ictrecht-privacy-basis@ictrecht-plugins
+/plugin install ictrecht-contracten@ictrecht-plugins
+/plugin install ictrecht-legal-counsel@ictrecht-plugins
+/plugin install ictrecht-ie@ictrecht-plugins
+/plugin install ictrecht-data@ictrecht-plugins
+/plugin install ictrecht-digital-decade@ictrecht-plugins
 ```
 
-**Stap 3** — Herstart Claude Code en richt in:
+**Stap 3** — Herstart Claude Code.
+
+**Stap 4** — Optioneel: richt in met een organisatieprofiel (~10 minuten):
 ```
-/ictrecht-privacy:cold-start-interview
+/ictrecht-privacy-basis:cold-start-interview
 ```
-
-Het inrichtingsgesprek duurt 10–15 minuten en is optioneel — alle commando's werken ook zonder.
-
-### Claude Desktop (connector — alleen privacy)
-
-Voeg de ICTRecht connector toe via **Settings → Connectors → Add connector**:
-
-- **URL:** `https://ictrecht.fastmcp.app/mcp`
-
-Slash-commando's zijn niet beschikbaar in Claude Desktop.
-
-### ZIP uploaden (zonder terminal)
-
-Download een ZIP via de knoppen hierboven en upload via **Settings → Extensions → Upload plugin**.
+Alle commando's werken ook zonder profiel — analyses zijn dan generiek.
 
 ---
 
-## Wat levert een plugin op?
+### Claude Desktop (ZIP uploaden)
 
-Elke plugin bevat gestructureerde workflows die Claude stap voor stap door een juridische analyse leiden. Zonder connector werkt Claude op eigen AVG- en IT-rechtenkennis. Met de ICTRecht kennisbankconnector (`ictrecht-privacy`) worden analyses aangevuld met actuele ICTRecht-bronnen.
+Download een ZIP via de knoppen in de plugintabel hierboven. Ga vervolgens naar **Settings → Extensions → Upload plugin**.
 
-Aan het einde van elke analyse verschijnt een verwijzing naar ICTRecht voor definitief juridisch advies.
+> ℹ️ Slash-commando's zijn niet beschikbaar in Claude Desktop. Voor de connector-versie of meer mogelijkheden: gebruik Claude Code of neem contact op via [support@ictrecht.nl](mailto:support@ictrecht.nl).
 
 ---
 
@@ -156,7 +102,7 @@ Aan het einde van elke analyse verschijnt een verwijzing naar ICTRecht voor defi
 
 © ICTRecht B.V. Alle rechten voorbehouden.
 
-Deze plugins zijn uitsluitend bedoeld voor gebruik door klanten en relaties van ICTRecht B.V. Verspreiding, wijziging of commercieel gebruik zonder schriftelijke toestemming is niet toegestaan.
+Deze plugins zijn uitsluitend bedoeld voor gebruik door klanten en relaties van ICTRecht B.V. Verspreiding, wijziging of commercieel gebruik zonder schriftelijke toestemming is niet toegestaan. Zie [LICENSE](./LICENSE) voor de volledige licentievoorwaarden.
 
 ---
 

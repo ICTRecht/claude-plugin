@@ -1,105 +1,120 @@
-# ICTRecht Privacy Plugin voor Claude
+<p align="center">
+  <img src="https://ictrecht.nl/wp-content/uploads/2023/01/ictrecht-logo.png" alt="ICTRecht" height="50">
+</p>
 
-Met deze plugin gebruik je de juridische kennisbanken van ICTRecht rechtstreeks vanuit Claude. Je kunt DPIA's uitvoeren, datalekken beoordelen, verwerkersovereenkomsten controleren en meer — volledig in het Nederlands, afgestemd op jouw organisatie.
+<h1 align="center">ICTRecht Privacy Plugin voor Claude</h1>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/versie-1.0.0-1a56db?style=flat-square" alt="v1.0.0">
+  <img src="https://img.shields.io/badge/taal-Nederlands-orange?style=flat-square" alt="NL">
+  <img src="https://img.shields.io/badge/Claude_Code-compatibel-blueviolet?style=flat-square" alt="Claude Code">
+  <img src="https://img.shields.io/badge/licentie-Proprietary-lightgrey?style=flat-square" alt="Proprietary">
+</p>
+
+<p align="center">
+  DPIA · Datalekken · AVG-rechten · VOK-review · Doorgifte · Grondslag
+</p>
 
 <p align="center">
   <a href="https://github.com/MarkICTRecht/ictrecht-mcp/releases/latest/download/ictrecht-privacy.zip">
-    <img src="https://img.shields.io/badge/⬇%20Download%20Plugin-ICTRecht%20Privacy%20v1.0.0-1a1a2e?style=for-the-badge&logoColor=white" alt="Download ICTRecht Privacy Plugin">
+    <img src="https://img.shields.io/badge/⬇%20Download-ictrecht--privacy%20v1.0.0%20(met%20connector)-1a56db?style=for-the-badge" alt="Download met connector">
+  </a>
+  &nbsp;
+  <a href="https://github.com/MarkICTRecht/ictrecht-mcp/releases/latest/download/ictrecht-privacy-basis.zip">
+    <img src="https://img.shields.io/badge/⬇%20Download-ictrecht--privacy--basis%20v1.0.0%20(gratis)-6b7280?style=for-the-badge" alt="Download gratis">
   </a>
 </p>
 
 ---
 
-## Welke versie van Claude gebruik jij?
+## Twee versies
 
-Er zijn twee versies van Claude. Kies de juiste installatiehandleiding:
-
-| Ik gebruik… | Hoe herken ik dat? | Ga naar |
+| | **ictrecht-privacy** | **ictrecht-privacy-basis** |
 |---|---|---|
-| **Claude Desktop** | Een chat-app op mijn computer | [Optie A](#optie-a--claude-desktop-via-instellingen) |
-| **Claude Code** | Een terminal-venster met Claude | [Optie B](#optie-b--claude-code-via-terminal) |
+| Skills | Alle 6 | Alle 6 |
+| Kennisbankconnector | Ja — ICTRecht + Legal Sources | Nee |
+| Analyses gebaseerd op | ICTRecht kennisbanken (actueel) | AVG-kennis Claude (generiek) |
+| Upsell naar ICTRecht | Nee | Ja |
+| Prijs | Betaald | Gratis |
 
-Niet zeker? Als je geen terminal gebruikt, kies dan **Optie A**.
+> Onderdeel van de [ICTRecht Plugin Suite](../README.md) — ook beschikbaar: Contracten, Legal Counsel, IE, Data en Digital Decade.
 
 ---
 
-## Optie A — Claude Desktop (via instellingen)
+## Welke versie van Claude gebruik jij?
 
-Met Claude Desktop voeg je de kennisbanken toe als connector. Je krijgt direct toegang tot alle kennisbanken — geen download of installatie nodig.
+| Ik gebruik… | Hoe herken ik dat? | Ga naar |
+|---|---|---|
+| **Claude Desktop** | Een chat-app op mijn computer | [Optie A](#optie-a--claude-desktop) |
+| **Claude Code** | Een terminal-venster met Claude | [Optie B](#optie-b--claude-code) |
 
-### Stap 1 — Open Claude Desktop instellingen
+Niet zeker? Kies **Optie A**.
 
-Klik linksonder op je naam of het ⚙️-icoon → **Settings** → **Connectors** (of **Connected Apps**).
+---
 
-### Stap 2 — Voeg de ICTRecht connector toe
+## Optie A — Claude Desktop
 
-Klik op **"Add connector"** of **"+"** en vul in:
+### Via connector (geen download nodig)
+
+Ga naar **Settings → Connectors → Add connector** en vul in:
 
 - **URL:** `https://ictrecht.fastmcp.app/mcp`
 - **Naam:** ICTRecht Privacy
 
-### Stap 3 — Inloggen
+Een browservenster opent voor authenticatie. Na inloggen zijn de kennisbanken beschikbaar.
 
-Een browservenster opent. Log in met je Horizon-account (of maak er een aan op [horizon.prefect.io](https://horizon.prefect.io)).
+> ℹ️ Slash-commando's zijn niet beschikbaar in Claude Desktop. Voor de volledige plugin: gebruik Claude Code.
 
-### Stap 4 — Klaar
+### Via ZIP uploaden
 
-De ICTRecht kennisbanken zijn nu beschikbaar. Stel een privacyvraag in Claude Desktop, bijvoorbeeld:
-
-> *"Wat moet ik melden bij een datalek aan de Autoriteit Persoonsgegevens?"*
-
-> ℹ️ De slash-commando's (`/ictrecht-privacy:dpia` etc.) zijn niet beschikbaar in Claude Desktop. Voor de volledige plugin met commando's: gebruik Claude Code (Optie B).
+Download een ZIP hierboven en ga naar **Settings → Extensions → Upload plugin**.
 
 ---
 
-## Optie B — Claude Code (via terminal)
+## Optie B — Claude Code
 
-Met Claude Code krijg je de volledige plugin inclusief slash-commando's. Geen download nodig — je installeert direct vanuit GitHub.
-
-### Stap 1 — Open Claude Code
-
-Start Claude Code in je terminal.
-
-### Stap 2 — Voeg de ICTRecht marketplace toe
-
-Typ dit commando (eenmalig):
+### Stap 1 — Marketplace toevoegen (eenmalig)
 
 ```
 /plugin marketplace add https://github.com/MarkICTRecht/ictrecht-mcp
 ```
 
-### Stap 3 — Installeer de privacy plugin
+### Stap 2 — Plugin installeren
 
+Met connector (betaald):
 ```
 /plugin install ictrecht-privacy@ictrecht-plugins
 ```
 
+Gratis versie:
+```
+/plugin install ictrecht-privacy-basis@ictrecht-plugins
+```
+
 Kies bij de vraag voor **"alle projecten"** (user scope).
 
-### Stap 4 — Herstart Claude Code
+### Stap 3 — Herstart Claude Code
 
-Sluit Claude Code en open het opnieuw.
-
-### Stap 5 — Eerste inrichting (eenmalig, ~10 minuten)
+### Stap 4 — Inrichten (optioneel, ~10 minuten)
 
 ```
 /ictrecht-privacy:cold-start-interview
 ```
 
-Claude stelt vragen over jouw organisatie. Na afloop zijn alle commando's beschikbaar.
+Claude stelt vragen over jouw organisatie. Analyses worden daarna gepersonaliseerd. Overslaan is ook mogelijk — alle commando's werken zonder profiel.
 
 ---
 
-## Beschikbare commando's (Claude Code)
+## Beschikbare commando's
 
 | Commando | Wat het doet |
 |---|---|
-| `/ictrecht-privacy:dpia` | DPIA uitvoeren voor een nieuwe verwerking |
+| `/ictrecht-privacy:dpia` | DPIA uitvoeren (AVG art. 35) |
 | `/ictrecht-privacy:datalek` | Datalek beoordelen en meldplicht bepalen |
 | `/ictrecht-privacy:avg-rechten` | Verzoek van een betrokkene behandelen |
-| `/ictrecht-privacy:vok-review` | Verwerkersovereenkomst controleren |
+| `/ictrecht-privacy:vok-review` | Verwerkersovereenkomst controleren (art. 28) |
 | `/ictrecht-privacy:doorgifte` | Internationale doorgifte beoordelen |
-| `/ictrecht-privacy:grondslag` | Verwerkingsgrondslag bepalen |
+| `/ictrecht-privacy:grondslag` | Verwerkingsgrondslag bepalen (art. 6) |
 
 ### Voorbeelden
 
@@ -110,28 +125,30 @@ Claude stelt vragen over jouw organisatie. Na afloop zijn alle commando's beschi
 /ictrecht-privacy:datalek Laptop gestolen met klantgegevens, geen encryptie
 ```
 ```
-/ictrecht-privacy:vok-review [sleep je VOK-document naar het venster]
+/ictrecht-privacy:vok-review [sleep verwerkersovereenkomst naar het venster]
 ```
 
 ---
 
-## Problemen?
+## Probleemoplossing
 
 | Probleem | Oplossing |
 |---|---|
-| "/plugin isn't available" | Je gebruikt Claude Desktop — volg Optie A |
-| "Command not found" na installatie | Herstart Claude Code (stap 5 overgeslagen) |
-| "Run setup first" | Voer `/ictrecht-privacy:cold-start-interview` uit |
-| Je wilt de inrichting opnieuw doen | Voer cold-start-interview opnieuw uit |
+| `/plugin` werkt niet | Je gebruikt Claude Desktop — volg Optie A |
+| "Command not found" na installatie | Herstart Claude Code |
+| Analyses zijn generiek | Voer `/ictrecht-privacy:cold-start-interview` uit |
+| Inrichting opnieuw doen | Voer cold-start-interview opnieuw uit |
 
 ---
 
-## Over ICTRecht
+## Licentie
 
-ICTRecht B.V. is een gespecialiseerd juridisch adviesbureau op het gebied van IT-recht, privacy en gegevensbescherming.
-
-🌐 [ictrecht.nl](https://ictrecht.nl) · ✉️ info@ictrecht.nl
+© ICTRecht B.V. Alle rechten voorbehouden. Zie [LICENSE](../LICENSE) voor voorwaarden.
 
 ---
+
+<p align="center">
+  <a href="https://ictrecht.nl">ictrecht.nl</a> · <a href="mailto:support@ictrecht.nl">support@ictrecht.nl</a>
+</p>
 
 > *De outputs van deze plugin zijn analyses op basis van ICTRecht-kennisbanken en vormen geen definitief juridisch advies. Raadpleeg een ICTRecht-jurist voor uw specifieke situatie.*

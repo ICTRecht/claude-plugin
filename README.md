@@ -6,7 +6,7 @@
 <h1 align="center">ICTRecht Plugin Suite voor Claude</h1>
 
 <p align="center">
-  Juridische AI-plugins van ICTRecht — klaar voor gebruik in Claude Code en Claude Desktop
+  Juridische AI-plugins van ICTRecht, klaar voor gebruik in Claude Code en Claude Desktop
 </p>
 
 <p align="center">
@@ -20,7 +20,7 @@
 
 ## Wat zijn de ICTRecht plugins?
 
-De ICTRecht Plugin Suite voegt juridische expertise toe aan Claude. Stel vragen over specifieke situaties, laat documenten beoordelen of voer gestructureerde analyses uit — met de werkwijze en het kennisniveau van ICTRecht-juristen.
+De ICTRecht Plugin voegt juridische expertise toe aan Claude. Stel vragen over specifieke situaties, laat documenten beoordelen of voer gestructureerde analyses uit met de werkwijze en het kennisniveau van ICTRecht-juristen. De plugins zijn gratis beschikbaar. Wil je ook gebruik maken van de kennis via onze connector? Neem dan contact op om aan te sluiten op onze kennis-MCP.
 
 Elke plugin biedt slash-commando's voor concrete juridische taken: van DPIA's en contractreviews tot AI Act-classificaties en IE-analyses. Een optioneel inrichtingsgesprek (`cold-start-interview`) stemt de analyses af op jouw organisatie.
 

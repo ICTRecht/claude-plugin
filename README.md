@@ -1,6 +1,5 @@
 <p align="center">
   <img <img width="200" height="200" alt="ictrecht_logo" src="https://github.com/user-attachments/assets/9343f1c8-3cd4-4b67-8a9c-d42cc361c33e" />
- />
  
 </p>
 

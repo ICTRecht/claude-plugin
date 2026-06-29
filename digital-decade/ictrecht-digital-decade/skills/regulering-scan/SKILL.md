@@ -1,6 +1,9 @@
-# regulering-scan
-
-Bepaal welke EU digitale regelgeving van toepassing is op een organisatie, product of dienst.
+---
+name: regulering-scan
+description: >
+  Bepaal welke EU digitale regelgeving van toepassing is op een organisatie, product of dienst.
+argument-hint: "[organisatie, product of dienst]"
+---
 
 ## Metadata
 - **name:** regulering-scan

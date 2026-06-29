@@ -1,6 +1,9 @@
-# dma-analyse
-
-Analyseer DMA-verplichtingen voor poortwachters of bedrijven die met poortwachters werken.
+---
+name: dma-analyse
+description: >
+  Analyseer DMA-verplichtingen voor poortwachters of bedrijven die met poortwachters werken.
+argument-hint: "[organisatie of platform]"
+---
 
 ## Metadata
 - **name:** dma-analyse

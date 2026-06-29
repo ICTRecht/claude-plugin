@@ -1,9 +1,8 @@
-# Skill: dataverdrag-analyse
-
-**Naam:** dataverdrag-analyse
-**Beschrijving:** Analyseer internationale dataverdragen en grensoverschrijdend dataverkeer buiten de AVG-context.
-**Argument-hint:** `[verdrag, land of situatie]`
-
+---
+name: dataverdrag-analyse
+description: >
+  Analyseer internationale dataverdragen en grensoverschrijdend dataverkeer buiten de AVG-context.
+argument-hint: "[verdrag, land of situatie]"
 ---
 
 ## Voorbereiding

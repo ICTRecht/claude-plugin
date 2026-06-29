@@ -1,9 +1,8 @@
-# software-licenties
-
-**name:** software-licenties
-**description:** Beoordeel software licenties inclusief open source, SaaS en proprietaire licenties.
-**argument-hint:** "[software of licentievorm]"
-
+---
+name: software-licenties
+description: >
+  Beoordeel software licenties inclusief open source, SaaS en proprietaire licenties.
+argument-hint: "[software of licentievorm]"
 ---
 
 ## Voorbereiding (3-laags)

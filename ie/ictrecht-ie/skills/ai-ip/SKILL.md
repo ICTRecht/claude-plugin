@@ -1,9 +1,8 @@
-# ai-ip
-
-**name:** ai-ip
-**description:** Analyseer IE-vraagstukken rondom AI-gegenereerde content, training data en AI-tools.
-**argument-hint:** "[AI-situatie of product]"
-
+---
+name: ai-ip
+description: >
+  Analyseer IE-vraagstukken rondom AI-gegenereerde content, training data en AI-tools.
+argument-hint: "[AI-situatie of product]"
 ---
 
 ## Voorbereiding (3-laags)

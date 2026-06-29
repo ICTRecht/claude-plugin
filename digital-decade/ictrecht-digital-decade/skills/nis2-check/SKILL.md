@@ -1,6 +1,9 @@
-# nis2-check
-
-Bepaal of een organisatie onder NIS2 valt en wat de verplichtingen zijn.
+---
+name: nis2-check
+description: >
+  Bepaal of een organisatie onder NIS2 valt en wat de verplichtingen zijn.
+argument-hint: "[organisatie of sector]"
+---
 
 ## Metadata
 - **name:** nis2-check

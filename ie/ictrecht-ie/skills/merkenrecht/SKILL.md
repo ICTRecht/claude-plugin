@@ -1,9 +1,8 @@
-# merkenrecht
-
-**name:** merkenrecht
-**description:** Analyseer merkenrechtelijke vragen over bescherming, inbreuk, registratie en conflict.
-**argument-hint:** "[merk of situatie]"
-
+---
+name: merkenrecht
+description: >
+  Analyseer merkenrechtelijke vragen over bescherming, inbreuk, registratie en conflict.
+argument-hint: "[merk of situatie]"
 ---
 
 ## Voorbereiding (3-laags)

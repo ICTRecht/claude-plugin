@@ -1,9 +1,8 @@
-# Skill: verwerkingsregister
-
-**Naam:** verwerkingsregister
-**Beschrijving:** Stel een verwerkingsregister op of review een bestaand register op AVG-conformiteit.
-**Argument-hint:** `[verwerking of bestaand register]`
-
+---
+name: verwerkingsregister
+description: >
+  Stel een verwerkingsregister op of review een bestaand register op AVG-conformiteit.
+argument-hint: "[verwerking of bestaand register]"
 ---
 
 ## Voorbereiding

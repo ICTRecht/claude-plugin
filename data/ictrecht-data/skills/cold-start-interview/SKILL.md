@@ -1,9 +1,8 @@
-# Skill: cold-start-interview
-
-**Naam:** cold-start-interview
-**Prefix:** `/ictrecht-data:`
-**Beschrijving:** Stel een organisatieprofiel op voor de ICTRecht Data plugin via een gestructureerd interview.
-
+---
+name: cold-start-interview
+description: >
+  Richt de ICTRecht Data plugin in voor jouw organisatie. Stel dit eenmalig in — alle andere commando's zijn ervan afhankelijk.
+argument-hint: ""
 ---
 
 ## Voorbereiding

@@ -1,6 +1,9 @@
-# dsa-verplichtingen
-
-Bepaal DSA-verplichtingen voor een online platform of tussenpersoon.
+---
+name: dsa-verplichtingen
+description: >
+  Bepaal DSA-verplichtingen voor een online platform of tussenpersoon.
+argument-hint: "[platform of dienst]"
+---
 
 ## Metadata
 - **name:** dsa-verplichtingen

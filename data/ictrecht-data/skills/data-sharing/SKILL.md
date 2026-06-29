@@ -1,9 +1,8 @@
-# Skill: data-sharing
-
-**Naam:** data-sharing
-**Beschrijving:** Beoordeel of stel een data sharing agreement op voor het delen van data tussen organisaties.
-**Argument-hint:** `[data, partijen en doel]`
-
+---
+name: data-sharing
+description: >
+  Beoordeel of stel een data sharing agreement op voor het delen van data tussen organisaties.
+argument-hint: "[data, partijen en doel]"
 ---
 
 ## Voorbereiding

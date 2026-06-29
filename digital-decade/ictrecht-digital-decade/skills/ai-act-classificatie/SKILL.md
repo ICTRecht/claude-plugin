@@ -1,6 +1,9 @@
-# ai-act-classificatie
-
-Classificeer een AI-systeem volgens de AI Act risicocategorieën en bepaal de verplichtingen.
+---
+name: ai-act-classificatie
+description: >
+  Classificeer een AI-systeem volgens de AI Act risicocategorieën en bepaal de verplichtingen.
+argument-hint: "[beschrijving van het AI-systeem]"
+---
 
 ## Metadata
 - **name:** ai-act-classificatie

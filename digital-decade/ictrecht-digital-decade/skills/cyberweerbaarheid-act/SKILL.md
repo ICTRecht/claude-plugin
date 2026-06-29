@@ -1,6 +1,9 @@
-# cyberweerbaarheid-act
-
-Analyseer Cyber Resilience Act verplichtingen voor producten met digitale elementen.
+---
+name: cyberweerbaarheid-act
+description: >
+  Analyseer Cyber Resilience Act verplichtingen voor producten met digitale elementen.
+argument-hint: "[product of component]"
+---
 
 ## Metadata
 - **name:** cyberweerbaarheid-act

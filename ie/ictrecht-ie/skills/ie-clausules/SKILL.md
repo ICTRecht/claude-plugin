@@ -1,9 +1,8 @@
-# ie-clausules
-
-**name:** ie-clausules
-**description:** Beoordeel of stel IP-clausules op in contracten (overdracht, licentie, work-for-hire, non-compete).
-**argument-hint:** "[contract of clausule]"
-
+---
+name: ie-clausules
+description: >
+  Beoordeel of stel IP-clausules op in contracten (overdracht, licentie, work-for-hire).
+argument-hint: "[contract of clausule]"
 ---
 
 ## Voorbereiding (3-laags)

@@ -1,9 +1,8 @@
-# Skill: data-act
-
-**Naam:** data-act
-**Beschrijving:** Analyseer de verplichtingen van de EU Data Act voor een product, dienst of organisatie.
-**Argument-hint:** `[product, dienst of situatie]`
-
+---
+name: data-act
+description: >
+  Analyseer de verplichtingen van de EU Data Act voor een product, dienst of organisatie.
+argument-hint: "[product, dienst of situatie]"
 ---
 
 ## Voorbereiding

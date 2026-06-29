@@ -1,9 +1,8 @@
-# handelsnaam-domeinnaam
-
-**name:** handelsnaam-domeinnaam
-**description:** Analyseer handelsnaam- en domeinnaamconflicten en beschermingsstrategie.
-**argument-hint:** "[naam of domeinnaam]"
-
+---
+name: handelsnaam-domeinnaam
+description: >
+  Analyseer handelsnaam- en domeinnaamconflicten en beschermingsstrategie.
+argument-hint: "[naam of domeinnaam]"
 ---
 
 ## Voorbereiding (3-laags)

@@ -1,6 +1,9 @@
-# cold-start-interview
-
-Stel het ICTRecht Digital Decade organisatieprofiel in voor deze gebruiker.
+---
+name: cold-start-interview
+description: >
+  Richt de ICTRecht Digital Decade plugin in voor jouw organisatie. Stel dit eenmalig in — alle andere commando's zijn ervan afhankelijk.
+argument-hint: ""
+---
 
 ## Configuratie
 - **Config pad:** `~/.claude/plugins/config/ictrecht-digital-decade/CLAUDE.md`

@@ -1,9 +1,8 @@
-# Skill: open-data
-
-**Naam:** open-data
-**Beschrijving:** Analyseer open data verplichtingen en hergebruiksvraagstukken voor overheden en bedrijven.
-**Argument-hint:** `[dataset of situatie]`
-
+---
+name: open-data
+description: >
+  Analyseer open data verplichtingen en hergebruiksvraagstukken voor overheden en bedrijven.
+argument-hint: "[dataset of situatie]"
 ---
 
 ## Voorbereiding

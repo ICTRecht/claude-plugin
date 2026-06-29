@@ -1,9 +1,8 @@
-# Skill: data-governance
-
-**Naam:** data-governance
-**Beschrijving:** Toets of ontwikkel een data governance framework voor de organisatie.
-**Argument-hint:** `[huidige situatie of vraagstuk]`
-
+---
+name: data-governance
+description: >
+  Toets of ontwikkel een data governance framework voor de organisatie.
+argument-hint: "[huidige situatie of vraagstuk]"
 ---
 
 ## Voorbereiding

@@ -1,9 +1,8 @@
-# cold-start-interview
-
-**name:** cold-start-interview
-**description:** Stel een reeks vragen om het ICTRecht IE organisatieprofiel in te vullen en op te slaan in de configuratiemap.
-**argument-hint:** (geen argumenten vereist)
-
+---
+name: cold-start-interview
+description: >
+  Richt de ICTRecht IE plugin in voor jouw organisatie. Stel dit eenmalig in — alle andere commando's zijn ervan afhankelijk.
+argument-hint: ""
 ---
 
 ## Configuratie

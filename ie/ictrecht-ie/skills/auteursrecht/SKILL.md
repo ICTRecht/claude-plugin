@@ -1,9 +1,8 @@
-# auteursrecht
-
-**name:** auteursrecht
-**description:** Beantwoord auteursrechtelijke vragen over bescherming, inbreuk en overdracht van creatieve werken en software.
-**argument-hint:** "[werk of situatie]"
-
+---
+name: auteursrecht
+description: >
+  Beantwoord auteursrechtelijke vragen over bescherming, inbreuk en overdracht van creatieve werken en software.
+argument-hint: "[werk of situatie]"
 ---
 
 ## Voorbereiding (3-laags)

@@ -1,9 +1,8 @@
-# Skill: risico-analyse
-
-**name:** risico-analyse
-**description:** Breng juridische risico's van een beslissing, product of situatie in kaart.
-**argument-hint:** "[beslissing of situatie]"
-
+---
+name: risico-analyse
+description: >
+  Breng juridische risico's van een beslissing, product of situatie in kaart.
+argument-hint: "[beslissing of situatie]"
 ---
 
 ## Voorbereiding — configuratie laden (3-laags fallback)

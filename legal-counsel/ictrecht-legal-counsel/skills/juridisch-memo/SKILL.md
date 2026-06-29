@@ -1,9 +1,8 @@
-# Skill: juridisch-memo
-
-**name:** juridisch-memo
-**description:** Schrijf een gestructureerde juridische memo over een rechtsvraag of situatie.
-**argument-hint:** "[rechtsvraag of onderwerp]"
-
+---
+name: juridisch-memo
+description: >
+  Schrijf een gestructureerde juridische memo over een rechtsvraag of situatie.
+argument-hint: "[rechtsvraag of onderwerp]"
 ---
 
 ## Voorbereiding — configuratie laden (3-laags fallback)

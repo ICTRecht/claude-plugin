@@ -1,9 +1,8 @@
-# Skill: regelgeving-scan
-
-**name:** regelgeving-scan
-**description:** Bepaal welke wet- en regelgeving van toepassing is op een organisatie, product of dienst.
-**argument-hint:** "[organisatietype, product of dienst]"
-
+---
+name: regelgeving-scan
+description: >
+  Bepaal welke wet- en regelgeving van toepassing is op een organisatie, product of dienst.
+argument-hint: "[organisatietype, product of dienst]"
 ---
 
 ## Voorbereiding — configuratie laden (3-laags fallback)

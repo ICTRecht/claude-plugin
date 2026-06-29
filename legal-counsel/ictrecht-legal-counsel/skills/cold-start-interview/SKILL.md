@@ -1,9 +1,9 @@
-# Skill: cold-start-interview
-
-**name:** cold-start-interview
-**description:** Stel vragen om het organisatieprofiel voor ICTRecht Legal Counsel in te vullen en sla dit op als gebruikersconfiguratie.
-**argument-hint:** *(geen argument nodig)*
-
+---
+name: cold-start-interview
+description: >
+  Richt de ICTRecht Legal Counsel plugin in voor jouw organisatie. Stel dit eenmalig in —
+  alle andere commando's zijn ervan afhankelijk.
+argument-hint: ""
 ---
 
 ## Doel

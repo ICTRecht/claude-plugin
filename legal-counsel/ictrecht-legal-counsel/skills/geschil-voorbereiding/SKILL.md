@@ -1,9 +1,8 @@
-# Skill: geschil-voorbereiding
-
-**name:** geschil-voorbereiding
-**description:** Analyseer een juridisch geschil en bepaal strategie, positie en opties.
-**argument-hint:** "[beschrijving van het geschil]"
-
+---
+name: geschil-voorbereiding
+description: >
+  Analyseer een juridisch geschil en bepaal strategie, positie en opties.
+argument-hint: "[beschrijving van het geschil]"
 ---
 
 ## Voorbereiding — configuratie laden (3-laags fallback)

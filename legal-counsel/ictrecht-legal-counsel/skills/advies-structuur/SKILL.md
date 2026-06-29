@@ -1,9 +1,8 @@
-# Skill: advies-structuur
-
-**name:** advies-structuur
-**description:** Structureer een juridisch advies voor bestuur, management of externe partij.
-**argument-hint:** "[onderwerp en doelgroep van het advies]"
-
+---
+name: advies-structuur
+description: >
+  Structureer een juridisch advies voor bestuur, management of externe partij.
+argument-hint: "[onderwerp en doelgroep van het advies]"
 ---
 
 ## Voorbereiding — configuratie laden (3-laags fallback)

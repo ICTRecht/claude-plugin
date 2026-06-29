@@ -1,9 +1,8 @@
-# Skill: compliance-check
-
-**name:** compliance-check
-**description:** Toets een situatie, product of beleid aan relevante wet- en regelgeving.
-**argument-hint:** "[situatie, product of beleid]"
-
+---
+name: compliance-check
+description: >
+  Toets een situatie, product of beleid aan relevante wet- en regelgeving.
+argument-hint: "[situatie, product of beleid]"
 ---
 
 ## Voorbereiding — configuratie laden (3-laags fallback)

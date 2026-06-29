@@ -13,7 +13,7 @@
   <img src="https://img.shields.io/badge/versie-1.0.0-1a56db?style=flat-square" alt="Versie 1.0.0">
   <img src="https://img.shields.io/badge/taal-Nederlands-orange?style=flat-square" alt="Nederlands">
   <img src="https://img.shields.io/badge/Claude_Code-compatibel-blueviolet?style=flat-square" alt="Claude Code">
-  <img src="https://img.shields.io/badge/licentie-Proprietary-lightgrey?style=flat-square" alt="Proprietary">
+  <img src="https://img.shields.io/badge/licentie-Proprietary-lightgrey?style=flat-square" alt="MIT">
 </p>
 
 ---
@@ -104,9 +104,7 @@ Alle commando's werken ook zonder profiel — analyses zijn dan generiek.
 
 ## Licentie
 
-© ICTRecht B.V. Alle rechten voorbehouden.
-
-Deze plugins zijn uitsluitend bedoeld voor gebruik door klanten en relaties van ICTRecht B.V. Verspreiding, wijziging of commercieel gebruik zonder schriftelijke toestemming is niet toegestaan. Zie [LICENSE](./LICENSE) voor de volledige licentievoorwaarden.
+De plugins van ICTRecht B.V. worden uitgegeven met een CC BY-SA 4.0 licentie. Wil je een kopie inzien? Kijk hier: https://creativecommons.org/licenses/by-sa/4.0/
 
 ---
 

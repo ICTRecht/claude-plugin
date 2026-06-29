@@ -1,6 +1,7 @@
 <p align="center">
-  <img <img width="649" height="439" alt="LOGO_ICTRECHT-1" src="https://github.com/user-attachments/assets/b8232a64-30d5-47b0-bd04-c122e8d9eca1" />
- alt="ICTRecht" height="60">
+  <img <img width="200" height="200" alt="ictrecht_logo" src="https://github.com/user-attachments/assets/9343f1c8-3cd4-4b67-8a9c-d42cc361c33e" />
+ />
+ 
 </p>
 
 <h1 align="center">ICTRecht Plugin Suite voor Claude</h1>
@@ -66,7 +67,7 @@ Klanten van ICTRecht kunnen ook de **connector-versie** activeren. Die koppelt C
 
 <img width="756" height="480" alt="ICTRecht plugin install" src="https://github.com/user-attachments/assets/9f027bd3-e7af-4948-8548-2d57b8c9e8ce" />
 
-
+Download hierboven het zip-bestand en upload deze in persoonlijke plugins om gebruik te maken van de skills.
 
 ### Claude Code (aanbevolen — volledige plugin met slash-commando's)
 

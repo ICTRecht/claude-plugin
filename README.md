@@ -64,9 +64,15 @@ Klanten van ICTRecht kunnen ook de **connector-versie** activeren. Die koppelt C
 
 ## Installatie
 
+### Claude Desktop (ZIP uploaden)
+
+Download een ZIP via de knoppen in de plugintabel hierboven. Ga vervolgens naar **Settings → Extensions → Upload plugin**. Zie ook de korte visualisering hieronder.
+
+---
+
 <img width="756" height="480" alt="ICTRecht plugin install" src="https://github.com/user-attachments/assets/9f027bd3-e7af-4948-8548-2d57b8c9e8ce" />
 
-Download hierboven het zip-bestand en upload deze in persoonlijke plugins om gebruik te maken van de skills.
+
 
 ### Claude Code (aanbevolen — volledige plugin met slash-commando's)
 
@@ -95,13 +101,6 @@ Alle commando's werken ook zonder profiel — analyses zijn dan generiek.
 
 ---
 
-### Claude Desktop (ZIP uploaden)
-
-Download een ZIP via de knoppen in de plugintabel hierboven. Ga vervolgens naar **Settings → Extensions → Upload plugin**.
-
-> ℹ️ Slash-commando's zijn niet beschikbaar in Claude Desktop. Voor de connector-versie of meer mogelijkheden: gebruik Claude Code of neem contact op via [support@ictrecht.nl](mailto:support@ictrecht.nl).
-
----
 
 ## Licentie
 

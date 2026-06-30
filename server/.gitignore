@@ -1,0 +1,9 @@
+.env
+*.db
+*.sqlite
+nginx/certs/
+*.pem
+*.key
+__pycache__/
+*.pyc
+.venv/

@@ -1,0 +1,121 @@
+# OAUTH-PAD (aanbevolen: gebruiksvriendelijk + superveilig).
+# Klant -> OAuth 2.1 (login via Keycloak OF Entra, naar keuze) -> ContextForge-gateway
+#       -> (intern, servicetoken) -> eigen MCP-server -> OpenWebUI (API-key server-side).
+# De eigen MCP-server is NIET publiek; alleen de gateway kan hem bereiken.
+# Setup (realms/app-registratie/clients koppelen): zie OAUTH-SETUP.md
+services:
+  # ── ContextForge MCP-gateway (OAuth, tokenbeheer, audit, SSRF-defaults) ──
+  gateway:
+    image: ${MCPGATEWAY_IMAGE}
+    restart: unless-stopped
+    env_file: .env
+    depends_on:
+      postgres: { condition: service_healthy }
+      redis: { condition: service_started }
+    # Gepubliceerd voor JOUW bestaande nginx (edge). Bind standaard op localhost;
+    # draait je nginx op een andere host, zet PUBLISH_BIND op het LAN-IP (+ firewall).
+    ports:
+      - "${PUBLISH_BIND:-127.0.0.1}:4444:4444"
+    healthcheck:
+      test: ["CMD", "python3", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:4444/health')"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+    security_opt: [no-new-privileges:true]
+    networks: [edge, data, app]      # edge: proxy+egress(Entra); data: db/redis; app: -> mcpserver
+
+  postgres:
+    image: postgres:16-alpine
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      POSTGRES_DB: ${POSTGRES_DB}
+    volumes: [pgdata:/var/lib/postgresql/data]
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER} -d ${POSTGRES_DB}"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    networks: [data]
+
+  redis:
+    image: redis:7-alpine
+    restart: unless-stopped
+    command: ["redis-server", "--save", "60", "1", "--appendonly", "yes"]
+    volumes: [redisdata:/data]
+    networks: [data]
+
+  # ── Self-hosted IdP: Keycloak (+ eigen database) ──────────────────────────
+  keycloak:
+    image: quay.io/keycloak/keycloak:26.1
+    restart: unless-stopped
+    command: ["start", "--import-realm"]   # importeert keycloak/realm-mcp.json bij eerste start
+    volumes:
+      - ./keycloak/realm-mcp.json:/opt/keycloak/data/import/realm-mcp.json:ro
+    environment:
+      KC_DB: postgres
+      KC_DB_URL: jdbc:postgresql://keycloak-db:5432/keycloak
+      KC_DB_USERNAME: keycloak
+      KC_DB_PASSWORD: ${KC_DB_PASSWORD}
+      KC_HOSTNAME: ${IDP_PUBLIC_URL}
+      KC_PROXY_HEADERS: xforwarded      # TLS wordt door nginx getermineerd
+      KC_HTTP_ENABLED: "true"
+      KC_BOOTSTRAP_ADMIN_USERNAME: ${KC_BOOTSTRAP_ADMIN_USERNAME}
+      KC_BOOTSTRAP_ADMIN_PASSWORD: ${KC_BOOTSTRAP_ADMIN_PASSWORD}
+    depends_on:
+      keycloak-db: { condition: service_healthy }
+    ports:
+      - "${PUBLISH_BIND:-127.0.0.1}:8080:8080"
+    networks: [edge, data]
+
+  keycloak-db:
+    image: postgres:16-alpine
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: keycloak
+      POSTGRES_PASSWORD: ${KC_DB_PASSWORD}
+      POSTGRES_DB: keycloak
+    volumes: [kcdata:/var/lib/postgresql/data]
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U keycloak -d keycloak"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    networks: [data]
+
+  # ── Eigen MCP-server: afgeschermd, alleen via de gateway bereikbaar ───────
+  mcpserver:
+    build: ./server
+    restart: unless-stopped
+    env_file: .env
+    volumes: [tokendata:/data]
+    expose: ["8000"]                  # niet gepubliceerd; geen poort naar buiten
+    security_opt: [no-new-privileges:true]
+    cap_drop: [ALL]
+    networks: [app]                   # alleen 'app' -> uitsluitend de gateway kan erbij
+
+  # ── OPTIONELE meegeleverde TLS-proxy ──────────────────────────────────────
+  # Standaard UIT, want je gebruikt je eigen nginx als edge. Alleen nodig als je
+  # géén externe reverse proxy hebt: start met `docker compose --profile bundled-proxy up -d`.
+  proxy:
+    image: nginx:1.27-alpine
+    profiles: ["bundled-proxy"]
+    restart: unless-stopped
+    depends_on: [gateway, keycloak]
+    ports: ["443:443", "80:80"]
+    volumes:
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf:ro
+      - ./nginx/certs:/etc/nginx/certs:ro
+    networks: [edge]
+
+networks:
+  edge: {}                            # proxy <-> gateway/keycloak (+ egress voor Entra)
+  data: { internal: true }            # databases/redis: geen internet
+  app: {}                             # gateway <-> mcpserver (mcpserver heeft egress naar OpenWebUI)
+
+volumes:
+  pgdata: {}
+  redisdata: {}
+  kcdata: {}
+  tokendata: {}

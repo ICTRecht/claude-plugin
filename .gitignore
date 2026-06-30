@@ -1,0 +1,38 @@
+# Secrets
+.env
+*.env.local
+
+# Databases
+*.db
+*.sqlite
+
+# Certs & keys
+*.pem
+*.key
+*.crt
+nginx/certs/
+server/nginx/certs/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+
+# macOS
+.DS_Store
+
+# Editors
+.idea/
+.vscode/
+
+# Build artifacts
+*.zip
+dist/
+build/
+
+# Security & deployment artifacts
+security-reports/
+.medusa/
+deploy_*.txt

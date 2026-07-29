@@ -42,7 +42,7 @@ Voer de volgende stappen uit voor de opgegeven organisatie of het platform:
 - Cloud computing diensten
 - Online advertentiediensten
 
-**Aangewezen poortwachters (per 2024):** Alphabet, Amazon, Apple, ByteDance, Meta, Microsoft.
+**Aangewezen poortwachters:** Alphabet, Amazon, Apple, Booking, ByteDance, Meta, Microsoft — controleer de actuele lijst van de Europese Commissie.
 
 **Conclusie:**
 - Poortwachter: ga naar Stap 2
@@ -57,7 +57,7 @@ Voer de volgende stappen uit voor de opgegeven organisatie of het platform:
 |---|---|
 | Geen combinatie persoonsgegevens | Geen kruislingse datakoppeling kernplatformdiensten zonder toestemming |
 | Geen opt-out blokkeren | Zakelijke gebruikers mogen hun diensten ook buiten het platform aanbieden |
-| Geen meest-begunstigd-nationclausule | Geen verbod op lagere prijzen op andere platforms |
+| Geen meest-begunstigde-natieclausule | Geen verbod op lagere prijzen op andere platforms |
 | App-vrijheid | Geen verplichte installatie standaard apps; sideloading toestaan |
 | Interoperabiliteit messaging | Derde partijen moeten kunnen koppelen aan messaging diensten |
 | Advertentietransparantie | Adverteerders toegang geven tot prestatiedata |

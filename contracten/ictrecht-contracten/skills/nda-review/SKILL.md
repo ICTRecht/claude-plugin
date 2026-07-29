@@ -58,6 +58,8 @@ Controleer de aanwezigheid en kwaliteit van alle kernbepalingen:
 - **Return/destroy:** Is er een expliciete verplichting tot teruggave of vernietiging bij beëindiging? Geldt dit ook voor kopieën?
 - **Sancties:** Zijn de sancties proportioneel en handhaafbaar?
 
+**Wettelijk kader:** wijs ook op de Wet bescherming bedrijfsgeheimen (Wbb): informatie kwalificeert alleen als bedrijfsgeheim als deze geheim is, handelswaarde heeft én onderworpen is aan redelijke geheimhoudingsmaatregelen — een goede NDA is daarvoor essentieel bewijs.
+
 ### Stap 3 — Eenzijdigheidstoets
 
 Analyseer wie het meeste risico draagt:
@@ -74,8 +76,11 @@ Geef een oordeel: **Gebalanceerd / Licht nadelig voor gebruiker / Sterk nadelig 
 Geef per ontbrekende bepaling of onbalans een concreet voorstel:
 
 **Punt:** [beschrijving]
+**Beoordeling:** 🔴 Kritiek punt / 🟠 Risico / ⚡ Aandachtspunt (ICTRecht-driedeling)
 **Probleem:** [wat ontbreekt of klopt niet]
 **Voorstel:** [concrete tekstsuggestie of aanvulling]
+
+Sluit af met een samenvattende tabel (Onderdeel | Bevinding | Korte samenvatting). Toon alleen onderdelen met een bevinding.
 
 ---
 

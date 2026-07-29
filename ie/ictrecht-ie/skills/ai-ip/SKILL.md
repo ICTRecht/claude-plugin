@@ -41,6 +41,7 @@ Analyseer de contractuele eigendomsregeling voor AI-gegenereerde output:
 **Stap 5 — Openbaarmaking AI-gebruik**
 Bespreek transparantieverplichtingen:
 - AI Act (EU) art. 50: transparantieverplichting bij deepfakes en chatbots
+- AI Act art. 53: aanbieders van GPAI-modellen moeten een auteursrechtbeleid voeren (incl. eerbiediging van TDM-opt-outs) en een voldoende gedetailleerde samenvatting van de trainingsdata publiceren
 - Auteursrechtelijke naamsvermelding bij menselijke bijdrage
 - Sectorspecifieke verplichtingen (reclame, journalistiek, wetenschappelijk werk)
 - Interne beleidsoverwegingen rondom AI-disclosure

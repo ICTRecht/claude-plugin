@@ -1,7 +1,7 @@
 {
   "name": "ictrecht-ie",
   "description": "IE-specialist assistent: auteursrecht, merkenrecht, software-licenties, IE-clausules, handelsnaam/domeinnaam en AI-gegenereerde content.",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "author": {
     "name": "ICTRecht B.V.",
     "email": "info@ictrecht.nl"

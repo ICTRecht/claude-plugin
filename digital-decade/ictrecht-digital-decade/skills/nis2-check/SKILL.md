@@ -89,7 +89,9 @@ Tijdlijn bij significante incidenten:
 Wat is een significant incident? Ernstige operationele verstoring OF financiële schade OF impact op anderen.
 
 ### Stap 5 — Registratieplicht
-Essentiële en belangrijke entiteiten moeten zich registreren bij de bevoegde nationale autoriteit (in Nederland: NCSC/RDI).
+Essentiële en belangrijke entiteiten moeten zich registreren bij de bevoegde nationale autoriteit (in Nederland: de RDI; het NCSC fungeert als CSIRT).
+
+**Nederlandse implementatie:** NIS2 wordt in Nederland geïmplementeerd via de **Cyberbeveiligingswet (Cbw)**, de opvolger van de Wbni. De implementatie is later dan de EU-deadline van 17 oktober 2024 — controleer de actuele stand van inwerkingtreding en de per sector aangewezen toezichthouders.
 
 ### Stap 6 — Persoonlijke aansprakelijkheid bestuurders
 - Bestuurders kunnen persoonlijk aansprakelijk worden gesteld voor niet-naleving

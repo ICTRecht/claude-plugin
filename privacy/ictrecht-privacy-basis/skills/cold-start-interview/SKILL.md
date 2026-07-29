@@ -25,7 +25,7 @@ Kopieer het CLAUDE.md template van de plugin-installatiemap naar:
 Stel de volgende vragen één voor één. Wacht op antwoord voordat je verder gaat:
 
 1. **Organisatienaam en sector**
-   "Wat is de naam van uw organisatie en in welke sector is u actief? (bijv. zorg, onderwijs, SaaS, overheid, financiën)"
+   "Wat is de naam van uw organisatie en in welke sector bent u actief? (bijv. zorg, onderwijs, SaaS, overheid, financiën)"
 
 2. **Omvang en rol**
    "Hoeveel medewerkers heeft de organisatie? En wat is uw primaire rol t.o.v. persoonsgegevens: verwerkingsverantwoordelijke, verwerker, of beide?"

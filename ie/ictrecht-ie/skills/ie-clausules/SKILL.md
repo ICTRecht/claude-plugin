@@ -30,7 +30,7 @@ Beoordeel of stel licentiebepalingen op:
 - Overdraagbaarheid bij fusie/overname
 
 **Stap 4 — Overdrachtsclausule**
-Toets of de overdrachtsclausule voldoet aan art. 2 Aw: schriftelijk vereiste, specificiteitseis (toekomstige werken moeten voldoende bepaald zijn), en of persoonlijkheidsrechten afzonderlijk worden behandeld.
+Toets of de overdrachtsclausule voldoet aan art. 2 Aw: levering vereist een daartoe bestemde (ondertekende) akte; de overdracht omvat alleen de bevoegdheden die in de akte staan vermeld of die noodzakelijk uit de aard of strekking van de titel voortvloeien (art. 2 lid 3 Aw — restrictieve uitleg); toekomstige werken moeten voldoende bepaald zijn; en persoonlijkheidsrechten (art. 25 Aw) moeten afzonderlijk worden geregeld via (gedeeltelijke) afstand.
 
 **Stap 5 — Werknemers en contractors**
 Bespreek het onderscheid:

@@ -68,7 +68,7 @@ Identificeer concrete spanningspunten:
 | Instrument | Verplichting | Spanning met AVG/EU-recht |
 |-----------|-------------|--------------------------|
 | CLOUD Act | Verplichte verstrekking aan VS-autoriteiten | Zonder rechtshulpverdrag: mogelijk strijd met AVG |
-| FATCA | Doorgifte financiële gegevens naar VS | Adequaatheidsbesluit ontbreekt voor VS (na Schrems II) |
+| FATCA | Doorgifte financiële gegevens naar VS | Doorgifte vereist een grondslag uit hfst. V AVG; het EU-U.S. Data Privacy Framework (adequaatheidsbesluit 2023) dekt alleen DPF-gecertificeerde ontvangers — verstrekking aan de IRS loopt via belastingverdragen/IGA's |
 | e-Evidence | Verstrekking aan buitenlandse autoriteiten | Waarborgen grondrechten vereist |
 
 Adviseer hoe met deze spanning om te gaan (legal analysis, contractuele waarborgen, escalatie).

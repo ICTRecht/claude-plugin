@@ -19,64 +19,125 @@
         "email": "info@ictrecht.nl"
       },
       "category": "legal",
-      "tags": ["privacy", "AVG", "GDPR", "DPIA", "datalek", "juridisch"]
+      "tags": [
+        "privacy",
+        "AVG",
+        "GDPR",
+        "DPIA",
+        "datalek",
+        "juridisch"
+      ]
     },
     {
       "name": "ictrecht-privacy-basis",
       "source": "./privacy/ictrecht-privacy-basis",
       "description": "Gratis AVG-assistent met DPIA, datalekbeoordeling, VOK-review, betrokkenenrechten, doorgifte en grondslagbepaling. Zonder kennisbankconnector.",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "author": {
         "name": "ICTRecht B.V.",
         "email": "info@ictrecht.nl"
       },
       "category": "legal",
-      "tags": ["privacy", "AVG", "GDPR", "DPIA", "datalek", "juridisch", "gratis"]
+      "tags": [
+        "privacy",
+        "AVG",
+        "GDPR",
+        "DPIA",
+        "datalek",
+        "juridisch",
+        "gratis"
+      ]
     },
     {
       "name": "ictrecht-contracten",
       "source": "./contracten/ictrecht-contracten",
       "description": "Contractenrecht assistent: contract review, NDA, algemene voorwaarden, aansprakelijkheid, SLA en onderhandelingsstrategie.",
-      "version": "1.0.0",
-      "author": { "name": "ICTRecht B.V.", "email": "info@ictrecht.nl" },
+      "version": "1.1.0",
+      "author": {
+        "name": "ICTRecht B.V.",
+        "email": "info@ictrecht.nl"
+      },
       "category": "legal",
-      "tags": ["contracten", "NDA", "aansprakelijkheid", "SLA", "juridisch"]
+      "tags": [
+        "contracten",
+        "NDA",
+        "aansprakelijkheid",
+        "SLA",
+        "juridisch"
+      ]
     },
     {
       "name": "ictrecht-legal-counsel",
       "source": "./legal-counsel/ictrecht-legal-counsel",
       "description": "Legal counsel assistent: juridische memo's, risico-analyse, compliance, regelgeving-scan en geschilvoorbereiding.",
-      "version": "1.0.0",
-      "author": { "name": "ICTRecht B.V.", "email": "info@ictrecht.nl" },
+      "version": "1.1.0",
+      "author": {
+        "name": "ICTRecht B.V.",
+        "email": "info@ictrecht.nl"
+      },
       "category": "legal",
-      "tags": ["legal counsel", "compliance", "risico", "memo", "juridisch"]
+      "tags": [
+        "legal counsel",
+        "compliance",
+        "risico",
+        "memo",
+        "juridisch"
+      ]
     },
     {
       "name": "ictrecht-ie",
       "source": "./ie/ictrecht-ie",
       "description": "IE-specialist assistent: auteursrecht, merkenrecht, software-licenties, IE-clausules, handelsnaam en AI-IP.",
-      "version": "1.0.0",
-      "author": { "name": "ICTRecht B.V.", "email": "info@ictrecht.nl" },
+      "version": "1.1.0",
+      "author": {
+        "name": "ICTRecht B.V.",
+        "email": "info@ictrecht.nl"
+      },
       "category": "legal",
-      "tags": ["IE", "auteursrecht", "merkenrecht", "licenties", "juridisch"]
+      "tags": [
+        "IE",
+        "auteursrecht",
+        "merkenrecht",
+        "licenties",
+        "juridisch"
+      ]
     },
     {
       "name": "ictrecht-data",
       "source": "./data/ictrecht-data",
       "description": "Data specialist assistent: verwerkingsregister, data sharing, data governance, EU Data Act en open data.",
-      "version": "1.0.0",
-      "author": { "name": "ICTRecht B.V.", "email": "info@ictrecht.nl" },
+      "version": "1.1.0",
+      "author": {
+        "name": "ICTRecht B.V.",
+        "email": "info@ictrecht.nl"
+      },
       "category": "legal",
-      "tags": ["data", "Data Act", "verwerkingsregister", "governance", "juridisch"]
+      "tags": [
+        "data",
+        "Data Act",
+        "verwerkingsregister",
+        "governance",
+        "juridisch"
+      ]
     },
     {
       "name": "ictrecht-digital-decade",
       "source": "./digital-decade/ictrecht-digital-decade",
       "description": "Digital Decade specialist: AI Act, NIS2, DSA, DMA, eIDAS 2.0 en Cyber Resilience Act.",
-      "version": "1.0.0",
-      "author": { "name": "ICTRecht B.V.", "email": "info@ictrecht.nl" },
+      "version": "1.1.0",
+      "author": {
+        "name": "ICTRecht B.V.",
+        "email": "info@ictrecht.nl"
+      },
       "category": "legal",
-      "tags": ["AI Act", "NIS2", "DSA", "DMA", "digitaal", "juridisch"]
+      "tags": [
+        "AI Act",
+        "NIS2",
+        "DSA",
+        "DMA",
+        "digitaal",
+        "juridisch"
+      ]
     }
   ]
 }

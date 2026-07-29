@@ -44,6 +44,8 @@ Doorloop per verwerking de volgende verplichte velden conform art. 30 AVG:
 | Bewaartermijnen | Per categorie gegevens, onderbouwd |
 | Beveiligingsmaatregelen | Technisch en organisatorisch (art. 32 AVG) |
 
+**Uitzondering (art. 30 lid 5 AVG):** organisaties met minder dan 250 medewerkers zijn alleen vrijgesteld als de verwerking incidenteel is, geen risico inhoudt én geen bijzondere of strafrechtelijke gegevens betreft — in de praktijk is een register dus vrijwel altijd verplicht.
+
 ### Stap 3 — Volledigheidscheck
 
 Beoordeel of er verwerkingen ontbreken door te vragen naar:

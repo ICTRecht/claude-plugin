@@ -34,13 +34,16 @@ Vraag om verduidelijking als de beschrijving onvoldoende is voor classificatie.
 
 ### Stap 2 — Verboden AI-praktijken toetsen (AI Act art. 5)
 Toets of het systeem valt onder een van de verboden praktijken:
-- Subliminale manipulatie van gedrag
-- Misbruik van kwetsbare groepen
-- Sociale scoring door overheden
-- Real-time biometrische identificatie op afstand in openbare ruimten (met beperkte uitzonderingen)
-- Emotieherkenning op werkplek of onderwijs
+- Subliminale of manipulatieve technieken die gedrag wezenlijk verstoren
+- Misbruik van kwetsbaarheden (leeftijd, handicap, sociaaleconomische situatie)
+- Sociale scoring (door overheden én private partijen)
+- Risicobeoordeling van strafbare feiten uitsluitend op basis van profilering of persoonskenmerken
+- Ongerichte scraping van gezichtsafbeeldingen voor gezichtsherkenningsdatabases
+- Emotieherkenning op de werkplek of in het onderwijs (m.u.v. medische of veiligheidsdoeleinden)
 - Biometrische categorisering op basis van gevoelige kenmerken
-- Predictive policing op basis van persoonskenmerken
+- Real-time biometrische identificatie op afstand in openbare ruimten t.b.v. rechtshandhaving (met beperkte uitzonderingen)
+
+**Let op:** deze verboden gelden al sinds 2 februari 2025.
 
 **Conclusie:** Verboden? → Stop hier en adviseer. Niet verboden? → Door naar Stap 3.
 
@@ -54,6 +57,8 @@ Controleer of het systeem valt onder een van de hoog-risico categorieën:
 - Migratie en grenscontrole
 - Rechtsbedeling en democratische processen
 - Veiligheidscomponenten van producten (Bijlage I Richtlijn machines, medische apparatuur, etc.)
+
+**Uitzondering (art. 6 lid 3):** een Bijlage III-systeem is toch níet hoog-risico als het geen significant risico vormt voor gezondheid, veiligheid of grondrechten (bijv. een enge procedurele of louter voorbereidende taak). Uitzondering geldt nooit bij profilering van natuurlijke personen. Documenteer en registreer deze beoordeling.
 
 **Conclusie:** Hoog-risico? → Noteer en ga naar Stap 6.
 
@@ -85,6 +90,13 @@ Stel een verplichtingenmatrix op:
 | Nauwkeurigheid, robuustheid, cybersecurity | | |
 | Transparantie naar gebruikers | | |
 | Post-market monitoring | | |
+
+### Stap 7 — Tijdlijn en toezicht
+- **2 februari 2025:** verboden praktijken (art. 5) en AI-geletterdheid (art. 4) van kracht
+- **2 augustus 2025:** verplichtingen GPAI-modellen en governancestructuur van kracht
+- **2 augustus 2026:** verplichtingen voor hoog-risicosystemen (Bijlage III) en transparantieverplichtingen (art. 50) volledig van toepassing
+- **2 augustus 2027:** hoog-risico als veiligheidscomponent onder Bijlage I-productwetgeving
+- **Nederland:** toezicht wordt sectoraal belegd; de AP (coördinatie algoritmetoezicht) en de RDI spelen een centrale rol — controleer de actuele aanwijzing van markttoezichtautoriteiten.
 
 ### Output
 Sla de classificatie op naar `~/.claude/plugins/config/ictrecht-digital-decade/outputs/ai-act-classificatie-[datum].md`.

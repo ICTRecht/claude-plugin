@@ -43,6 +43,7 @@ Van toepassing op alle categorieën:
 | Verplichting | Artikel | Status |
 |---|---|---|
 | Aanwijzen contactpunt voor autoriteiten | Art. 11 | |
+| Aanwijzen contactpunt voor afnemers van de dienst | Art. 12 | |
 | Aanwijzen wettelijk vertegenwoordiger in EU (indien buiten EU) | Art. 13 | |
 | Transparantierapportage | Art. 15 | |
 | Samenwerking met toezichthoudende autoriteiten | Art. 11 | |
@@ -57,7 +58,6 @@ Extra bij hosting (inclusief online platforms):
 | Verwerking meldingen tijdig en zorgvuldig | Art. 17 | |
 | Motivering bij verwijdering of beperking | Art. 17 | |
 | Waarschuwing bij misbruik (repeterend misbruik) | Art. 23 | |
-| Bewaarplicht gegevens na verwijdering (6 maanden) | Art. 17 | |
 
 ### Stap 4 — Online platform verplichtingen (art. 20-28)
 Extra bij online platforms:
@@ -73,6 +73,8 @@ Extra bij online platforms:
 | Transparantie aanbevelingssystemen | Art. 27 | |
 | Verbod op dark patterns | Art. 25 | |
 | Online marktplaatsen: traceerbaarheid handelaren | Art. 30 | |
+
+**Uitzondering micro- en kleine ondernemingen (art. 19 en 29):** de meeste platformverplichtingen (art. 20-28) gelden niet voor micro- en kleine ondernemingen, tenzij het platform is aangewezen als VLOP.
 
 ### Stap 5 — VLOP/VLOSE extra verplichtingen
 Bij aanwijzing als Very Large Online Platform of Search Engine:
@@ -92,7 +94,7 @@ Bij aanwijzing als Very Large Online Platform of Search Engine:
 Overzicht van:
 1. Verplichtingen die direct gelden
 2. Verplichtingen die nog niet zijn geïmplementeerd
-3. Prioritering op basis van handhavingsrisico (boetes tot 6% wereldwijde jaaromzet)
+3. Prioritering op basis van handhavingsrisico (boetes tot 6% wereldwijde jaaromzet; in Nederland is de ACM digitaledienstencoördinator en handhaaft de AP de bepalingen over profilering)
 4. Aanbevolen volgorde van implementatie
 
 ### Output

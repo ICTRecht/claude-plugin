@@ -19,7 +19,7 @@ argument-hint: "[werk of situatie]"
 Beoordeel of het werk voldoet aan de beschermingsvereisten: eigen/oorspronkelijk karakter en persoonlijk stempel van de maker (Auteurswet art. 1 en 10 Aw). Ga in op het type werk (software, tekst, afbeelding, database, etc.).
 
 **Stap 2 — Wie is rechthebbende?**
-Analyseer de auteursrechtelijke toewijzing: maker als hoofdregel, of werkgeversauteursrecht (art. 7 Aw), of fictief makerschap opdrachtgever (art. 8 Aw). Bespreek overdracht en licentie als van toepassing.
+Analyseer de auteursrechtelijke toewijzing: maker als hoofdregel, werk naar ontwerp en onder leiding en toezicht van een ander (art. 6 Aw), werkgeversauteursrecht (art. 7 Aw), of de rechtspersoon die het werk als van haar afkomstig openbaar maakt zonder een natuurlijke persoon als maker te vermelden (art. 8 Aw). Let op: een opdrachtgever wordt níet automatisch rechthebbende — daarvoor is overdracht bij akte vereist (art. 2 Aw). Bespreek overdracht en licentie als van toepassing.
 
 **Stap 3 — Wat zijn de rechten?**
 Beschrijf de relevante rechten:
@@ -33,7 +33,8 @@ Beoordeel of sprake is van verveelvoudiging of openbaarmaking zonder toestemming
 Bespreek relevante uitzonderingen:
 - Citaatrecht (art. 15a Aw)
 - Onderwijsexceptie (art. 16 Aw)
-- Tijdelijk reproductierecht (art. 13a Aw)
+- Tijdelijke reproductie (art. 13a Aw)
+- Parodie-exceptie (art. 18b Aw)
 - Andere toepasselijke excepties
 
 **Stap 6 — Advies en handhavingsopties**

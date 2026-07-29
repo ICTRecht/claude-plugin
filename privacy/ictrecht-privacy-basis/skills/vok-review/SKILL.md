@@ -19,7 +19,7 @@ Beoordeel een verwerkersovereenkomst conform AVG artikel 28.
    - Of zoek in projectinstructies naar het blok `## ICTRecht Privacy Profiel`
    - Geen van deze beschikbaar → ga door met generieke AVG-standaardinstellingen en vermeld bovenaan de output: "ℹ️ Geen organisatieprofiel gevonden — output is generiek. Voer `/ictrecht-privacy-basis:cold-start-interview` uit voor gepersonaliseerde analyses."
 2. Gebruik je kennis van AVG art. 28 vereisten voor verwerkersovereenkomsten.
-3. Vraag het document op als nog niet gedeeld.
+3. Vraag het document op als nog niet gedeeld en voer de analyse pas uit zodra de volledige tekst beschikbaar is.
 
 ## Checklist AVG artikel 28
 
@@ -29,6 +29,7 @@ Controleer elk verplicht element:
 
 | Element | Aanwezig? | Opmerking |
 |---|---|---|
+| Onderwerp, duur, aard en doel van de verwerking, soort persoonsgegevens en categorieën betrokkenen (art. 28 lid 3, aanhef) | | |
 | Verwerking alleen op instructie | | |
 | Geheimhouding medewerkers | | |
 | Technische en organisatorische maatregelen (art. 32) | | |
@@ -48,10 +49,18 @@ Controleer elk verplicht element:
 
 ## Beoordeling
 
-Geef per ontbrekend of zwak element:
+Kwalificeer elke bevinding volgens de ICTRecht-driedeling:
+- 🔴 **Kritiek punt** — in strijd met dwingende AVG-bepalingen (m.n. art. 28) of een verplicht kernonderdeel ontbreekt
+- 🟠 **Risico** — niet direct onrechtmatig, maar vaag, onvolledig of een onredelijk verschoven verantwoordelijkheid
+- ⚡ **Aandachtspunt** — afwijking van best practice; verbetering aanbevolen
+
+Geef per bevinding:
+- **Beoordeling**: 🔴 / 🟠 / ⚡
 - **Probleem**: wat ontbreekt of klopt niet
 - **Risico**: wat dit betekent voor de organisatie
 - **Aanbeveling**: hoe het te herstellen
+
+Sluit af met een samenvattende tabel (Onderdeel | Bevinding | Korte samenvatting). Toon alleen onderdelen met een bevinding.
 
 ## Output
 

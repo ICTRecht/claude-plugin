@@ -49,11 +49,11 @@ Risicoclassificatie: **Geen risico / Beperkt risico / Hoog risico**
 
 Meldplicht bij de AP als:
 - Er sprake is van een datalek (stap 1 = ja), EN
-- Het risico voor betrokkenen niet verwaarloosbaar is
+- Het niet onwaarschijnlijk is dat de inbreuk een risico inhoudt voor de rechten en vrijheden van betrokkenen (art. 33 lid 1 AVG: melden, tenzij dat risico onwaarschijnlijk is)
 
-**Termijn: 72 uur na ontdekking** (tenzij geen risico voor betrokkenen)
+**Termijn: 72 uur nadat de organisatie er kennis van heeft genomen.** Een latere melding moet gemotiveerd worden (art. 33 lid 1).
 
-Als niet zeker: meld toch — een te vroege melding is beter dan een te late.
+Zijn de feiten nog niet compleet? Doe dan een voorlopige melding via het AP-meldloket datalekken; die kan later worden aangevuld of ingetrokken. Bij twijfel is melden verstandiger dan afwachten.
 
 Oordeel: **AP-melding verplicht / niet verplicht / aanbevolen**
 

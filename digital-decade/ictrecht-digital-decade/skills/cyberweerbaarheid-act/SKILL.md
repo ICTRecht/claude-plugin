@@ -42,9 +42,9 @@ Een "product met digitale elementen" is: elk softwareproduct of hardwareproduct 
 | Categorie | Omschrijving | Conformiteitsbeoordeling |
 |---|---|---|
 | **Standaard** | Producten met lager cybersecurityrisico | Self-assessment mogelijk |
-| **Klasse I** | Hogere risicoklasse (Bijlage III, deel 1): identiteitsbeheer, browsers, VPN, wachtwoordbeheer, beveiligingsmonitoring, firewalls, mobiele netwerkapparatuur, IoT algemeen gebruik | Self-assessment met geharmoniseerde norm OF derde partij |
-| **Klasse II** | Kritische producten (Bijlage III, deel 2): besturingssystemen, hypervisors, firewalls industrieel gebruik, routers, microprocessors, industriële controlesystemen | Verplichte derde partij conformiteitsbeoordeling |
-| **Kritieke kerncomponenten** | Hardwarebeveiligingsmodules, chipkaarten, smartcard-IC | Europees cybersecuritycertificeringsschema vereist |
+| **Belangrijk — klasse I** | Belangrijke producten (Bijlage III, klasse I): identiteitsbeheer, browsers, VPN, wachtwoordbeheer, beveiligingsmonitoring, firewalls voor consumenten, smart home, IoT algemeen gebruik | Self-assessment met geharmoniseerde norm OF derde partij |
+| **Belangrijk — klasse II** | Belangrijke producten (Bijlage III, klasse II): besturingssystemen, hypervisors, firewalls/IDS voor industrieel gebruik, manipulatiebestendige microprocessors | Verplichte conformiteitsbeoordeling door derde partij |
+| **Kritiek** | Kritieke producten (Bijlage IV): hardwarebeveiligingsmodules, slimme meters, chipkaarten/smartcard-IC's | Europees cybersecuritycertificeringsschema kan verplicht worden gesteld |
 
 ### Stap 3 — Essentiële cybersecurityvereisten (Bijlage I CRA)
 
@@ -105,7 +105,10 @@ Overzicht van:
 4. Conformiteitsbeoordelingstraject en tijdlijn
 5. Prioritering op basis van inwerkingtreding CRA
 
-**Tijdlijn CRA:** Aangenomen september 2024; meeste verplichtingen van kracht na 36 maanden (circa eind 2027). Rapportageverplichtingen eerder van kracht (21 maanden na inwerkingtreding).
+**Tijdlijn CRA (Verordening (EU) 2024/2847):**
+- In werking getreden op 10 december 2024
+- **11 september 2026:** meldplicht voor actief uitgebuite kwetsbaarheden en ernstige incidenten van kracht
+- **11 december 2027:** volledige toepassing van de hoofdverplichtingen (essentiële eisen, conformiteitsbeoordeling, CE-markering)
 
 ### Output
 Sla de CRA-analyse op naar `~/.claude/plugins/config/ictrecht-digital-decade/outputs/cyberweerbaarheid-act-[datum].md`.

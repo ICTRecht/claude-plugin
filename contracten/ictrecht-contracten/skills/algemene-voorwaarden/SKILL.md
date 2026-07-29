@@ -36,14 +36,15 @@ Vraag (indien niet opgegeven):
 Toets of de AV voldoen aan de wettelijke minimumeisen:
 
 **Algemene AV-regelgeving (art. 6:231–247 BW):**
-- Zijn de AV tijdig ter hand gesteld of digitaal beschikbaar gesteld?
+- Zijn de AV tijdig ter hand gesteld of digitaal beschikbaar gesteld (art. 6:233 sub b en 6:234 BW; voor dienstverrichters ook art. 6:230c BW)?
 - Is er een verwijzing naar de AV in de overeenkomst?
 - Bij B2C: zijn er bedingen die op de zwarte lijst (art. 6:236 BW) of grijze lijst (art. 6:237 BW) staan?
-- Zijn informatieplichten (bij digitale diensten: Wet OHP, Richtlijn Digitale Inhoud) nageleefd?
+- Zijn de precontractuele informatieplichten nageleefd (bij consumenten: art. 6:230m BW; oneerlijke handelspraktijken: art. 6:193a e.v. BW; bij digitale inhoud en digitale diensten: titel 1AA van Boek 7 BW)?
 
 **Onredelijk bezwarende bedingen:**
-- Beoordeel op onaanvaardbare beperking van rechten van de wederpartij
+- Beoordeel op onaanvaardbare beperking van rechten van de wederpartij (art. 6:233 sub a BW)
 - Bij B2C: extra bescherming op grond van dwingend consumentenrecht
+- Bij kleine ondernemers en zzp'ers: mogelijke reflexwerking van de zwarte en grijze lijst via de open norm van art. 6:233 sub a BW
 
 ### Stap 3 — Kernbepalingen
 
@@ -82,8 +83,9 @@ Controleer of de volgende IT-specifieke bepalingen aanwezig en toereikend zijn:
 
 **Bij reviewen:** Lever een reviewrapport met:
 - Bevindingen per bepaling (aanwezig / ontbreekt / onvoldoende)
-- Risiconiveau: 🔴 Hoog / 🟡 Middel / 🟢 Laag
+- Beoordeling per bevinding conform de ICTRecht-driedeling: 🔴 Kritiek punt (strijd met dwingend recht of ontbrekend kernonderdeel) / 🟠 Risico (vaag, onvolledig of onredelijk) / ⚡ Aandachtspunt (afwijking van best practice)
 - Concrete tekstsuggesties voor ontbrekende of zwakke bepalingen
+- Een samenvattende tabel (Bepaling | Bevinding | Korte samenvatting)
 
 ---
 

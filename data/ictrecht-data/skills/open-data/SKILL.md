@@ -38,7 +38,8 @@ Breng het juridisch kader in kaart:
 | Regelgeving | Toepassingsbereik |
 |------------|-----------------|
 | Open Data Richtlijn 2019/1024 (PSI-richtlijn) | Overheidsorganen en publiekrechtelijke instellingen in de EU |
-| Wet hergebruik overheidsinformatie (Who) | Nederlandse implementatie van de richtlijn |
+| Wet hergebruik van overheidsinformatie (Who, herzien in 2024) | Nederlandse implementatie van de Open Data Richtlijn |
+| Data Governance Act (EU) 2022/868 | Hergebruik van beschermde overheidsdata (o.a. vertrouwelijke gegevens en persoonsgegevens) |
 | INSPIRE-richtlijn 2007/2/EG | Ruimtelijke data bij overheidsorganen |
 | HVD-uitvoeringsverordening (EU) 2023/138 | Specifieke verplichtingen voor High Value Datasets |
 | AVG | Indien de dataset persoonsgegevens bevat |

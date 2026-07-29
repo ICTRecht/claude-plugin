@@ -22,10 +22,13 @@ Bepaal de verwerkingsgrondslag conform AVG artikel 6 (en art. 9 voor bijzondere 
 
 ## Stap 1 — Zijn het bijzondere categorieën?
 
-Bijzondere categorieën (art. 9): ras, politieke opvattingen, religie, vakbondslidmaatschap,
-biometrische gegevens, gezondheidsgegevens, seksuele geaardheid, strafrechtelijke gegevens.
+Bijzondere categorieën (art. 9 lid 1): ras of etnische afkomst, politieke opvattingen, religieuze of
+levensbeschouwelijke overtuigingen, vakbondslidmaatschap, genetische gegevens, biometrische gegevens
+met het oog op unieke identificatie, gezondheidsgegevens, en gegevens over seksueel gedrag of seksuele gerichtheid.
 
-Als ja → aanvullende grondslag vereist (art. 9 lid 2). Gebruik je kennis van AVG art. 9 uitzonderingen.
+Als ja → naast een grondslag uit art. 6 is een uitzondering uit art. 9 lid 2 vereist. Let ook op de nationale uitwerkingen in de UAVG (art. 22 e.v.).
+
+**Let op:** strafrechtelijke gegevens vallen niet onder art. 9 maar onder art. 10 AVG (en art. 31-33 UAVG) — verwerking alleen onder overheidstoezicht of op basis van een wettelijke uitzondering.
 
 ## Stap 2 — Zes grondslagen (art. 6 AVG)
 
@@ -33,12 +36,12 @@ Beoordeel elke grondslag:
 
 | Grondslag | Wanneer passend | Aandachtspunten |
 |---|---|---|
-| **Toestemming** (a) | Als geen andere grondslag past | Vrij, specifiek, geïnformeerd, ondubbelzinnig. Intrekbaar. Niet voor arbeidsrelaties. |
+| **Toestemming** (a) | Als de betrokkene een echte vrije keuze heeft en de verwerking optioneel is | Vrij, specifiek, geïnformeerd, ondubbelzinnig. Altijd intrekbaar. In gezagsverhoudingen (zoals werkgever-werknemer) zelden 'vrij'. Geen restgrondslag: kies toestemming niet omdat niets anders past. |
 | **Overeenkomst** (b) | Noodzakelijk voor uitvoering contract | Strikt noodzakelijk — niet "handig" |
 | **Wettelijke verplichting** (c) | EU/nationale wet schrijft voor | Verwijs naar specifieke wet |
 | **Vitaal belang** (d) | Noodsituaties | Zeer beperkt toepasbaar |
 | **Algemeen belang / openbaar gezag** (e) | Overheidsorganisaties | Wettelijke basis vereist |
-| **Gerechtvaardigd belang** (f) | Bedrijven (niet overheid) | Balancing test vereist; niet voor kinderen |
+| **Gerechtvaardigd belang** (f) | Private partijen; overheid niet voor de uitoefening van haar publieke taken (art. 6 lid 1, slotzin) | Driestappentoets vereist (doeltoets, noodzakelijkheidstoets, belangenafweging); belangen van kinderen wegen extra zwaar mee |
 
 ## Stap 3 — Aanbeveling
 

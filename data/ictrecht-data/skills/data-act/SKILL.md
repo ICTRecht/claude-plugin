@@ -23,7 +23,7 @@ Als geen van de drie bronnen beschikbaar is: ga generiek te werk en voeg onderaa
 
 ### Stap 1 — Is de Data Act van toepassing?
 
-Beoordeel aan de hand van art. 1 en 2 Data Act of de verordening van toepassing is:
+De Data Act (Verordening (EU) 2023/2854) is van toepassing sinds **12 september 2025**. Beoordeel aan de hand van art. 1 en 2 of de verordening van toepassing is:
 
 **Connected product:** een product dat data genereert of verzamelt via sensoren of andere middelen, en dat data kan communiceren via een netwerk (bijv. IoT-apparaten, slimme apparaten, voertuigen, medische hulpmiddelen).
 
@@ -57,13 +57,15 @@ Indien de organisatie kwalificeert als **data recipient** (art. 6 Data Act):
 
 ### Stap 4 — Portabiliteit en cloud switching
 
-**Art. 23-31 — Switching van cloud-diensten:**
-- Aanbieders van clouddiensten moeten switching faciliteren
-- Maximale uitfaseerperiode: 12 maanden (later teruggebracht)
-- Exportformaten moeten interoperabel zijn
-- Switching-kosten mogen na transitieperiode niet worden berekend
+**Art. 23-31 — Switching van dataverwerkingsdiensten (cloud):**
+- Aanbieders moeten switching contractueel en technisch faciliteren
+- Maximale opzegtermijn: 2 maanden; transitieperiode van 30 dagen, verlengbaar als dat technisch onhaalbaar is
+- Exportformaten moeten gestructureerd, gangbaar en machineleesbaar zijn
+- Switching-kosten worden afgebouwd en zijn vanaf 12 januari 2027 volledig verboden
 
 Beoordeel of de organisatie als afnemer of aanbieder van clouddiensten hieraan voldoet of hiervan profiteert.
+
+**Hoofdstuk V — B2G:** overheidsinstanties kunnen bij uitzonderlijke noodzaak (zoals noodsituaties) toegang tot data vorderen bij data holders. Signaleer dit indien relevant.
 
 ### Stap 5 — Verhouding tot de AVG
 

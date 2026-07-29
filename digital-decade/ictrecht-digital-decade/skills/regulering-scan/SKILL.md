@@ -45,6 +45,8 @@ Vul de onderstaande tabel in op basis van de beschreven activiteit:
 | **Cyber Resilience Act** | | | |
 | **eIDAS 2.0** | | | |
 | **Data Act** | | | |
+| **Data Governance Act** | | | |
+| **EHDS** (zorg) | | | |
 | **AVG / GDPR** | | | |
 | **DORA** (financieel) | | | |
 
@@ -56,7 +58,9 @@ Vul de onderstaande tabel in op basis van de beschreven activiteit:
 - **DMA:** Van toepassing bij aanwijzing als poortwachter (kernplatformdiensten, grote schaal)
 - **Cyber Resilience Act:** Van toepassing bij fabricage of verkoop van producten met digitale elementen
 - **eIDAS 2.0:** Van toepassing bij aanbieden van vertrouwensdiensten of digitale identiteitsoplossingen
-- **Data Act:** Van toepassing bij aanbieden van connected products of gerelateerde diensten (IoT-data)
+- **Data Act:** Van toepassing bij aanbieden van connected products of gerelateerde diensten (IoT-data); van toepassing sinds 12 september 2025
+- **Data Governance Act:** Van toepassing bij data-intermediairs, data-altruïsme en hergebruik van beschermde overheidsdata
+- **EHDS:** Van toepassing bij verwerking van elektronische gezondheidsgegevens (primair en secundair gebruik)
 - **AVG:** Van toepassing bij verwerking van persoonsgegevens van EU-burgers
 - **DORA:** Van toepassing bij financiële entiteiten (banken, verzekeraars, beleggingsondernemingen, fintechs)
 

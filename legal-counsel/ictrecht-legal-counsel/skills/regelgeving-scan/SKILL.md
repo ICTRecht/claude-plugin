@@ -37,7 +37,7 @@ Identificeer regelgeving die specifiek geldt voor de sector of activiteit:
 - **Overheid** — Aanbestedingswet, Archiefwet, Wet open overheid (Woo), BIO
 - **Energie** — Energiewet, RED III
 - **Transport / Mobiliteit** — sector-specifieke EU-verordeningen
-- **Onderwijs** — Wet bescherming persoonsgegevens in het onderwijs
+- **Onderwijs** — onderwijswetgeving en sectorafspraken (o.a. Wet register onderwijsdeelnemers, Convenant Digitale Onderwijsmiddelen en Privacy)
 - **Telecom / Media** — Wet elektronische communicatie, AVMS-richtlijn
 
 ### Stap 3 — Horizontale regelgeving
@@ -46,11 +46,13 @@ Identificeer breed-toepasbare regelgeving die ongeacht sector geldt:
 - AI Act — AI-systemen (classificatie: verboden / hoog risico / beperkt risico / minimaal risico)
 - Digital Services Act (DSA) — onlinediensten en platforms
 - Digital Markets Act (DMA) — poortwachters
-- NIS2 — netwerk- en informatiebeveiliging
+- NIS2 — netwerk- en informatiebeveiliging (in NL: Cyberbeveiligingswet, opvolger Wbni)
+- Cyber Resilience Act — producten met digitale elementen
+- Data Act — connected products en cloud switching (van toepassing sinds 12 september 2025)
 - Cybersecurity Act — certificering
 - ePrivacy — cookies, elektronische communicatie
-- Productaansprakelijkheidsrichtlijn — digitale producten
-- Toegankelijkheidsrichtlijn (WCAG / EAA)
+- Productaansprakelijkheidsrichtlijn (EU) 2024/2853 — omvat ook software en AI
+- European Accessibility Act (EAA) — van toepassing sinds 28 juni 2025 op o.a. e-commerce, bankdiensten en e-books
 
 ### Stap 4 — Contractuele verplichtingen upstream
 Zijn er contractuele verplichtingen die extra regelgeving van toepassing maken?

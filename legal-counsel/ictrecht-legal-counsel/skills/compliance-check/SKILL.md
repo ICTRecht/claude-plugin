@@ -40,13 +40,16 @@ Stel een lijst op van toepasselijke wet- en regelgeving op EU- en nationaal nive
 - Digital Markets Act (DMA)
 - Network and Information Security Directive (NIS2)
 - ePrivacy Richtlijn / Telecommunicatiewet
-- Productaansprakelijkheidsrichtlijn
+- Productaansprakelijkheidsrichtlijn (EU) 2024/2853 — omvat ook software en AI
 - Cybersecurity Act
+- Data Act
+- Cyber Resilience Act (CRA)
+- DORA (financiële sector)
 
 **Nederlands recht:**
 - Burgerlijk Wetboek (contracten, aansprakelijkheid)
-- Telecommunicatiewet / Wet elektronische communicatie
-- Wet beveiliging netwerk- en informatiesystemen (Wbni)
+- Telecommunicatiewet
+- Cyberbeveiligingswet (implementatie NIS2; opvolger van de Wbni — controleer de actuele status van inwerkingtreding)
 - Sectorspecifieke wetgeving (Wft, WMG, Aanbestedingswet, etc.)
 
 ### Stap 3 — Per wet: verplichtingen vs. huidige situatie

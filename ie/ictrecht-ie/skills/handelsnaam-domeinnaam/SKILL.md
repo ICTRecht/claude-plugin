@@ -23,7 +23,7 @@ Analyseer de handelsnaamrechtelijke positie op grond van de Handelsnaamwet (Hnw)
 - Geografisch bereik van de bescherming
 
 **Stap 2 — Merkrecht overlap**
-Beoordeel of de naam ook als merk is geregistreerd (Benelux / EU / internationaal). Analyseer samenloop handelsnaamrecht en merkenrecht: welk recht heeft voorrang? Bespreek art. 2.20 lid 1 sub d BVIE (gebruik als handelsnaam).
+Beoordeel of de naam ook als merk is geregistreerd (Benelux / EU / internationaal). Analyseer samenloop handelsnaamrecht en merkenrecht: welk recht heeft voorrang? Bespreek art. 2.20 lid 2 sub d BVIE (gebruik van een teken anders dan ter onderscheiding van waren of diensten, zoals handelsnaamgebruik).
 
 **Stap 3 — Domeinnaamconflict**
 Analyseer het domeinnaamconflict aan de hand van de UDRP/WIPO-procedure criteria (drie cumulatieve vereisten):

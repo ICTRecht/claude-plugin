@@ -63,7 +63,7 @@ Bespreek het toepasselijke wettelijk kader:
 
 Beoordeel of de aansprakelijkheidsbeperking standhoudt:
 
-- **Grove schuld / opzet:** Een beding dat aansprakelijkheid voor opzet of grove schuld uitsluit, is nietig (art. 6:248 BW, redelijkheid en billijkheid).
+- **Opzet / bewuste roekeloosheid:** Een beroep op een beding dat aansprakelijkheid uitsluit voor opzet of bewuste roekeloosheid van de schuldenaar zelf of van tot de bedrijfsleiding behorende personen, is naar maatstaven van redelijkheid en billijkheid onaanvaardbaar (art. 6:248 lid 2 BW; vaste rechtspraak van de Hoge Raad). Het beding is dus niet automatisch nietig, maar kan in zoverre niet worden ingeroepen.
 - **B2C-context:** Is het beding onredelijk bezwarend voor een consument? (zwarte/grijze lijst BW)
 - **Specifieke wetgeving:** Gelden er bijzondere regels? (bijv. productaansprakelijkheid, AVG-boetes)
 - **Derogerende werking van redelijkheid en billijkheid:** Kan de beperking naar maatstaven van redelijkheid en billijkheid onaanvaardbaar zijn?

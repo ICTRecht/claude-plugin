@@ -24,13 +24,15 @@ Behandel een verzoek van een betrokkene conform AVG hoofdstuk III.
 
 | Type | AVG artikel | Termijn |
 |---|---|---|
-| Inzage | Art. 15 | 1 maand (max. 3 maanden) |
+| Inzage | Art. 15 | 1 maand |
 | Correctie | Art. 16 | 1 maand |
 | Verwijdering ('recht op vergetelheid') | Art. 17 | 1 maand |
 | Beperking verwerking | Art. 18 | 1 maand |
 | Dataportabiliteit | Art. 20 | 1 maand |
-| Bezwaar | Art. 21 | Zo snel mogelijk |
-| Niet onderworpen aan geautomatiseerde besluitvorming | Art. 22 | 1 maand |
+| Bezwaar | Art. 21 | 1 maand |
+| Rechten bij geautomatiseerde besluitvorming | Art. 22 | 1 maand |
+
+Alle termijnen volgen uit art. 12 lid 3 AVG: reageer binnen één maand na ontvangst; verlenging met maximaal twee maanden is mogelijk bij complexe of talrijke verzoeken, mits de betrokkene binnen de eerste maand over de verlenging wordt geïnformeerd. Behandeling is in beginsel kosteloos; alleen bij kennelijk ongegronde of buitensporige verzoeken mag een redelijke vergoeding worden gevraagd of het verzoek worden geweigerd (art. 12 lid 5 AVG — motiveer dit).
 
 ## Stap 2 — Identiteitsverificatie
 

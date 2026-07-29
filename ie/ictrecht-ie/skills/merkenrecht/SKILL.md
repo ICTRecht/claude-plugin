@@ -29,7 +29,7 @@ Bespreek territorial scope en prioriteitsrechten.
 Analyseer de beschermingsomvang: waren en diensten (Nice-classificatie), soortgelijkheid, gevaar voor verwarring (Global appreciation-test: visuele, auditieve en begripsmatige overeenstemming). Bekendheid als verzwaarde bescherming.
 
 **Stap 4 — Inbreukanalyse**
-Beoordeel gebruik in het economisch verkeer (art. 2.20 BVIE). Toets overeenstemming teken vs. merk en soortgelijkheid waren/diensten. Weeg verwarringsgevaar of ongerechtvaardigd voordeel/afbreuk aan bekendheid.
+Beoordeel gebruik in het economisch verkeer (art. 2.20 lid 2 BVIE). Toets overeenstemming teken vs. merk en soortgelijkheid waren/diensten. Weeg verwarringsgevaar of ongerechtvaardigd voordeel/afbreuk aan bekendheid.
 
 **Stap 5 — Opties**
 Bespreek beschikbare acties:

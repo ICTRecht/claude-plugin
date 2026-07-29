@@ -28,8 +28,9 @@ Let op: remote access door een medewerker buiten de EER telt ook.
 ## Stap 2 — Naar welk land?
 
 Controleer:
-- **Adequaatheidsbesluit** aanwezig? (raadpleeg je kennis van actuele adequaatheidsbesluiten)
+- **Adequaatheidsbesluit** aanwezig? (raadpleeg je kennis van actuele adequaatheidsbesluiten; controleer bij twijfel de actuele lijst van de Europese Commissie)
   → Zo ja: doorgifte toegestaan, documenteer.
+  → **VS:** het EU-U.S. Data Privacy Framework (adequaatheidsbesluit, juli 2023) geldt alleen voor ontvangers met een actieve DPF-certificering — controleer die op dataprivacyframework.gov. Zonder certificering: passende waarborgen vereist.
 - **Geen adequaatheidsbesluit** → passende waarborgen vereist.
 
 ## Stap 3 — Passende waarborg
@@ -47,8 +48,9 @@ Gebruik je kennis van de EU-SCCs 2021 (Uitvoeringsbesluit 2021/914).
 
 ## Stap 4 — Transfer Impact Assessment (TIA)
 
-Bij SCCs: is een TIA vereist?
-Beoordeel het recht van het ontvangende land (met name: overheidstoegangsbevoegdheden).
+Bij SCCs (en BCRs) is sinds het Schrems II-arrest (HvJ EU C-311/18) in de praktijk altijd een TIA vereist.
+Beoordeel het recht van het ontvangende land (met name: overheidstoegangsbevoegdheden) en of aanvullende
+technische, contractuele of organisatorische maatregelen nodig zijn (EDPB Aanbevelingen 01/2020).
 
 Gebruik je kennis van TIA-methodiek en overheidstoegangsbevoegdheden per land.
 

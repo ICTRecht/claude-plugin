@@ -1,97 +1,126 @@
 ---
 name: cold-start-interview
 description: >
-  Richt de ICTRecht Privacy plugin in voor jouw organisatie. Stel dit eenmalig in —
-  alle andere commando's zijn ervan afhankelijk. Gebruik dit als je de plugin voor
-  het eerst installeert, of als de organisatiegegevens zijn gewijzigd.
-argument-hint: "[--check-integraties]"
+  Optioneel eenmalig inrichtingsgesprek voor het GEDEELDE ICTRecht-organisatieprofiel.
+  Dit profiel wordt door alle geïnstalleerde ICTRecht-plugins herkend — je hoeft dit
+  maar één keer te doen, ongeacht hoeveel ICTRecht-plugins je gebruikt. Gebruik dit als
+  je nog geen profiel hebt, of als je de Privacy-plugin verder wilt inrichten.
+argument-hint: ""
 ---
 
 # /ictrecht-privacy-basis:cold-start-interview
 
-Richt de plugin in voor deze organisatie. Duurt 10-15 minuten.
+Dit interview vult het **gedeelde** ICTRecht-organisatieprofiel — hetzelfde profiel dat
+door alle geïnstalleerde ICTRecht-plugins wordt gebruikt. Heb je dit al via een andere
+ICTRecht-plugin ingevuld? Dan hoef je de basisvragen niet opnieuw te beantwoorden.
 
-## Stap 1 — Configuratiepad voorbereiden
+## Stap 0 — Bestaand profiel checken
 
-Maak de volgende map aan als die niet bestaat:
-`~/.claude/plugins/config/ictrecht-privacy-basis/`
-`~/.claude/plugins/config/ictrecht-privacy-basis/outputs/`
+Probeer in volgorde:
+1. Lees `~/.claude/plugins/config/ictrecht/CLAUDE.md`
+2. Of zoek in geheugen naar "ICTRecht organisatieprofiel"
+3. Of zoek in projectinstructies naar het blok `## ICTRecht Profiel`
 
-Kopieer het CLAUDE.md template van de plugin-installatiemap naar:
-`~/.claude/plugins/config/ictrecht-privacy-basis/CLAUDE.md`
+**Basisprofiel al aanwezig** (geen [PLACEHOLDER] meer bij "Over de organisatie")?
+Toon een korte samenvatting en vraag: "Je hebt al een ICTRecht-organisatieprofiel —
+mogelijk aangemaakt via een andere ICTRecht-plugin. Wil je (a) niets doen en direct verder
+met de Privacy-skills, (b) alleen de Privacy & AVG-specifieke vragen beantwoorden om dit
+domein toe te voegen, of (c) het volledige profiel opnieuw doorlopen?"
+- (a) → sluit af, klaar.
+- (b) → ga direct naar Stap 2 (sla Stap 1 over).
+- (c) → ga naar Stap 1.
 
-## Stap 2 — Organisatieprofiel
+**"Privacy & AVG"-sectie al aanwezig?** Meld dat en vraag of de gebruiker die wil
+bijwerken; anders sla Stap 2 over en sluit af.
 
-Stel de volgende vragen één voor één. Wacht op antwoord voordat je verder gaat:
+**Niets van dit alles aanwezig:** ga naar Stap 1.
 
-1. **Organisatienaam en sector**
-   "Wat is de naam van uw organisatie en in welke sector bent u actief? (bijv. zorg, onderwijs, SaaS, overheid, financiën)"
+## Stap 1 — Basisvragen (gelden voor alle ICTRecht-plugins)
 
-2. **Omvang en rol**
-   "Hoeveel medewerkers heeft de organisatie? En wat is uw primaire rol t.o.v. persoonsgegevens: verwerkingsverantwoordelijke, verwerker, of beide?"
+Stel deze vragen één voor één, alleen als ze nog niet beantwoord zijn. Wacht op antwoord
+voordat je verder gaat:
 
-3. **Vestiging en toepasselijk recht**
-   "In welk(e) land(en) is de organisatie gevestigd en welke privacywetgeving is van toepassing? (AVG is standaard voor Nederland/EU; zijn er sectorspecifieke regels zoals WPG, UAVG-uitzonderingen, HIPAA?)"
+1. Wat is de naam van je organisatie?
+2. In welke sector werk je? (zorg / onderwijs / overheid / SaaS / anders)
+3. Hoeveel medewerkers heeft de organisatie ongeveer?
+4. In welk(e) land(en) is de organisatie gevestigd?
+5. Wat is jouw rol? (jurist / privacy officer / compliance / management / anders)
+6. Wie is het juridisch aanspreekpunt (indien anders dan jij)?
+7. Voor wie zijn de outputs primair bedoeld? (intern gebruik / extern / voor het bestuur)
 
-4. **FG / privacy officer**
+## Stap 2 — Privacy & AVG-specifieke vragen
+
+1. **Rol t.o.v. persoonsgegevens**
+   "Wat is uw primaire rol t.o.v. persoonsgegevens: verwerkingsverantwoordelijke, verwerker, of beide?"
+
+2. **Toepasselijke wetgeving**
+   "Welke privacywetgeving is van toepassing? (AVG is standaard voor Nederland/EU; zijn er sectorspecifieke regels zoals WPG, UAVG-uitzonderingen, HIPAA?)"
+
+3. **FG / privacy officer**
    "Is er een Functionaris Gegevensbescherming (FG) of privacy officer aangesteld? Zo ja, naam en contactgegevens?"
 
-5. **Juridisch contact**
-   "Wie is het juridisch aanspreekpunt? (interne jurist, extern advocaat, of is de gebruiker zelf jurist?)"
-
-6. **Rol gebruiker**
-   "Wat is uw eigen rol? (jurist / privacy officer / compliance / management / anders)"
-
-7. **Open toezichtszaken**
+4. **Open toezichtszaken**
    "Zijn er lopende onderzoeken of handhavingszaken van de Autoriteit Persoonsgegevens of andere toezichthouders?"
 
-8. **Huisstijl documenten**
+5. **Huisstijl documenten**
    "Heeft u een voorbeelddocument (DPIA, verwerkersovereenkomst, datalekrapportage) dat ik als huisstijlreferentie kan gebruiken? Zo ja, deel het bestand of plak de structuur."
 
-## Stap 3 — Configuratie opslaan
+## Stap 3 — Opslaan (gedeeld bestand, 3 lagen)
 
-Sla de ingevulde antwoorden op via drie kanalen (in volgorde):
+**a) Bestand**
+Lees/schrijf `~/.claude/plugins/config/ictrecht/CLAUDE.md`.
+- Bestaat het bestand nog niet: maak het aan met de basisvelden ingevuld en voeg de
+  `### Privacy & AVG`-sectie toe onder "Domeinspecifieke aanvullingen".
+- Bestaat het al: VUL AAN. Overschrijf nooit basisvelden of secties van andere domeinen
+  die al ingevuld zijn — voeg alleen je eigen sectie toe of werk die bij.
+Maak ook aan: `~/.claude/plugins/config/ictrecht-privacy-basis/outputs/`.
 
-**3a. Bestand** (voor Claude Code gebruikers)
-Schrijf weg naar `~/.claude/plugins/config/ictrecht-privacy-basis/CLAUDE.md`.
-Vervang alle [PLACEHOLDER] markers. Behoud de koppenstructuur.
-Als het pad niet beschikbaar is, sla deze stap over.
+**b) Geheugen**
+Sla het VOLLEDIGE actuele profiel (basisvelden + alle tot nu toe bekende domeinsecties) op
+onder de titel "ICTRecht organisatieprofiel". Update de bestaande entry als die er al is;
+maak geen tweede entry aan.
 
-**3b. Geheugen** (voor alle omgevingen)
-Sla het organisatieprofiel op in Claude-geheugen onder de naam "ICTRecht Privacy organisatieprofiel".
-Formaat: compacte samenvatting van naam, sector, omvang, rol, FG, wetgeving en gebruikersrol.
-
-**3c. Projectinstructies-blok genereren**
-Toon onderaan dit bericht een kant-en-klaar tekstblok dat de gebruiker kan kopiëren naar de instructies van een Claude Project:
+**c) Projectinstructies-blok**
+Toon onderaan dit bericht het complete, actuele blok `## ICTRecht Profiel` (inclusief alle
+tot nu toe ingevulde domeinsecties), zodat de gebruiker dit kan kopiëren naar de instructies
+van een Claude Project:
 
 ```
 --- KOPIEER DIT NAAR JE CLAUDE PROJECT INSTRUCTIES ---
 
-## ICTRecht Privacy Profiel
+## ICTRecht Profiel
 
-**Organisatie:** [ingevulde naam]
+**Organisatie:** [naam]
 **Sector:** [sector]
 **Omvang:** [medewerkers]
-**Rol t.o.v. persoonsgegevens:** [verwerkingsverantwoordelijke / verwerker / beide]
 **Vestigingsland:** [land]
+**Rol:** [rol]
+**Juridisch contactpersoon:** [intern / extern / nvt]
+
+### Privacy & AVG
+**Rol t.o.v. persoonsgegevens:** [verwerkingsverantwoordelijke / verwerker / beide]
 **Toepasselijke wetgeving:** [AVG / WPG / etc.]
 **FG:** [naam of 'geen']
-**Rol gebruiker:** [jurist / privacy officer / etc.]
-**Juridisch contact:** [intern / extern / nvt]
+**Open toezichtszaken:** [status]
 
-Alle ICTRecht privacy-commando's gebruiken dit profiel als organisatiecontext.
+Alle ICTRecht-plugins gebruiken dit gedeelde profiel als organisatiecontext.
 
 --- EINDE BLOK ---
 ```
 
-Zeg erbij: "Optioneel: plak dit blok in de instructies van een Claude Project om de configuratie ook in nieuwe chats beschikbaar te hebben zonder opnieuw de cold-start te hoeven doen."
+Zeg erbij: "Optioneel: plak dit blok in de instructies van een Claude Project om de
+configuratie ook in nieuwe chats beschikbaar te hebben zonder opnieuw cold-start te doen."
 
 ## Stap 4 — Bevestiging
 
-Meld: "✅ ICTRecht Privacy plugin is ingericht voor [organisatienaam]. U kunt nu alle commando's gebruiken:
+Meld: "✅ Privacy & AVG is toegevoegd aan je ICTRecht-organisatieprofiel. Je kunt nu:
 - `/ictrecht-privacy-basis:dpia` — DPIA uitvoeren
 - `/ictrecht-privacy-basis:datalek` — datalek beoordelen
 - `/ictrecht-privacy-basis:avg-rechten` — betrokkene verzoek behandelen
 - `/ictrecht-privacy-basis:doorgifte` — internationale doorgifte controleren
 - `/ictrecht-privacy-basis:grondslag` — verwerkingsgrondslag bepalen
-- `/ictrecht-privacy-basis:vok-review` — verwerkersovereenkomst controleren"
+- `/ictrecht-privacy-basis:vok-review` — verwerkersovereenkomst controleren
+
+Andere ICTRecht-plugins gebruiken automatisch dit gedeelde profiel — je hoeft dit interview
+niet opnieuw te doen als je een andere ICTRecht-plugin installeert. Voer dit commando alleen
+opnieuw uit om je Privacy & AVG-gegevens bij te werken."

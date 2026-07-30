@@ -14,9 +14,9 @@ Beoordeel een verwerkersovereenkomst conform AVG artikel 28.
 ## Voorbereiding
 
 1. **Organisatiecontext laden** — probeer in volgorde:
-   - Lees `~/.claude/plugins/config/ictrecht-privacy-basis/CLAUDE.md`
-   - Of zoek in geheugen naar "ICTRecht Privacy organisatieprofiel"
-   - Of zoek in projectinstructies naar het blok `## ICTRecht Privacy Profiel`
+   - Lees `~/.claude/plugins/config/ictrecht/CLAUDE.md`
+   - Of zoek in geheugen naar "ICTRecht organisatieprofiel"
+   - Of zoek in projectinstructies naar het blok `## ICTRecht Profiel`
    - Geen van deze beschikbaar → ga door met generieke AVG-standaardinstellingen en vermeld bovenaan de output: "ℹ️ Geen organisatieprofiel gevonden — output is generiek. Voer `/ictrecht-privacy-basis:cold-start-interview` uit voor gepersonaliseerde analyses."
 2. Gebruik je kennis van AVG art. 28 vereisten voor verwerkersovereenkomsten.
 3. Vraag het document op als nog niet gedeeld en voer de analyse pas uit zodra de volledige tekst beschikbaar is.

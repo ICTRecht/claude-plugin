@@ -12,9 +12,9 @@ argument-hint: "[platform of dienst]"
 
 ## Voorbereiding (3-laags)
 
-1. **Config-bestand:** Lees `~/.claude/plugins/config/ictrecht-digital-decade/CLAUDE.md` voor organisatiecontext.
-2. **Memory:** Zoek naar memory met label "ICTRecht Digital Decade organisatieprofiel".
-3. **Project instructions:** Zoek naar sectie `## ICTRecht Digital Decade Profiel` in de projectinstructies.
+1. **Config-bestand:** Lees `~/.claude/plugins/config/ictrecht/CLAUDE.md` voor organisatiecontext.
+2. **Memory:** Zoek naar memory met label "ICTRecht organisatieprofiel".
+3. **Project instructions:** Zoek naar sectie `## ICTRecht Profiel` in de projectinstructies.
 
 Geen van de drie beschikbaar: ga door generiek en toon:
 > ℹ️ *Geen organisatieprofiel gevonden. Voer `/ictrecht-digital-decade:cold-start-interview` uit voor gepersonaliseerde analyse. Nu worden generieke DSA-verplichtingen bepaald.*

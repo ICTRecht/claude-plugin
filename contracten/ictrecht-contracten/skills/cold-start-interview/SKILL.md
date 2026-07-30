@@ -1,106 +1,122 @@
 ---
 name: cold-start-interview
-description: Stel het ICTRecht Contracten organisatieprofiel in via een interviewgesprek. Voer dit eenmalig uit om alle skills optimaal te personaliseren.
-argument-hint: "[optioneel: naam van de organisatie]"
+description: >
+  Optioneel eenmalig inrichtingsgesprek voor het GEDEELDE ICTRecht-organisatieprofiel.
+  Dit profiel wordt door alle geïnstalleerde ICTRecht-plugins herkend — je hoeft dit
+  maar één keer te doen, ongeacht hoeveel ICTRecht-plugins je gebruikt. Gebruik dit als
+  je nog geen profiel hebt, of als je de Contracten-plugin verder wilt inrichten.
+argument-hint: ""
 ---
 
-# Cold-start interview — ICTRecht Contracten
+# /ictrecht-contracten:cold-start-interview
 
-Dit interview legt het organisatieprofiel vast zodat alle contractenrecht-skills contextbewust werken.
+Dit interview vult het **gedeelde** ICTRecht-organisatieprofiel — hetzelfde profiel dat
+door alle geïnstalleerde ICTRecht-plugins wordt gebruikt. Heb je dit al via een andere
+ICTRecht-plugin ingevuld? Dan hoef je de basisvragen niet opnieuw te beantwoorden.
 
-## Voorbereiding
+## Stap 0 — Bestaand profiel checken
 
-Controleer of er al een profiel bestaat:
-1. Lees `~/.claude/plugins/config/ictrecht-contracten/CLAUDE.md` — als dat bestand bestaat, toon de huidige waarden als startsuggesties.
-2. Anders: start met lege velden.
+Probeer in volgorde:
+1. Lees `~/.claude/plugins/config/ictrecht/CLAUDE.md`
+2. Of zoek in geheugen naar "ICTRecht organisatieprofiel"
+3. Of zoek in projectinstructies naar het blok `## ICTRecht Profiel`
 
-Maak de map aan als die nog niet bestaat: `~/.claude/plugins/config/ictrecht-contracten/`.
+**Basisprofiel al aanwezig** (geen [PLACEHOLDER] meer bij "Over de organisatie")?
+Toon een korte samenvatting en vraag: "Je hebt al een ICTRecht-organisatieprofiel —
+mogelijk aangemaakt via een andere ICTRecht-plugin. Wil je (a) niets doen en direct verder
+met de Contracten-skills, (b) alleen de contractenrecht-specifieke vragen beantwoorden om
+dit domein toe te voegen, of (c) het volledige profiel opnieuw doorlopen?"
+- (a) → sluit af, klaar.
+- (b) → ga direct naar Stap 2 (sla Stap 1 over).
+- (c) → ga naar Stap 1.
 
----
+**"Contractenrecht"-sectie al aanwezig?** Meld dat en vraag of de gebruiker die wil
+bijwerken; anders sla Stap 2 over en sluit af.
 
-## Interview — stap voor stap
+**Niets van dit alles aanwezig:** ga naar Stap 1.
 
-Stel de vragen één voor één. Wacht op antwoord voordat je doorgaat. Gebruik een vriendelijke, professionele toon.
+## Stap 1 — Basisvragen (gelden voor alle ICTRecht-plugins)
 
-**Stap 1 — Introductie**
+Stel deze vragen één voor één, alleen als ze nog niet beantwoord zijn. Wacht op antwoord
+voordat je verder gaat. Gebruik een vriendelijke, professionele toon.
 
-Zeg:
-> "Welkom bij de ICTRecht Contracten plugin. Ik ga je een aantal vragen stellen om de plugin in te stellen op jouw organisatie. Dit duurt ongeveer 3 minuten. Je kunt het interview later opnieuw uitvoeren om het profiel bij te werken."
+Zeg vooraf:
+> "Welkom bij de ICTRecht Contracten plugin. Ik ga je een aantal vragen stellen om het
+> gedeelde ICTRecht-organisatieprofiel in te stellen. Dit duurt ongeveer 3-5 minuten."
 
-**Stap 2 — Organisatienaam**
-Vraag: "Wat is de naam van jouw organisatie?"
+1. Wat is de naam van je organisatie?
+2. In welke sector werk je? (zorg / onderwijs / overheid / SaaS / anders)
+3. Hoeveel medewerkers heeft de organisatie ongeveer?
+4. In welk(e) land(en) is de organisatie gevestigd?
+5. Wat is jouw rol? (jurist / inkoper / contractmanager / management / anders)
+6. Wie is het juridisch aanspreekpunt (indien anders dan jij)?
+7. Voor wie zijn de outputs primair bedoeld? (intern gebruik / extern / voor het bestuur)
 
-**Stap 3 — Sector**
-Vraag: "In welke sector is jouw organisatie actief? (Bijv. zorg, onderwijs, overheid, SaaS, retail, industrie, financieel, anders)"
+## Stap 2 — Contractenrecht-specifieke vragen
 
-**Stap 4 — Omvang**
-Vraag: "Hoeveel medewerkers heeft jouw organisatie (bij benadering)?"
+1. **Rol in contracten**
+   "Wat is de gebruikelijke rol van jouw organisatie in contracten — opdrachtgever, opdrachtnemer, of beide?"
 
-**Stap 5 — Rol in contracten**
-Vraag: "Wat is de gebruikelijke rol van jouw organisatie in contracten — opdrachtgever, opdrachtnemer, of beide?"
+2. **Toepasselijk recht**
+   "Welk recht is doorgaans van toepassing op jullie contracten? (Standaard: Nederlands recht)"
 
-**Stap 6 — Vestigingsland en toepasselijk recht**
-Vraag: "In welk(e) land(en) is jouw organisatie gevestigd, en welk recht is doorgaans van toepassing op jullie contracten? (Standaard: Nederlands recht)"
+3. **Vaste contractpartijen**
+   "Zijn er vaste contractpartijen of leveranciers waarmee jullie regelmatig samenwerken en waarbij contracten een terugkerende rol spelen? (Namen of type partijen)"
 
-**Stap 7 — Juridisch contactpersoon**
-Vraag: "Is er een interne jurist of een vaste externe advocaat/adviseur die betrokken is bij contracten? Zo ja, wie of welk kantoor?"
+4. **Tekenbevoegdheid**
+   "Wie is bevoegd om namens jouw organisatie contracten te tekenen?"
 
-**Stap 8 — Vaste contractpartijen**
-Vraag: "Zijn er vaste contractpartijen of leveranciers waarmee jullie regelmatig samenwerken en waarbij contracten een terugkerende rol spelen? (Namen of type partijen)"
+## Stap 3 — Opslaan (gedeeld bestand, 3 lagen)
 
-**Stap 9 — Gebruikersrol**
-Vraag: "Wat is jouw eigen rol binnen de organisatie ten aanzien van contracten? (Bijv. jurist, inkoper, contractmanager, management, directeur)"
+**a) Bestand**
+Lees/schrijf `~/.claude/plugins/config/ictrecht/CLAUDE.md`.
+- Bestaat het bestand nog niet: maak het aan met de basisvelden ingevuld en voeg de
+  `### Contractenrecht`-sectie toe onder "Domeinspecifieke aanvullingen".
+- Bestaat het al: VUL AAN. Overschrijf nooit basisvelden of secties van andere domeinen
+  die al ingevuld zijn — voeg alleen je eigen sectie toe of werk die bij.
+Maak ook aan: `~/.claude/plugins/config/ictrecht-contracten/outputs/`.
 
-**Stap 10 — Tekenbevoegdheid**
-Vraag: "Wie is bevoegd om namens jouw organisatie contracten te tekenen?"
+**b) Geheugen**
+Sla het VOLLEDIGE actuele profiel (basisvelden + alle tot nu toe bekende domeinsecties) op
+onder de titel "ICTRecht organisatieprofiel". Update de bestaande entry als die er al is;
+maak geen tweede entry aan.
 
-**Stap 11 — Niveau van outputs**
-Vraag: "Voor wie zijn de outputs van deze plugin primair bedoeld? (Bijv. intern gebruik door juristen, ter goedkeuring aan bestuur, extern naar contractpartijen)"
-
----
-
-## Opslaan — drielaagse save
-
-Na het interview sla je het profiel op via drie stappen:
-
-### Stap A — Bestand opslaan
-Schrijf het ingevulde profiel naar:
-`~/.claude/plugins/config/ictrecht-contracten/CLAUDE.md`
-
-Gebruik de template-structuur uit het plugin-CLAUDE.md maar vervang alle [PLACEHOLDER]-waarden door de gegeven antwoorden.
-
-Maak ook de outputs-map aan:
-`~/.claude/plugins/config/ictrecht-contracten/outputs/`
-
-### Stap B — Memory opslaan
-Sla een samenvatting op in Claude-geheugen onder de naam **"ICTRecht Contracten organisatieprofiel"** met de kerngegevens:
-- Organisatienaam
-- Sector
-- Rol in contracten
-- Toepasselijk recht
-- Gebruikersrol
-- Tekenbevoegdheid
-
-### Stap C — Project instructions block
-Voeg een blok toe aan de project instructions (of CLAUDE.md op projectniveau) met de volgende structuur:
+**c) Projectinstructies-blok**
+Toon onderaan dit bericht het complete, actuele blok `## ICTRecht Profiel` (inclusief alle
+tot nu toe ingevulde domeinsecties), zodat de gebruiker dit kan kopiëren naar de instructies
+van een Claude Project:
 
 ```
-## ICTRecht Contracten Profiel
-- Organisatie: [naam]
-- Sector: [sector]
-- Rol: [opdrachtgever/nemer/beide]
-- Recht: [toepasselijk recht]
-- Gebruikersrol: [rol]
-- Tekenbevoegdheid: [wie]
+--- KOPIEER DIT NAAR JE CLAUDE PROJECT INSTRUCTIES ---
+
+## ICTRecht Profiel
+
+**Organisatie:** [naam]
+**Sector:** [sector]
+**Omvang:** [medewerkers]
+**Vestigingsland:** [land]
+**Rol:** [rol]
+**Juridisch contactpersoon:** [intern / extern / nvt]
+
+### Contractenrecht
+**Rol in contracten:** [opdrachtgever/nemer/beide]
+**Toepasselijk recht:** [recht]
+**Vaste contractpartijen:** [partijen]
+**Tekenbevoegdheid:** [wie]
+
+Alle ICTRecht-plugins gebruiken dit gedeelde profiel als organisatiecontext.
+
+--- EINDE BLOK ---
 ```
 
----
+Zeg erbij: "Optioneel: plak dit blok in de instructies van een Claude Project om de
+configuratie ook in nieuwe chats beschikbaar te hebben zonder opnieuw cold-start te doen."
 
-## Afsluiting
+## Stap 4 — Afsluiting
 
-Sluit het interview af met:
+Sluit af met:
 
-> "Profiel opgeslagen. Je kunt nu alle ICTRecht Contracten-skills gebruiken:"
+> "Contractenrecht is toegevoegd aan je ICTRecht-organisatieprofiel. Je kunt nu:
 >
 > - `/ictrecht-contracten:contract-review` — volledig contract doorlichten op risico's
 > - `/ictrecht-contracten:nda-review` — geheimhoudingsovereenkomst controleren
@@ -108,5 +124,8 @@ Sluit het interview af met:
 > - `/ictrecht-contracten:aansprakelijkheid` — aansprakelijkheidsanalyse
 > - `/ictrecht-contracten:onderhandeling-prep` — onderhandeling voorbereiden
 > - `/ictrecht-contracten:sla-review` — SLA beoordelen
+>
+> Andere ICTRecht-plugins gebruiken automatisch dit gedeelde profiel — je hoeft dit
+> interview niet opnieuw te doen als je een andere ICTRecht-plugin installeert."
 
-> ℹ️ *Je gebruikt de basis versie van de ICTRecht Contracten plugin. Wil je toegang tot de volledige ICTRecht kennisbank voor nog nauwkeurigere analyses? Neem contact op via [support@ictrecht.nl](mailto:support@ictrecht.nl).*
+> ℹ️ *Je gebruikt de gratis versie van de ICTRecht Contracten plugin. Wil je toegang tot de volledige ICTRecht kennisbank voor nog nauwkeurigere analyses? Neem contact op via [support@ictrecht.nl](mailto:support@ictrecht.nl).*

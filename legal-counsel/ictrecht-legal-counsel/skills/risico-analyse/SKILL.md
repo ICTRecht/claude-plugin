@@ -9,9 +9,9 @@ argument-hint: "[beslissing of situatie]"
 
 Laad het organisatieprofiel in deze volgorde:
 
-1. **Bestand** — lees `~/.claude/plugins/config/ictrecht-legal-counsel/CLAUDE.md`
-2. **Memory** — zoek naar memory-entry `ICTRecht Legal Counsel organisatieprofiel`
-3. **Project instructions** — zoek naar blok `## ICTRecht Legal Counsel Profiel` in de actieve project instructions
+1. **Bestand** — lees `~/.claude/plugins/config/ictrecht/CLAUDE.md`
+2. **Memory** — zoek naar memory-entry `ICTRecht organisatieprofiel`
+3. **Project instructions** — zoek naar blok `## ICTRecht Profiel` in de actieve project instructions
 
 Als **geen van de drie** beschikbaar is:
 - Ga door met generieke standaardinstellingen (Nederlands recht, algemene IT-rechtpraktijk)

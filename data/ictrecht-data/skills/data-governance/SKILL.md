@@ -9,9 +9,9 @@ argument-hint: "[huidige situatie of vraagstuk]"
 
 Controleer in deze volgorde of er organisatiecontext beschikbaar is:
 
-1. **Configuratiebestand:** `~/.claude/plugins/config/ictrecht-data/CLAUDE.md` — lees dit bestand als het bestaat.
-2. **Geheugen:** Zoek naar geheugenblokken met de titel "ICTRecht Data organisatieprofiel".
-3. **Project-instructies:** Zoek naar een sectie `## ICTRecht Data Profiel` in de projectinstructies.
+1. **Configuratiebestand:** `~/.claude/plugins/config/ictrecht/CLAUDE.md` — lees dit bestand als het bestaat.
+2. **Geheugen:** Zoek naar geheugenblokken met de titel "ICTRecht organisatieprofiel".
+3. **Project-instructies:** Zoek naar een sectie `## ICTRecht Profiel` in de projectinstructies.
 
 Als geen van de drie bronnen beschikbaar is: ga generiek te werk en voeg onderaan een ℹ️-melding toe:
 

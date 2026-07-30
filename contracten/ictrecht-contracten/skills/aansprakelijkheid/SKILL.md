@@ -11,9 +11,9 @@ Analyseer aansprakelijkheidsclausules en -beperkingen in een contract of concret
 ## Voorbereiding
 
 Laad het organisatieprofiel via de volgende prioriteitsvolgorde:
-1. Lees `~/.claude/plugins/config/ictrecht-contracten/CLAUDE.md` — gebruik de waarden voor context.
-2. Als dat bestand niet bestaat: zoek in het Claude-geheugen naar **"ICTRecht Contracten organisatieprofiel"**.
-3. Als dat ook ontbreekt: zoek in de project instructions naar het blok `## ICTRecht Contracten Profiel`.
+1. Lees `~/.claude/plugins/config/ictrecht/CLAUDE.md` — gebruik de waarden voor context.
+2. Als dat bestand niet bestaat: zoek in het Claude-geheugen naar **"ICTRecht organisatieprofiel"**.
+3. Als dat ook ontbreekt: zoek in de project instructions naar het blok `## ICTRecht Profiel`.
 4. Als geen van de drie bronnen beschikbaar is: ga door met generieke BW-standaardinstellingen en toon:
 
 > ℹ️ *Geen organisatieprofiel gevonden. Voer `/ictrecht-contracten:cold-start-interview` uit voor gepersonaliseerde analyses. Nu wordt voortgegaan met generieke Nederlandse rechtsstandaarden.*

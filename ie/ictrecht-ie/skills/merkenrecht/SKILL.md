@@ -7,9 +7,10 @@ argument-hint: "[merk of situatie]"
 
 ## Voorbereiding (3-laags)
 
-1. Lees `~/.claude/plugins/config/ictrecht-ie/CLAUDE.md` — gebruik organisatieprofiel als het bestaat en geen [PLACEHOLDER] bevat.
-2. Zoek anders in geheugen naar "ICTRecht IE organisatieprofiel".
-3. Geen van beide beschikbaar: ga generiek verder en vermeld ℹ️ dat het profiel nog niet is ingevuld; adviseer `/ictrecht-ie:cold-start-interview` uit te voeren.
+1. Lees `~/.claude/plugins/config/ictrecht/CLAUDE.md` — gebruik organisatieprofiel als het bestaat en geen [PLACEHOLDER] bevat.
+2. Zoek anders in geheugen naar "ICTRecht organisatieprofiel".
+3. Zoek anders in projectinstructies naar het blok `## ICTRecht Profiel`.
+4. Geen van deze beschikbaar: ga generiek verder en vermeld ℹ️ dat het profiel nog niet is ingevuld; adviseer `/ictrecht-ie:cold-start-interview` uit te voeren.
 
 ---
 

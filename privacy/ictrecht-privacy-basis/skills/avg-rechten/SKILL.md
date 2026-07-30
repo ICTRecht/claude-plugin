@@ -14,9 +14,9 @@ Behandel een verzoek van een betrokkene conform AVG hoofdstuk III.
 ## Voorbereiding
 
 1. **Organisatiecontext laden** — probeer in volgorde:
-   - Lees `~/.claude/plugins/config/ictrecht-privacy-basis/CLAUDE.md`
-   - Of zoek in geheugen naar "ICTRecht Privacy organisatieprofiel"
-   - Of zoek in projectinstructies naar het blok `## ICTRecht Privacy Profiel`
+   - Lees `~/.claude/plugins/config/ictrecht/CLAUDE.md`
+   - Of zoek in geheugen naar "ICTRecht organisatieprofiel"
+   - Of zoek in projectinstructies naar het blok `## ICTRecht Profiel`
    - Geen van deze beschikbaar → ga door met generieke AVG-standaardinstellingen en vermeld bovenaan de output: "ℹ️ Geen organisatieprofiel gevonden — output is generiek. Voer `/ictrecht-privacy-basis:cold-start-interview` uit voor gepersonaliseerde analyses."
 2. Gebruik je kennis van AVG hoofdstuk III (rechten van betrokkenen, art. 15–22).
 

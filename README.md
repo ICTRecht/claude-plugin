@@ -31,7 +31,7 @@ Elke plugin biedt slash-commando's voor concrete juridische taken: van DPIA's en
 
 ## Eén plugin per rol, connector optioneel
 
-Alle plugins zijn gratis en werken direct met de ingebouwde juridische kennis van Claude — dat is een volwaardige manier om ze te gebruiken. Wil je analyses laten gronden in actuele ICTRecht-kennisbanken? Voeg dan zelf de **ictrecht-knowledge-server**-connector toe (via Claude Desktop *Settings → Connectors*, of `claude mcp add` in Claude Code). Skills detecteren de connector automatisch als hij er is, en werken er zonder problemen ook zonder — geen foutmeldingen, geen apart "basis"-plugin meer nodig.
+Alle plugins zijn gratis en werken direct met de ingebouwde juridische kennis van Claude — dat is een volwaardige manier om ze te gebruiken. Wil je analyses laten gronden in actuele ICTRecht-kennisbanken? Voeg dan zelf de **ictrecht-knowledge-server**-connector toe (via Claude Desktop *Settings → Connectors*, of `claude mcp add` in Claude Code). Skills detecteren de connector automatisch als hij er is, en werken er zonder problemen ook zonder, geen foutmeldingen, geen apart "basis"-plugin meer nodig. Op dit moment testen we de connector in een closed beta-programma en binnenkort zal deze voor als publieke beta uitgerold worden.
 
 Neem voor toegang tot de connector contact op via [support@ictrecht.nl](mailto:support@ictrecht.nl).
 

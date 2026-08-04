@@ -42,11 +42,9 @@ Neem voor toegang tot de connector contact op via [support@ictrecht.nl](mailto:s
 | Plugin | Rol | Skills | Download |
 |---|---|---|---|
 | **ictrecht-privacy-officer** | Privacy Officer | dpia · datalek · avg-rechten · doorgifte · grondslag · vok-review · verwerkingsregister · data-sharing · data-governance · ai-act-classificatie | [![](https://img.shields.io/badge/⬇_download-1a56db?style=flat-square)](https://github.com/ICTRecht/claude-plugin/releases/latest/download/ictrecht-privacy-officer.zip) |
-| **ictrecht-fg** † | FG | identiek aan Privacy Officer | [![](https://img.shields.io/badge/⬇_download-1a56db?style=flat-square)](https://github.com/ICTRecht/claude-plugin/releases/latest/download/ictrecht-fg.zip) |
+| **ictrecht-fg**  | FG | dpia · datalek · avg-rechten · doorgifte · grondslag · vok-review · verwerkingsregister · data-sharing · data-governance · ai-act-classificatie | [![](https://img.shields.io/badge/⬇_download-1a56db?style=flat-square)](https://github.com/ICTRecht/claude-plugin/releases/latest/download/ictrecht-fg.zip) |
 | **ictrecht-legal-counsel** | Legal Counsel | contract-review · nda-review · algemene-voorwaarden · aansprakelijkheid · onderhandeling-prep · sla-review · juridisch-memo · risico-analyse · geschil-voorbereiding · advies-structuur · vok-review · ie-clausules · auteursrecht · merkenrecht · software-licenties · handelsnaam-domeinnaam · ai-ip | [![](https://img.shields.io/badge/⬇_download-1a56db?style=flat-square)](https://github.com/ICTRecht/claude-plugin/releases/latest/download/ictrecht-legal-counsel.zip) |
 | **ictrecht-compliance-officer** | Compliance Officer | verwerkingsregister · data-sharing · data-governance · data-act · open-data · dataverdrag-analyse · risico-analyse · compliance-check · regelgeving-scan · ai-act-classificatie · nis2-check · dsa-verplichtingen · dma-analyse · cyberweerbaarheid-act | [![](https://img.shields.io/badge/⬇_download-1a56db?style=flat-square)](https://github.com/ICTRecht/claude-plugin/releases/latest/download/ictrecht-compliance-officer.zip) |
-
-† FG is inhoudelijk identiek aan Privacy Officer — een apart installeerbare plugin voor wie op die functietitel zoekt.
 
 Sommige skills (bv. `vok-review`, `risico-analyse`, `verwerkingsregister`, `data-sharing`, `data-governance`, `ai-act-classificatie`) zijn relevant voor meerdere rollen en staan daarom in meer dan één plugin.
 

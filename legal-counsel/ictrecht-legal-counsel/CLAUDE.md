@@ -68,23 +68,19 @@ domeinspecifieke vragen. Ontbreekt een sectie? Dan is die plugin nog niet ingeri
 skills van die plugin werken dan met generieke instellingen voor dat domein, totdat je
 `/ictrecht-<plugin>:cold-start-interview` uitvoert.*
 
-<!-- Voegt ictrecht-privacy-basis toe:
-### Privacy & AVG
+<!-- Voegt ictrecht-privacy-officer toe:
+### Privacy Officer / FG
 **Rol t.o.v. persoonsgegevens:** verwerkingsverantwoordelijke / verwerker / beide
 **Toepasselijke wetgeving:** AVG, WPG, UAVG, sectorspecifiek
 **Functionaris Gegevensbescherming (FG):** naam en contactgegevens, of 'geen FG aangesteld'
 **Open toezichtszaken:** lopende AP-onderzoeken of 'geen'
+**Rol t.o.v. data:** data producer / data holder / data recipient / platform
+**Data governance structuur:** wie is verantwoordelijk
+**Huidige verwerkingsregister:** aanwezig en actueel / in opbouw / ontbreekt
+**Huidige AI Act-compliance:** geïmplementeerd / in opbouw / nog niets gestart
 **Ernstvloer:** als een eerdere /datalek of /dpia analyse een hoog risico heeft vastgesteld,
 kan een latere analyse voor hetzelfde onderwerp dit niet stilzwijgend verlagen zonder
 expliciete motivering.
--->
-
-<!-- Voegt ictrecht-contracten toe:
-### Contractenrecht
-**Rol in contracten:** opdrachtgever / opdrachtnemer / beide
-**Toepasselijk recht:** doorgaans Nederlands recht
-**Vaste contractpartijen/leveranciers:** ...
-**Bevoegdheid tekenen:** wie mag namens de organisatie tekenen
 -->
 
 <!-- Voegt ictrecht-legal-counsel toe:
@@ -94,48 +90,43 @@ expliciete motivering.
 **Primaire juridische vraagstukken:** ...
 **Mandaat:** adviesbevoegdheid / tekenbevoegdheid / escalatieniveau
 **Escalatiepad:** wie wordt ingeschakeld als het de interne capaciteit overstijgt
--->
-
-<!-- Voegt ictrecht-ie toe:
-### Intellectueel Eigendom
+**Rol in contracten:** opdrachtgever / opdrachtnemer / beide
+**Toepasselijk recht:** doorgaans Nederlands recht
+**Vaste contractpartijen/leveranciers:** ...
+**Bevoegdheid tekenen:** wie mag namens de organisatie tekenen
 **Type IE-rechten:** software / content / merken / octrooien / bedrijfsgeheimen
 **Actief in landen/markten:** ...
 **IE-portefeuille:** geregistreerde merken, domeinnamen, octrooien, auteursrechten
 -->
 
-<!-- Voegt ictrecht-data toe:
-### Data (juridisch)
-**Rol t.o.v. data:** data producer / data holder / data recipient / platform
-**Toepasselijke wetgeving:** AVG, EU Data Act, Open Data Richtlijn, sectorspecifiek
-**Data governance structuur:** wie is verantwoordelijk
-**Huidige verwerkingsregister:** aanwezig / in opbouw / ontbreekt
--->
-
-<!-- Voegt ictrecht-digital-decade toe:
-### Digital Decade
-**Type organisatie:** platform / producent / dienstverlener / overheid / kritieke infrastructuur
-**Actief in EU-markten:** ...
-**Relevante producten/diensten:** AI-systemen, online platforms, connected products, etc.
-**Huidige Digital Decade compliance:** welke verordeningen al geïmplementeerd zijn
+<!-- Voegt ictrecht-compliance-officer toe:
+### Compliance Officer
+**Toepasselijke regelgeving:** AI Act, NIS2, DSA, DMA, Data Act, Open Data Richtlijn, sectorspecifiek
+**Compliance-structuur:** eigen compliance-afdeling / gedeeld met juridisch / extern
+**Huidige compliance-status per verordening:** geïmplementeerd / in opbouw / nog te starten
+**Rapportagelijn:** aan wie wordt gerapporteerd (bestuur, RvC, toezichthouder)
 **Let op:** dit domein wijzigt snel — controleer actuele implementatiestatus en
 toezichthoudersrichtlijnen.
 -->
 
 ---
 
-## Kennisbanken
+## Connector
 
-Dit gedeelde profiel wordt door plugins zonder MCP-connector (de gratis basisversies)
-gebruikt met de algemene juridische kennis van Claude. Voor toegang tot de ICTRecht
-kennisbanken (diepere en actuelere juridische bronnen) op een van deze domeinen: neem
-contact op via [support@ictrecht.nl](mailto:support@ictrecht.nl).
+Elke ICTRecht-plugin ondersteunt de optionele **ictrecht-knowledge-server**-connector.
+Zonder connector werken alle skills met de algemene juridische kennis van Claude — dat is
+een volwaardige, ondersteunde manier om deze plugins te gebruiken. Met een actieve,
+geauthenticeerde connector gronden skills hun analyse aanvullend in actuele
+ICTRecht-kennisbanken. De connector voeg je zelf toe via Claude Desktop
+Settings → Connectors, of `claude mcp add` in Claude Code. Neem voor toegang contact op
+via [support@ictrecht.nl](mailto:support@ictrecht.nl).
 
 ---
 
 ## Outputs
 
 Gegenereerde documenten per plugin blijven op hun eigen pad, bv.:
-`~/.claude/plugins/config/ictrecht-privacy-basis/outputs/`
-`~/.claude/plugins/config/ictrecht-contracten/outputs/`
+`~/.claude/plugins/config/ictrecht-privacy-officer/outputs/`
+`~/.claude/plugins/config/ictrecht-legal-counsel/outputs/`
 
 (elke plugin gebruikt zijn eigen `outputs/`-map onder `~/.claude/plugins/config/<plugin-naam>/`)

@@ -4,15 +4,15 @@
     "name": "ICTRecht B.V.",
     "email": "info@ictrecht.nl"
   },
-  "description": "Juridische AI-plugins van ICTRecht voor IT-recht, privacy, contracten, IE, data en digitale regelgeving.",
+  "description": "Juridische AI-plugins van ICTRecht, ingedeeld per rol: Privacy Officer, FG, Legal Counsel en Compliance Officer.",
   "metadata": {
     "pluginRoot": "./"
   },
   "plugins": [
     {
-      "name": "ictrecht-privacy",
-      "source": "./privacy/ictrecht-privacy",
-      "description": "Privacy- en AVG-assistent met DPIA, datalekbeoordeling, VOK-review, betrokkenenrechten, doorgifte en grondslagbepaling. Inclusief ICTRecht kennisbankconnector.",
+      "name": "ictrecht-privacy-officer",
+      "source": "./privacy-officer/ictrecht-privacy-officer",
+      "description": "Privacy Officer-assistent: DPIA, datalekbeoordeling, betrokkenenrechten, doorgifte, grondslagbepaling, verwerkersovereenkomsten, verwerkingsregister, data sharing, data governance en AI Act-classificatie.",
       "version": "1.0.0",
       "author": {
         "name": "ICTRecht B.V.",
@@ -25,14 +25,15 @@
         "GDPR",
         "DPIA",
         "datalek",
+        "privacy officer",
         "juridisch"
       ]
     },
     {
-      "name": "ictrecht-privacy-basis",
-      "source": "./privacy/ictrecht-privacy-basis",
-      "description": "Gratis AVG-assistent met DPIA, datalekbeoordeling, VOK-review, betrokkenenrechten, doorgifte en grondslagbepaling. Zonder kennisbankconnector.",
-      "version": "1.2.0",
+      "name": "ictrecht-fg",
+      "source": "./fg/ictrecht-fg",
+      "description": "FG-assistent (inhoudelijk identiek aan Privacy Officer): DPIA, datalekbeoordeling, betrokkenenrechten, doorgifte, grondslagbepaling, verwerkersovereenkomsten, verwerkingsregister, data sharing, data governance en AI Act-classificatie.",
+      "version": "1.0.0",
       "author": {
         "name": "ICTRecht B.V.",
         "email": "info@ictrecht.nl"
@@ -42,35 +43,16 @@
         "privacy",
         "AVG",
         "GDPR",
-        "DPIA",
-        "datalek",
-        "juridisch",
-        "gratis"
-      ]
-    },
-    {
-      "name": "ictrecht-contracten",
-      "source": "./contracten/ictrecht-contracten",
-      "description": "Contractenrecht assistent: contract review, NDA, algemene voorwaarden, aansprakelijkheid, SLA en onderhandelingsstrategie.",
-      "version": "1.2.0",
-      "author": {
-        "name": "ICTRecht B.V.",
-        "email": "info@ictrecht.nl"
-      },
-      "category": "legal",
-      "tags": [
-        "contracten",
-        "NDA",
-        "aansprakelijkheid",
-        "SLA",
+        "FG",
+        "DPO",
         "juridisch"
       ]
     },
     {
       "name": "ictrecht-legal-counsel",
       "source": "./legal-counsel/ictrecht-legal-counsel",
-      "description": "Legal counsel assistent: juridische memo's, risico-analyse, compliance, regelgeving-scan en geschilvoorbereiding.",
-      "version": "1.2.0",
+      "description": "Legal Counsel-assistent: contractreview, NDA, algemene voorwaarden, aansprakelijkheid, onderhandeling, SLA, juridische memo's, risico-analyse, geschilvoorbereiding, adviesstructuur, verwerkersovereenkomsten en intellectueel eigendom (auteursrecht, merkenrecht, software-licenties, handelsnaam, AI & IP).",
+      "version": "1.0.0",
       "author": {
         "name": "ICTRecht B.V.",
         "email": "info@ictrecht.nl"
@@ -78,64 +60,30 @@
       "category": "legal",
       "tags": [
         "legal counsel",
-        "compliance",
-        "risico",
-        "memo",
-        "juridisch"
-      ]
-    },
-    {
-      "name": "ictrecht-ie",
-      "source": "./ie/ictrecht-ie",
-      "description": "IE-specialist assistent: auteursrecht, merkenrecht, software-licenties, IE-clausules, handelsnaam en AI-IP.",
-      "version": "1.2.0",
-      "author": {
-        "name": "ICTRecht B.V.",
-        "email": "info@ictrecht.nl"
-      },
-      "category": "legal",
-      "tags": [
+        "contracten",
         "IE",
         "auteursrecht",
         "merkenrecht",
-        "licenties",
         "juridisch"
       ]
     },
     {
-      "name": "ictrecht-data",
-      "source": "./data/ictrecht-data",
-      "description": "Data specialist assistent: verwerkingsregister, data sharing, data governance, EU Data Act en open data.",
-      "version": "1.2.0",
+      "name": "ictrecht-compliance-officer",
+      "source": "./compliance-officer/ictrecht-compliance-officer",
+      "description": "Compliance Officer-assistent: verwerkingsregister, data sharing, data governance, EU Data Act, open data, dataverdragen, risico-analyse, compliance-check, regelgeving-scan (incl. AI Act, NIS2, DSA, DMA, Cyber Resilience Act).",
+      "version": "1.0.0",
       "author": {
         "name": "ICTRecht B.V.",
         "email": "info@ictrecht.nl"
       },
       "category": "legal",
       "tags": [
-        "data",
-        "Data Act",
-        "verwerkingsregister",
-        "governance",
-        "juridisch"
-      ]
-    },
-    {
-      "name": "ictrecht-digital-decade",
-      "source": "./digital-decade/ictrecht-digital-decade",
-      "description": "Digital Decade specialist: AI Act, NIS2, DSA, DMA, eIDAS 2.0 en Cyber Resilience Act.",
-      "version": "1.2.0",
-      "author": {
-        "name": "ICTRecht B.V.",
-        "email": "info@ictrecht.nl"
-      },
-      "category": "legal",
-      "tags": [
+        "compliance",
         "AI Act",
         "NIS2",
         "DSA",
         "DMA",
-        "digitaal",
+        "Data Act",
         "juridisch"
       ]
     }

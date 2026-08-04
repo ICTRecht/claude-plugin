@@ -1,0 +1,6 @@
+{
+  "name": "ictrecht-privacy-officer",
+  "description": "Privacy Officer-assistent: DPIA, datalekbeoordeling, betrokkenenrechten, doorgifte, grondslagbepaling, verwerkersovereenkomsten, verwerkingsregister, data sharing, data governance en AI Act-classificatie.",
+  "version": "1.0.0",
+  "author": { "name": "ICTRecht B.V.", "email": "info@ictrecht.nl" }
+}

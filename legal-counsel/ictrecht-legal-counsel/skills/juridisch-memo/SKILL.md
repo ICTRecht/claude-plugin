@@ -19,6 +19,27 @@ Als **geen van de drie** beschikbaar is:
 
 > ℹ️ *Geen organisatieprofiel gevonden. Voer `/ictrecht-legal-counsel:cold-start-interview` uit voor gepersonaliseerde output.*
 
+Volg voor toon, structuur en opmaak de schrijfwijzer in deze plugin (`SCHRIJFWIJZER.md` in de plugin-root).
+
+---
+
+## Connector (optioneel)
+
+Deze skill kan gebruikmaken van de **ictrecht-knowledge-server**-connector voor actuele
+ICTRecht-kennisbanken. Dit is volledig optioneel — de gebruiker voegt de connector zelf
+toe (via Claude Desktop Settings → Connectors, of `claude mcp add` in Claude Code) als hij
+dat wil. Deze skill werkt identiek goed met of zonder.
+
+1. Check of er een MCP-tool beschikbaar is die bij de `ictrecht-knowledge-server`-
+   connector hoort (bijv. een tool genaamd `search_knowledge`, `search_<naam>` of
+   vergelijkbaar, aangeboden door een MCP-server met 'ictrecht' in de naam of omschrijving).
+2. **Wel beschikbaar:** gebruik de tool met kennisbank-ID `PLACEHOLDER_COLLECTION_ID`
+   <!-- Nog geen kennisbank-backend beschikbaar voor dit domein --> om je analyse te
+   gronden in actuele ICTRecht-bronnen, naast je eigen kennis.
+3. **Niet beschikbaar:** ga gewoon door met je eigen juridische kennis. Vermeld dit NIET
+   als fout, waarschuwing of gemis — geen connector is een volwaardige, ondersteunde manier
+   om deze skill te gebruiken.
+
 ---
 
 ## Werkwijze

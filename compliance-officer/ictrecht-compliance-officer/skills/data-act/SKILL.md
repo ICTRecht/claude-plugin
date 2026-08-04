@@ -1,0 +1,119 @@
+---
+name: data-act
+description: >
+  Analyseer de verplichtingen van de EU Data Act voor een product, dienst of organisatie.
+argument-hint: "[product, dienst of situatie]"
+---
+
+## Voorbereiding
+
+Controleer in deze volgorde of er organisatiecontext beschikbaar is:
+
+1. **Configuratiebestand:** `~/.claude/plugins/config/ictrecht/CLAUDE.md` — lees dit bestand als het bestaat.
+2. **Geheugen:** Zoek naar geheugenblokken met de titel "ICTRecht organisatieprofiel".
+3. **Project-instructies:** Zoek naar een sectie `## ICTRecht Profiel` in de projectinstructies.
+
+Als geen van de drie bronnen beschikbaar is: ga generiek te werk en voeg onderaan een ℹ️-melding toe:
+
+> ℹ️ *Geen organisatieprofiel gevonden. Voer `/ictrecht-compliance-officer:cold-start-interview` uit voor gepersonaliseerde analyses.*
+
+Volg voor toon, structuur en opmaak de schrijfwijzer in deze plugin (`SCHRIJFWIJZER.md` in de plugin-root).
+
+---
+
+## Connector (optioneel)
+
+Deze skill kan gebruikmaken van de **ictrecht-knowledge-server**-connector voor actuele
+ICTRecht-kennisbanken. Dit is volledig optioneel — de gebruiker voegt de connector zelf
+toe (via Claude Desktop Settings → Connectors, of `claude mcp add` in Claude Code) als hij
+dat wil. Deze skill werkt identiek goed met of zonder.
+
+1. Check of er een MCP-tool beschikbaar is die bij de `ictrecht-knowledge-server`-
+   connector hoort (bijv. een tool genaamd `search_knowledge`, `search_<naam>` of
+   vergelijkbaar, aangeboden door een MCP-server met 'ictrecht' in de naam of omschrijving).
+2. **Wel beschikbaar:** gebruik de tool met kennisbank-ID `41f69cc8-8f94-436c-95f1-e8939e7dfcb5`
+   (Data Act Guide) om je analyse te gronden in actuele ICTRecht-bronnen, naast je eigen kennis.
+3. **Niet beschikbaar:** ga gewoon door met je eigen juridische kennis. Vermeld dit NIET
+   als fout, waarschuwing of gemis — geen connector is een volwaardige, ondersteunde manier
+   om deze skill te gebruiken.
+
+---
+
+## Workflow
+
+### Stap 1 — Is de Data Act van toepassing?
+
+De Data Act (Verordening (EU) 2023/2854) is van toepassing sinds **12 september 2025**. Beoordeel aan de hand van art. 1 en 2 of de verordening van toepassing is:
+
+**Connected product:** een product dat data genereert of verzamelt via sensoren of andere middelen, en dat data kan communiceren via een netwerk (bijv. IoT-apparaten, slimme apparaten, voertuigen, medische hulpmiddelen).
+
+**Related service:** een digitale dienst die noodzakelijk is voor de werking van het connected product, of die specifiek is ontworpen om het product een bepaalde functie te geven (bijv. bijbehorende apps, cloud-diensten).
+
+Concludeer:
+- Valt het product/de dienst onder de definitie? (ja / nee / nader onderzoek vereist)
+- Is de organisatie data holder, data recipient, of gebruiker in de zin van de Data Act?
+
+### Stap 2 — Data holder verplichtingen
+
+Indien de organisatie kwalificeert als **data holder**:
+
+**Art. 4 — Toegangsrecht van de gebruiker:**
+- De gebruiker heeft recht op toegang tot data gegenereerd door gebruik van het connected product
+- Data moet direct en gratis toegankelijk zijn, voor zover technisch mogelijk
+- Data moet toegankelijk zijn in een gestructureerd, gangbaar en machine-leesbaar formaat
+
+**Art. 5 — Toegang door derde partijen op verzoek van de gebruiker:**
+- De data holder moet data delen met een derde aangewezen door de gebruiker
+- Voorwaarden: het verzoek moet worden nageleefd onverwijld en kosteloos (of tegen redelijke vergoeding bij B2B)
+- De data holder mag het verzoek alleen weigeren op limitatieve gronden (bijv. bedrijfsgeheimen)
+
+### Stap 3 — Data recipient rechten en plichten
+
+Indien de organisatie kwalificeert als **data recipient** (art. 6 Data Act):
+- Data mag uitsluitend worden gebruikt voor de overeengekomen doeleinden
+- Verbod op gebruik van data voor profilering van natuurlijke personen
+- Verbod op doorverkoop van data of gebruik voor ontwikkeling van concurrerende producten
+- Data moet worden verwijderd zodra het doel is bereikt, tenzij anders overeengekomen
+
+### Stap 4 — Portabiliteit en cloud switching
+
+**Art. 23-31 — Switching van dataverwerkingsdiensten (cloud):**
+- Aanbieders moeten switching contractueel en technisch faciliteren
+- Maximale opzegtermijn: 2 maanden; transitieperiode van 30 dagen, verlengbaar als dat technisch onhaalbaar is
+- Exportformaten moeten gestructureerd, gangbaar en machineleesbaar zijn
+- Switching-kosten worden afgebouwd en zijn vanaf 12 januari 2027 volledig verboden
+
+Beoordeel of de organisatie als afnemer of aanbieder van clouddiensten hieraan voldoet of hiervan profiteert.
+
+**Hoofdstuk V — B2G:** overheidsinstanties kunnen bij uitzonderlijke noodzaak (zoals noodsituaties) toegang tot data vorderen bij data holders. Signaleer dit indien relevant.
+
+### Stap 5 — Verhouding tot de AVG
+
+Maak onderscheid tussen:
+- **Niet-persoonsgebonden data** — valt primair onder de Data Act
+- **Persoonsgegevens** — valt onder de AVG én de Data Act (cumulatieve toepassing)
+- **Gemengde datasets** — beide regimes van toepassing; anonimisering kan AVG-verplichtingen wegnemen maar is niet altijd haalbaar
+
+Signaleer spanning: de Data Act-verplichting tot datadeling kan botsen met de AVG-verplichting tot dataminimalisatie of doelbinding.
+
+### Stap 6 — Actieplan compliance
+
+Lever een concreet actieplan:
+
+| Actie | Artikel | Prioriteit | Verantwoordelijke |
+|-------|---------|-----------|------------------|
+| ... | ... | Hoog/Middel/Laag | ... |
+
+Inclusief:
+- Contractuele aanpassingen (leveringsvoorwaarden, SLA's, data sharing agreements)
+- Technische maatregelen (API's voor data-toegang, exportfunctionaliteit)
+- Beleidsmaatregelen (procedure voor verzoeken gebruikers, retentiebeleid)
+
+---
+
+## Outputs
+
+Sla gegenereerde bestanden op in:
+`~/.claude/plugins/config/ictrecht-compliance-officer/outputs/`
+
+Sluit af met de standaard ICTRecht disclaimer.

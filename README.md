@@ -23,9 +23,7 @@ De ICTRecht Plugin Suite voegt juridische expertise toe aan Claude, ingedeeld na
 
 Elke plugin biedt slash-commando's voor concrete juridische taken: van DPIA's en contractreviews tot AI Act-classificaties en IE-analyses. Een optioneel inrichtingsgesprek (`cold-start-interview`) stemt de analyses af op jouw organisatie — je hoeft dit maar één keer te doen, ook als je meerdere ICTRecht-plugins installeert.
 
-<p align="center">
-  <img src="./assets/demo.gif" alt="ICTRecht Plugin in gebruik" width="720">
-</p>
+
 
 ---
 
@@ -51,6 +49,11 @@ Sommige skills (bv. `vok-review`, `risico-analyse`, `verwerkingsregister`, `data
 ---
 
 ## Installatie
+
+<p align="center">
+  <img src="./assets/demo.gif" alt="ICTRecht Plugin in gebruik" width="720">
+</p>
+
 
 ### Claude Desktop (ZIP uploaden)
 

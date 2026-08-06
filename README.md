@@ -55,15 +55,9 @@ Sommige skills (bv. `vok-review`, `risico-analyse`, `verwerkingsregister`, `data
 </p>
 
 
-### Claude Desktop (ZIP uploaden)
 
-Download een ZIP via de knoppen in de plugintabel hierboven. Ga vervolgens naar **Settings → Extensions → Upload plugin**. Zie ook de korte visualisering hieronder.
 
----
-
-<img width="756" height="480" alt="ICTRecht plugin install" src="https://github.com/user-attachments/assets/9f027bd3-e7af-4948-8548-2d57b8c9e8ce" />
-
-### Claude Code (aanbevolen — volledige plugin met slash-commando's)
+### Claude Code (als alternatief)
 
 **Stap 1** — Voeg de marketplace toe (eenmalig):
 ```

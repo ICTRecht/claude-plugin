@@ -1,15 +1,16 @@
 ---
-name: avg-rechten
+name: betrokkenen-contact
 description: >
-  Behandel een verzoek van een betrokkene (inzage, correctie, verwijdering, bezwaar,
-  dataportabiliteit, beperking). Gebruik dit als iemand een privacyverzoek ontvangt
-  of wil weten hoe te reageren op een verzoek van een burger of klant.
+  Behandel als FG een rechtstreeks verzoek van een betrokkene (inzage, correctie,
+  verwijdering, bezwaar, dataportabiliteit, beperking), conform AVG artikel 38 lid 4.
+  Gebruik dit als een betrokkene zich met een privacyvraag of -verzoek tot de FG
+  wendt, of als de FG de afhandeling van een verzoek wil toetsen.
 argument-hint: "[type verzoek en context]"
 ---
 
-# /ictrecht-fg:avg-rechten
+# /ictrecht-fg:betrokkenen-contact
 
-Behandel een verzoek van een betrokkene conform AVG hoofdstuk III.
+Behandel een rechtstreeks verzoek van een betrokkene aan de FG, conform AVG artikel 38 lid 4 en hoofdstuk III.
 
 ## Voorbereiding
 
@@ -20,6 +21,13 @@ Behandel een verzoek van een betrokkene conform AVG hoofdstuk III.
    - Geen van deze beschikbaar → ga door met generieke AVG-standaardinstellingen en vermeld bovenaan de output: "ℹ️ Geen organisatieprofiel gevonden — output is generiek. Voer `/ictrecht-fg:cold-start-interview` uit voor gepersonaliseerde analyses."
 2. Gebruik je kennis van AVG hoofdstuk III (rechten van betrokkenen, art. 15–22).
 3. Volg voor toon, structuur en opmaak de schrijfwijzer in deze plugin (`SCHRIJFWIJZER.md` in de plugin-root).
+
+**Rolkader:** de FG is voor betrokkenen het eerste aanspreekpunt over de verwerking van hun
+gegevens en de uitoefening van hun rechten (art. 38 lid 4) — dat is een eigen wettelijke
+FG-taak, los van wie het verzoek uiteindelijk uitvoert. De feitelijke afhandeling
+(gegevens verzamelen, corrigeren, verwijderen) ligt bij de verwerkingsverantwoordelijke; de
+FG begeleidt de betrokkene, beoordeelt de ontvankelijkheid en ziet toe op een correcte
+afhandeling binnen de termijn.
 
 ## Connector (optioneel)
 
@@ -68,9 +76,11 @@ Uitzonderingen bij recht op verwijdering (art. 17 lid 3):
 - Archiefdoeleinden
 - Juridische procedures
 
-## Stap 4 — Reactie opstellen
+## Stap 4 — Doorgeleiden of toetsen
 
-Stel een conceptreactie op. Toon en niveau conform CLAUDE.md.
+Bepaal wat de FG in dit geval doet:
+- **Verzoek net binnengekomen bij de FG:** stel een conceptreactie op en geleid het verzoek voor feitelijke uitvoering door naar de verwerkingsverantwoordelijke of de betrokken afdeling. De FG legt het besluit niet zelf op, maar bewaakt de termijn.
+- **Al afgehandeld verzoek, ter toetsing:** beoordeel of de gekozen uitkomst (inwilligen / gedeeltelijk / afwijzen) correct is onderbouwd en of de termijn is gehaald.
 
 Mogelijke uitkomsten:
 - **Inwilligen** → bevestig uitvoering
@@ -80,7 +90,7 @@ Mogelijke uitkomsten:
 
 ## Stap 5 — Output
 
-Schrijf concept-reactiebrief naar `~/.claude/plugins/config/ictrecht-fg/outputs/avg-verzoek-[datum]-[type].md`.
-Als dat pad niet beschikbaar is, toon de volledige reactiebrief in de chat.
+Schrijf de conceptreactie of toets naar `~/.claude/plugins/config/ictrecht-fg/outputs/betrokkenen-contact-[datum]-[type].md`.
+Als dat pad niet beschikbaar is, toon de volledige reactie in de chat.
 
 Sluit af met de standaard ICTRecht disclaimer.

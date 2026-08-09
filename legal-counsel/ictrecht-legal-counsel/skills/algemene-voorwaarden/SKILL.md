@@ -104,7 +104,7 @@ Controleer of de volgende IT-specifieke bepalingen aanwezig en toereikend zijn:
 
 **Bij reviewen:** Lever een reviewrapport met:
 - Bevindingen per bepaling (aanwezig / ontbreekt / onvoldoende)
-- Beoordeling per bevinding conform de ICTRecht-driedeling: 🔴 Kritiek punt (strijd met dwingend recht of ontbrekend kernonderdeel) / 🟠 Risico (vaag, onvolledig of onredelijk) / ⚡ Aandachtspunt (afwijking van best practice)
+- Beoordeling per bevinding conform de ICTRecht-driedeling: 🔴 Kritiek punt (strijd met dwingend recht of ontbrekend kernonderdeel) / 🟠 Risico (vaag, onvolledig of onredelijk) / 🟡 Aandachtspunt (afwijking van best practice)
 - Concrete tekstsuggesties voor ontbrekende of zwakke bepalingen
 - Een samenvattende tabel (Bepaling | Bevinding | Korte samenvatting)
 

@@ -77,9 +77,13 @@ Oordeel: **AP-melding verplicht / niet verplicht / aanbevolen**
 
 ## Stap 4 — Melding aan betrokkenen (art. 34 AVG)
 
-Verplicht bij hoog risico. Beoordeel op basis van AVG art. 34 drempelcriteria.
+Verplicht bij hoog risico, met twee wettelijke uitzonderingen (art. 34 lid 3 AVG) die zelfs bij een hoog-risico-inschatting de meldplicht aan betrokkenen wegnemen:
+- De getroffen gegevens waren versleuteld of anderszins onbegrijpelijk voor onbevoegden (bv. sterke encryptie waarvan de sleutel niet is gelekt).
+- De gevolgen zijn direct na het incident tot nul gereduceerd (bv. gestolen inloggegevens waarvan de wachtwoorden meteen zijn gereset).
 
-Oordeel: **Melding betrokkenen verplicht / niet verplicht**
+Toets deze uitzonderingen expliciet vóórdat je tot "melding verplicht" concludeert — meld bij toepasselijkheid welke uitzondering van toepassing is en waarom. Bij twijfel of de maatregel de gevolgen daadwerkelijk tot nul reduceert: geen uitzondering aannemen.
+
+Oordeel: **Melding betrokkenen verplicht / niet verplicht (uitzondering: [encryptie / gevolgen genomen tot nul])**
 
 ## Stap 5 — Documentatieplicht (art. 33 lid 5 AVG)
 

@@ -1,15 +1,16 @@
 ---
-name: grondslag
+name: grondslag-advies
 description: >
-  Bepaal de juiste verwerkingsgrondslag voor een verwerking van persoonsgegevens.
-  Gebruik dit als iemand vraagt op welke grondslag een verwerking is gebaseerd,
-  of toestemming nodig is, of een verwerking is toegestaan.
+  Geef als FG advies over de juiste verwerkingsgrondslag voor een verwerking
+  van persoonsgegevens, conform AVG artikel 39. Gebruik dit als de FG om advies
+  wordt gevraagd op welke grondslag een verwerking gebaseerd kan worden, of
+  toestemming nodig is, of een verwerking is toegestaan.
 argument-hint: "[omschrijving van de verwerking]"
 ---
 
-# /ictrecht-fg:grondslag
+# /ictrecht-fg:grondslag-advies
 
-Bepaal de verwerkingsgrondslag conform AVG artikel 6 (en art. 9 voor bijzondere categorieën).
+Geef FG-advies over de verwerkingsgrondslag conform AVG artikel 6 (en art. 9 voor bijzondere categorieën), als onderdeel van de informerende en adviserende taak (art. 39 lid 1 sub a).
 
 ## Voorbereiding
 
@@ -20,6 +21,11 @@ Bepaal de verwerkingsgrondslag conform AVG artikel 6 (en art. 9 voor bijzondere 
    - Geen van deze beschikbaar → ga door met generieke AVG-standaardinstellingen en vermeld bovenaan de output: "ℹ️ Geen organisatieprofiel gevonden — output is generiek. Voer `/ictrecht-fg:cold-start-interview` uit voor gepersonaliseerde analyses."
 2. Gebruik je kennis van AVG art. 6 grondslagen en relevante jurisprudentie.
 3. Volg voor toon, structuur en opmaak de schrijfwijzer in deze plugin (`SCHRIJFWIJZER.md` in de plugin-root).
+
+**Rolkader:** de keuze van de grondslag is een besluit over het doel en de middelen van
+een verwerking, en ligt daarom bij de verwerkingsverantwoordelijke. De FG adviseert welke
+grondslag houdbaar is en signaleert risico's — het is niet aan de FG om die keuze zelf te
+maken (art. 38 lid 6: dat zou het risico op een belangenconflict met de FG-rol opleveren).
 
 ## Connector (optioneel)
 
@@ -32,7 +38,7 @@ dat wil. Deze skill werkt identiek goed met of zonder.
    connector hoort (bijv. een tool genaamd `search_knowledge`, `search_<naam>` of
    vergelijkbaar, aangeboden door een MCP-server met 'ictrecht' in de naam of omschrijving).
 2. **Wel beschikbaar:** gebruik de tool met kennisbank-ID `2f3b3297-a449-4848-b38b-44cf61d58c2a`
-   (Gegevensverwerking Assistent) om je analyse te gronden in actuele ICTRecht-bronnen,
+   (Gegevensverwerking Assistent) om je advies te gronden in actuele ICTRecht-bronnen,
    naast je eigen kennis.
 3. **Niet beschikbaar:** ga gewoon door met je eigen juridische kennis. Vermeld dit NIET
    als fout, waarschuwing of gemis — geen connector is een volwaardige, ondersteunde manier
@@ -54,25 +60,31 @@ Beoordeel elke grondslag:
 
 | Grondslag | Wanneer passend | Aandachtspunten |
 |---|---|---|
-| **Toestemming** (a) | Als de betrokkene een echte vrije keuze heeft en de verwerking optioneel is | Vrij, specifiek, geïnformeerd, ondubbelzinnig. Altijd intrekbaar. In gezagsverhoudingen (zoals werkgever-werknemer) zelden 'vrij'. Geen restgrondslag: kies toestemming niet omdat niets anders past. |
+| **Toestemming** (a) | Als de betrokkene een echte vrije keuze heeft en de verwerking optioneel is | Vrij, specifiek, geïnformeerd, ondubbelzinnig. Altijd intrekbaar. In gezagsverhoudingen (zoals werkgever-werknemer) zelden 'vrij'. Geen restgrondslag: adviseer toestemming niet omdat niets anders past. |
 | **Overeenkomst** (b) | Noodzakelijk voor uitvoering contract | Strikt noodzakelijk — niet "handig" |
 | **Wettelijke verplichting** (c) | EU/nationale wet schrijft voor | Verwijs naar specifieke wet |
 | **Vitaal belang** (d) | Noodsituaties | Zeer beperkt toepasbaar |
 | **Algemeen belang / openbaar gezag** (e) | Overheidsorganisaties | Wettelijke basis vereist |
 | **Gerechtvaardigd belang** (f) | Private partijen; overheid niet voor de uitoefening van haar publieke taken (art. 6 lid 1, slotzin) | Driestappentoets vereist (doeltoets, noodzakelijkheidstoets, belangenafweging); belangen van kinderen wegen extra zwaar mee |
 
-## Stap 3 — Aanbeveling
+## Stap 3 — Advies
 
-Geef de meest passende grondslag met motivering.
+Geef de meest houdbare grondslag met motivering — als advies, niet als besluit.
 
-Als gerechtvaardigd belang: voer de balancing test uit:
+Als gerechtvaardigd belang: adviseer over de balancing test:
 1. Welk belang heeft de verwerkingsverantwoordelijke?
 2. Is de verwerking noodzakelijk voor dat belang?
 3. Weegt het belang op tegen de belangen van de betrokkene?
 
+## Stap 4 — Als het advies niet wordt overgenomen
+
+Signaleer het risico van de gekozen grondslag, maar leg de organisatie niets op — de FG
+heeft geen corrigerende bevoegdheid. Adviseer om de motivering voor de afwijkende keuze in
+het verwerkingsregister vast te leggen.
+
 ## Output
 
-Schrijf analyse naar `~/.claude/plugins/config/ictrecht-fg/outputs/grondslag-[datum]-[verwerking].md`.
-Als dat pad niet beschikbaar is, toon de volledige analyse in de chat.
+Schrijf het advies naar `~/.claude/plugins/config/ictrecht-fg/outputs/grondslag-advies-[datum]-[verwerking].md`.
+Als dat pad niet beschikbaar is, toon het volledige advies in de chat.
 
 Sluit af met de standaard ICTRecht disclaimer.

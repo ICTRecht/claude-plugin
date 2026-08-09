@@ -1,15 +1,14 @@
 ---
-name: vok-review
+name: vok-toets
 description: >
-  Controleer een verwerkersovereenkomst (VOK) op volledigheid en AVG-conformiteit.
-  Gebruik dit als iemand een VOK wil beoordelen, opstellen of controleren voor
-  een leverancier of klant.
+  Toets als FG een verwerkersovereenkomst (VOK) op volledigheid en AVG-conformiteit.
+  Gebruik dit als de FG een VOK wil beoordelen voor een leverancier of klant.
 argument-hint: "[VOK document of naam leverancier]"
 ---
 
-# /ictrecht-fg:vok-review
+# /ictrecht-fg:vok-toets
 
-Beoordeel een verwerkersovereenkomst conform AVG artikel 28.
+Toets een verwerkersovereenkomst conform AVG artikel 28, als onderdeel van het FG-toezicht op naleving (art. 39 lid 1 sub b).
 
 ## Voorbereiding
 
@@ -19,8 +18,13 @@ Beoordeel een verwerkersovereenkomst conform AVG artikel 28.
    - Of zoek in projectinstructies naar het blok `## ICTRecht Profiel`
    - Geen van deze beschikbaar → ga door met generieke AVG-standaardinstellingen en vermeld bovenaan de output: "ℹ️ Geen organisatieprofiel gevonden — output is generiek. Voer `/ictrecht-fg:cold-start-interview` uit voor gepersonaliseerde analyses."
 2. Gebruik je kennis van AVG art. 28 vereisten voor verwerkersovereenkomsten.
-3. Vraag het document op als nog niet gedeeld en voer de analyse pas uit zodra de volledige tekst beschikbaar is.
+3. Vraag het document op als nog niet gedeeld en voer de toets pas uit zodra de volledige tekst beschikbaar is.
 4. Volg voor toon, structuur en opmaak de schrijfwijzer in deze plugin (`SCHRIJFWIJZER.md` in de plugin-root).
+
+**Rolkader:** het sluiten van de VOK en het onderhandelen over de inhoud is aan de
+verwerkingsverantwoordelijke, niet aan de FG. De FG toetst of de overeenkomst aan art. 28
+voldoet en signaleert hiaten — het besluit om een leverancier al dan niet in te schakelen
+blijft bij de organisatie.
 
 ## Connector (optioneel)
 
@@ -33,7 +37,7 @@ dat wil. Deze skill werkt identiek goed met of zonder.
    connector hoort (bijv. een tool genaamd `search_knowledge`, `search_<naam>` of
    vergelijkbaar, aangeboden door een MCP-server met 'ictrecht' in de naam of omschrijving).
 2. **Wel beschikbaar:** gebruik de tool met kennisbank-ID `b1c44172-86ba-4504-8b1a-6c58c8ea9120`
-   (Privacy Guide V2) om je analyse te gronden in actuele ICTRecht-bronnen, naast je eigen
+   (Privacy Guide V2) om je toets te gronden in actuele ICTRecht-bronnen, naast je eigen
    kennis.
 3. **Niet beschikbaar:** ga gewoon door met je eigen juridische kennis. Vermeld dit NIET
    als fout, waarschuwing of gemis — geen connector is een volwaardige, ondersteunde manier
@@ -65,24 +69,24 @@ Controleer elk verplicht element:
 - **Bewaartermijnen**: Zijn die specifiek genoeg?
 - **Beveiligingsniveau**: Is art. 32-niveau beschreven of verwezen?
 
-## Beoordeling
+## FG-oordeel
 
 Kwalificeer elke bevinding volgens de ICTRecht-driedeling:
 - 🔴 **Kritiek punt** — in strijd met dwingende AVG-bepalingen (m.n. art. 28) of een verplicht kernonderdeel ontbreekt
 - 🟠 **Risico** — niet direct onrechtmatig, maar vaag, onvolledig of een onredelijk verschoven verantwoordelijkheid
-- ⚡ **Aandachtspunt** — afwijking van best practice; verbetering aanbevolen
+- 🟡 **Aandachtspunt** — afwijking van best practice; verbetering aanbevolen
 
 Geef per bevinding:
-- **Beoordeling**: 🔴 / 🟠 / ⚡
+- **Beoordeling**: 🔴 / 🟠 / 🟡
 - **Probleem**: wat ontbreekt of klopt niet
 - **Risico**: wat dit betekent voor de organisatie
-- **Aanbeveling**: hoe het te herstellen
+- **Aanbeveling**: hoe het te herstellen — richting de verwerkingsverantwoordelijke, die de VOK laat aanpassen
 
 Sluit af met een samenvattende tabel (Onderdeel | Bevinding | Korte samenvatting). Toon alleen onderdelen met een bevinding.
 
 ## Output
 
-Schrijf beoordeling naar `~/.claude/plugins/config/ictrecht-fg/outputs/vok-review-[datum]-[leverancier].md`.
-Als dat pad niet beschikbaar is, toon de volledige beoordeling in de chat.
+Schrijf de toets naar `~/.claude/plugins/config/ictrecht-fg/outputs/vok-toets-[datum]-[leverancier].md`.
+Als dat pad niet beschikbaar is, toon de volledige toets in de chat.
 
 Sluit af met de standaard ICTRecht disclaimer.

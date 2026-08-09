@@ -32,7 +32,7 @@
     {
       "name": "ictrecht-fg",
       "source": "./fg/ictrecht-fg",
-      "description": "FG-assistent: DPIA, datalekbeoordeling, betrokkenenrechten, doorgifte, grondslagbepaling, verwerkersovereenkomsten, verwerkingsregister, data sharing, data governance en AI Act-classificatie.",
+      "description": "FG-assistent: onafhankelijk toezicht en advies conform AVG art. 37-39 — FG-advies, DPIA-toetsing, datalek-toetsing, betrokkenencontact, doorgifte- en grondslagadvies, verwerkersovereenkomsten- en registertoetsing, toezichtsplan, AP-contact en FG-jaarverslag.",
       "version": "1.0.0",
       "author": {
         "name": "ICTRecht B.V.",

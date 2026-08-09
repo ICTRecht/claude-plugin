@@ -85,7 +85,7 @@ Geef per risico:
 - Beoordeling conform de ICTRecht-driedeling:
   - 🔴 **Kritiek punt (dealbreaker)** — strijd met dwingend recht, ongeldige afspraak of ontbrekend kernonderdeel
   - 🟠 **Risico** — juridisch ambigu, onvolledig of onredelijk verschoven verantwoordelijkheid
-  - ⚡ **Aandachtspunt** — afwijking van best practice; verbetering aanbevolen
+  - 🟡 **Aandachtspunt** — afwijking van best practice; verbetering aanbevolen
 
 ### Stap 4 — Rode vlaggen
 
@@ -102,12 +102,12 @@ Som alle kritieke punten op die directe aandacht vereisen:
 Geef per rode vlag of risico een concrete tekstsuggestie voor aanpassing of aanvulling. Gebruik de volgende structuur:
 
 **Clausule:** [naam/nummer]
-**Beoordeling:** 🔴 Kritiek punt / 🟠 Risico / ⚡ Aandachtspunt
+**Beoordeling:** 🔴 Kritiek punt / 🟠 Risico / 🟡 Aandachtspunt
 **Huidig:** [huidige tekst of samenvatting]
 **Risico:** [uitleg]
 **Voorstel:** [concrete herformulering of aanvulling]
 
-Groepeer: eerst 🔴 kritieke punten, dan 🟠 risico's, dan ⚡ aandachtspunten. Sluit af met een samenvattende tabel (Clausule | Bevinding | Korte samenvatting).
+Groepeer: eerst 🔴 kritieke punten, dan 🟠 risico's, dan 🟡 aandachtspunten. Sluit af met een samenvattende tabel (Clausule | Bevinding | Korte samenvatting).
 
 ---
 

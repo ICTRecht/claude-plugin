@@ -1,15 +1,16 @@
 ---
-name: doorgifte
+name: doorgifte-advies
 description: >
-  Beoordeel een internationale doorgifte van persoonsgegevens buiten de EER.
-  Gebruik dit bij cloudoplossingen, leveranciers buiten de EU, of als iemand
-  vraagt of data naar een bepaald land mag worden gestuurd.
+  Geef als FG advies over een internationale doorgifte van persoonsgegevens
+  buiten de EER, conform AVG artikel 39. Gebruik dit bij cloudoplossingen,
+  leveranciers buiten de EU, of als de FG om advies wordt gevraagd of data naar
+  een bepaald land mag worden gestuurd.
 argument-hint: "[naam leverancier of land van doorgifte]"
 ---
 
-# /ictrecht-fg:doorgifte
+# /ictrecht-fg:doorgifte-advies
 
-Beoordeel een internationale doorgifte conform AVG hoofdstuk V.
+Geef FG-advies over een internationale doorgifte conform AVG hoofdstuk V, als onderdeel van de informerende en adviserende taak (art. 39 lid 1 sub a).
 
 ## Voorbereiding
 
@@ -20,6 +21,10 @@ Beoordeel een internationale doorgifte conform AVG hoofdstuk V.
    - Geen van deze beschikbaar → ga door met generieke AVG-standaardinstellingen en vermeld bovenaan de output: "ℹ️ Geen organisatieprofiel gevonden — output is generiek. Voer `/ictrecht-fg:cold-start-interview` uit voor gepersonaliseerde analyses."
 2. Gebruik je kennis van AVG hoofdstuk V, adequaatheidsbesluiten en EU-SCCs 2021.
 3. Volg voor toon, structuur en opmaak de schrijfwijzer in deze plugin (`SCHRIJFWIJZER.md` in de plugin-root).
+
+**Rolkader:** het besluit om met een partij buiten de EER te werken en de keuze van het
+doorgiftemechanisme liggen bij de verwerkingsverantwoordelijke. De FG adviseert over de
+juridische houdbaarheid van die keuze, maar bepaalt hem niet.
 
 ## Connector (optioneel)
 
@@ -32,7 +37,7 @@ dat wil. Deze skill werkt identiek goed met of zonder.
    connector hoort (bijv. een tool genaamd `search_knowledge`, `search_<naam>` of
    vergelijkbaar, aangeboden door een MCP-server met 'ictrecht' in de naam of omschrijving).
 2. **Wel beschikbaar:** gebruik de tool met kennisbank-ID `a7280324-a663-4c80-b056-ae42fc223abc`
-   (Doorgifte Assistent AVG) om je analyse te gronden in actuele ICTRecht-bronnen, naast je
+   (Doorgifte Assistent AVG) om je advies te gronden in actuele ICTRecht-bronnen, naast je
    eigen kennis.
 3. **Niet beschikbaar:** ga gewoon door met je eigen juridische kennis. Vermeld dit NIET
    als fout, waarschuwing of gemis — geen connector is een volwaardige, ondersteunde manier
@@ -47,11 +52,11 @@ Let op: remote access door een medewerker buiten de EER telt ook.
 
 Controleer:
 - **Adequaatheidsbesluit** aanwezig? (raadpleeg je kennis van actuele adequaatheidsbesluiten; controleer bij twijfel de actuele lijst van de Europese Commissie)
-  → Zo ja: doorgifte toegestaan, documenteer.
+  → Zo ja: doorgifte toegestaan, advies: documenteren.
   → **VS:** het EU-U.S. Data Privacy Framework (adequaatheidsbesluit, juli 2023) geldt alleen voor ontvangers met een actieve DPF-certificering — controleer die op dataprivacyframework.gov. Zonder certificering: passende waarborgen vereist.
 - **Geen adequaatheidsbesluit** → passende waarborgen vereist.
 
-## Stap 3 — Passende waarborg
+## Stap 3 — Advies over passende waarborg
 
 Als geen adequaatheidsbesluit:
 
@@ -67,20 +72,20 @@ Gebruik je kennis van de EU-SCCs 2021 (Uitvoeringsbesluit 2021/914).
 ## Stap 4 — Transfer Impact Assessment (TIA)
 
 Bij SCCs (en BCRs) is sinds het Schrems II-arrest (HvJ EU C-311/18) in de praktijk altijd een TIA vereist.
-Beoordeel het recht van het ontvangende land (met name: overheidstoegangsbevoegdheden) en of aanvullende
+Adviseer over het recht van het ontvangende land (met name: overheidstoegangsbevoegdheden) en of aanvullende
 technische, contractuele of organisatorische maatregelen nodig zijn (EDPB Aanbevelingen 01/2020).
 
 Gebruik je kennis van TIA-methodiek en overheidstoegangsbevoegdheden per land.
 
-## Stap 5 — Conclusie
+## Stap 5 — FG-advies
 
-- Doorgifte toegestaan: **ja / nee / ja mits [maatregelen]**
-- Vereiste documentatie
-- Eventuele aanvullende maatregelen
+- **Advies**: doorgifte houdbaar **ja / nee / ja mits [maatregelen]**, met motivering.
+- **Vereiste documentatie**: wat de verwerkingsverantwoordelijke moet vastleggen.
+- **Als het advies niet wordt overgenomen**: dit is aan de organisatie om te beargumenteren; de FG signaleert het risico maar heeft geen vetorecht.
 
 ## Output
 
-Schrijf beoordeling naar `~/.claude/plugins/config/ictrecht-fg/outputs/doorgifte-[datum]-[land-leverancier].md`.
-Als dat pad niet beschikbaar is, toon de volledige beoordeling in de chat.
+Schrijf het advies naar `~/.claude/plugins/config/ictrecht-fg/outputs/doorgifte-advies-[datum]-[land-leverancier].md`.
+Als dat pad niet beschikbaar is, toon het volledige advies in de chat.
 
 Sluit af met de standaard ICTRecht disclaimer.

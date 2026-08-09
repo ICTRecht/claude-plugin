@@ -153,17 +153,18 @@ configuratie ook in nieuwe chats beschikbaar te hebben zonder opnieuw cold-start
 
 ## Stap 4 — Bevestiging
 
-Meld: "✅ Privacy Officer / FG is toegevoegd aan je ICTRecht-organisatieprofiel. Je kunt nu:
-- `/ictrecht-fg:dpia` — DPIA uitvoeren
-- `/ictrecht-fg:datalek` — datalek beoordelen
-- `/ictrecht-fg:avg-rechten` — betrokkene verzoek behandelen
-- `/ictrecht-fg:doorgifte` — internationale doorgifte controleren
-- `/ictrecht-fg:grondslag` — verwerkingsgrondslag bepalen
-- `/ictrecht-fg:vok-review` — verwerkersovereenkomst controleren
-- `/ictrecht-fg:verwerkingsregister` — verwerkingsregister opstellen of reviewen
-- `/ictrecht-fg:data-sharing` — data sharing agreement beoordelen of opstellen
-- `/ictrecht-fg:data-governance` — data governance framework toetsen of ontwikkelen
-- `/ictrecht-fg:ai-act-classificatie` — AI-systeem classificeren volgens de AI Act
+Meld: "✅ FG is toegevoegd aan je ICTRecht-organisatieprofiel. Je kunt nu:
+- `/ictrecht-fg:fg-advies` — formeel FG-advies opstellen
+- `/ictrecht-fg:dpia-toets` — FG-advies geven over een DPIA en toezien op de uitvoering
+- `/ictrecht-fg:datalek-toets` — FG-oordeel geven over een datalek en de afhandeling
+- `/ictrecht-fg:betrokkenen-contact` — verzoek van een betrokkene aan de FG behandelen
+- `/ictrecht-fg:doorgifte-advies` — advies geven over een internationale doorgifte
+- `/ictrecht-fg:grondslag-advies` — advies geven over de verwerkingsgrondslag
+- `/ictrecht-fg:vok-toets` — verwerkersovereenkomst toetsen
+- `/ictrecht-fg:register-toets` — verwerkingsregister toetsen
+- `/ictrecht-fg:toezichtsplan` — risicogeoriënteerd toezichtsplan opstellen
+- `/ictrecht-fg:ap-contact` — contact met de Autoriteit Persoonsgegevens voorbereiden
+- `/ictrecht-fg:fg-jaarverslag` — jaarverslag opstellen voor het bestuur
 
 Andere ICTRecht-plugins gebruiken automatisch dit gedeelde profiel — je hoeft dit interview
 niet opnieuw te doen als je een andere ICTRecht-plugin installeert. Voer dit commando alleen

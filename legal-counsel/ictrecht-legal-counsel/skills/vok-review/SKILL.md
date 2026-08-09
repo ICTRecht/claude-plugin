@@ -75,10 +75,10 @@ Controleer elk verplicht element:
 Kwalificeer elke bevinding volgens de ICTRecht-driedeling:
 - 🔴 **Kritiek punt** — in strijd met dwingende AVG-bepalingen (m.n. art. 28) of een verplicht kernonderdeel ontbreekt
 - 🟠 **Risico** — niet direct onrechtmatig, maar vaag, onvolledig of een onredelijk verschoven verantwoordelijkheid
-- ⚡ **Aandachtspunt** — afwijking van best practice; verbetering aanbevolen
+- 🟡 **Aandachtspunt** — afwijking van best practice; verbetering aanbevolen
 
 Geef per bevinding:
-- **Beoordeling**: 🔴 / 🟠 / ⚡
+- **Beoordeling**: 🔴 / 🟠 / 🟡
 - **Probleem**: wat ontbreekt of klopt niet
 - **Risico**: wat dit betekent voor de organisatie
 - **Aanbeveling**: hoe het te herstellen

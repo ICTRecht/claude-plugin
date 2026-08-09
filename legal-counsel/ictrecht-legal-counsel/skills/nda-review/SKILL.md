@@ -97,7 +97,7 @@ Geef een oordeel: **Gebalanceerd / Licht nadelig voor gebruiker / Sterk nadelig 
 Geef per ontbrekende bepaling of onbalans een concreet voorstel:
 
 **Punt:** [beschrijving]
-**Beoordeling:** 🔴 Kritiek punt / 🟠 Risico / ⚡ Aandachtspunt (ICTRecht-driedeling)
+**Beoordeling:** 🔴 Kritiek punt / 🟠 Risico / 🟡 Aandachtspunt (ICTRecht-driedeling)
 **Probleem:** [wat ontbreekt of klopt niet]
 **Voorstel:** [concrete tekstsuggestie of aanvulling]
 

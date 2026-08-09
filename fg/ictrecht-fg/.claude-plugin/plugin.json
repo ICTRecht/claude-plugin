@@ -1,6 +1,6 @@
 {
   "name": "ictrecht-fg",
   "description": "FG-assistent: FG-advies, DPIA-toetsing, datalek-toetsing, betrokkenencontact, doorgifte- en grondslagadvies, verwerkersovereenkomsten- en registertoetsing, toezichtsplan, AP-contact en FG-jaarverslag.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": { "name": "ICTRecht B.V.", "email": "info@ictrecht.nl" }
 }

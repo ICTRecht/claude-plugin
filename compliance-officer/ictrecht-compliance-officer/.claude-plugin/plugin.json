@@ -1,6 +1,6 @@
 {
   "name": "ictrecht-compliance-officer",
   "description": "Compliance Officer-assistent: verwerkingsregister, data sharing, data governance, EU Data Act, open data, dataverdragen, risico-analyse, compliance-check, regelgeving-scan (incl. AI Act, NIS2, DSA, DMA, Cyber Resilience Act).",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": { "name": "ICTRecht B.V.", "email": "info@ictrecht.nl" }
 }

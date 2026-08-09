@@ -1,6 +1,6 @@
 {
   "name": "ictrecht-legal-counsel",
   "description": "Legal Counsel-assistent: contractreview, NDA, algemene voorwaarden, aansprakelijkheid, onderhandeling, SLA, juridische memo's, risico-analyse, geschilvoorbereiding, adviesstructuur, verwerkersovereenkomsten en intellectueel eigendom (auteursrecht, merkenrecht, software-licenties, handelsnaam, AI & IP).",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": { "name": "ICTRecht B.V.", "email": "info@ictrecht.nl" }
 }

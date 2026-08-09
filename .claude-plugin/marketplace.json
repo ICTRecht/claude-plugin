@@ -13,7 +13,7 @@
       "name": "ictrecht-privacy-officer",
       "source": "./privacy-officer/ictrecht-privacy-officer",
       "description": "Privacy Officer-assistent: DPIA, datalekbeoordeling, betrokkenenrechten, doorgifte, grondslagbepaling, verwerkersovereenkomsten, verwerkingsregister, data sharing, data governance en AI Act-classificatie.",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "author": {
         "name": "ICTRecht B.V.",
         "email": "info@ictrecht.nl"
@@ -32,8 +32,8 @@
     {
       "name": "ictrecht-fg",
       "source": "./fg/ictrecht-fg",
-      "description": "FG-assistent: onafhankelijk toezicht en advies conform AVG art. 37-39 — FG-advies, DPIA-toetsing, datalek-toetsing, betrokkenencontact, doorgifte- en grondslagadvies, verwerkersovereenkomsten- en registertoetsing, toezichtsplan, AP-contact en FG-jaarverslag.",
-      "version": "1.0.0",
+      "description": "FG-assistent: DPIA-toetsing, datalek-toetsing, betrokkenencontact, doorgifte- en grondslagadvies, verwerkersovereenkomsten- en registertoetsing, toezichtsplan, AP-contact en FG-jaarverslag.",
+      "version": "1.0.1",
       "author": {
         "name": "ICTRecht B.V.",
         "email": "info@ictrecht.nl"
@@ -52,7 +52,7 @@
       "name": "ictrecht-legal-counsel",
       "source": "./legal-counsel/ictrecht-legal-counsel",
       "description": "Legal Counsel-assistent: contractreview, NDA, algemene voorwaarden, aansprakelijkheid, onderhandeling, SLA, juridische memo's, risico-analyse, geschilvoorbereiding, adviesstructuur, verwerkersovereenkomsten en intellectueel eigendom (auteursrecht, merkenrecht, software-licenties, handelsnaam, AI & IP).",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "author": {
         "name": "ICTRecht B.V.",
         "email": "info@ictrecht.nl"
@@ -71,7 +71,7 @@
       "name": "ictrecht-compliance-officer",
       "source": "./compliance-officer/ictrecht-compliance-officer",
       "description": "Compliance Officer-assistent: verwerkingsregister, data sharing, data governance, EU Data Act, open data, dataverdragen, risico-analyse, compliance-check, regelgeving-scan (incl. AI Act, NIS2, DSA, DMA, Cyber Resilience Act).",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "author": {
         "name": "ICTRecht B.V.",
         "email": "info@ictrecht.nl"
